@@ -1,3 +1,7 @@
+require("dotenv").config({
+	path: `.env.${process.env.NODE_ENV}`,
+});
+
 const urljoin = require("url-join");
 const path = require("path");
 const config = require("./data/SiteConfig");
@@ -21,6 +25,16 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
+    "gatsby-plugin-stripe",
+    {
+      resolve: "gatsby-source-stripe",
+      options: {
+        objects: ['Product', 'Sku'],
+        secretKey: 'sk_test_OxcRGXwa8vyXhvj34pOAKmjs',
+        downloadFiles: true,
+	      auth: false
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {

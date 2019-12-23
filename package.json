@@ -1,9 +1,14 @@
 {
-  "name": "gatsby-starter-advanced",
-  "description": "GatsbyJS starter that includes examples for advanced use cases.",
+  "name": "react-static-ecom-blog",
+  "description": "react gatsbyJs static site includes e-commerence and blog",
   "version": "1.1.0",
-  "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
+  "author": "Shawn Miller <hereiamnow@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hereiamnow/react-static-ecom-blog"
+  },
   "dependencies": {
+    "bootstrap": "^3.3.6",
     "gatsby": "^2.15.28",
     "gatsby-image": "^2.2.23",
     "gatsby-plugin-catch-links": "^2.1.12",
@@ -17,6 +22,7 @@
     "gatsby-plugin-react-helmet": "^3.1.10",
     "gatsby-plugin-sharp": "^2.2.27",
     "gatsby-plugin-sitemap": "^2.2.16",
+    "gatsby-plugin-stripe": "^1.2.3",
     "gatsby-plugin-twitter": "^2.1.9",
     "gatsby-remark-autolink-headers": "^2.1.13",
     "gatsby-remark-copy-linked-files": "^2.1.23",
@@ -24,11 +30,16 @@
     "gatsby-remark-prismjs": "^3.3.16",
     "gatsby-remark-responsive-iframe": "^2.2.20",
     "gatsby-source-filesystem": "^2.1.28",
+    "gatsby-source-stripe": "^3.0.5",
     "gatsby-transformer-remark": "^2.6.26",
     "gatsby-transformer-sharp": "^2.2.19",
+    "gsap": "^3.0.4",
+    "jquery": "^3.4.1",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "netlify-cms-app": "^2.9.7",
+    "owl.carousel": "^2.3.4",
+    "popper.js": "^1.15.0",
     "prismjs": "^1.16.0",
     "react": "^16.10.1",
     "react-disqus-comments": "^1.4.0",
@@ -56,7 +67,14 @@
     "write-good": "^1.0.1"
   },
   "keywords": [
-    "gatsby"
+    "dotted",
+    "react",
+    "gatsby",
+    "static",
+    "e-commerence",
+    "blog",
+    "seo",
+    "helment"
   ],
   "license": "MIT",
   "main": "n/a",
