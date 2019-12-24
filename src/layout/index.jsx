@@ -1,8 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 import config from "../../data/SiteConfig";
-
-import "./index.css";
+import "../../static/css/site/style.css"
+/*import "./index.css";*/
 
 export default class MainLayout extends React.Component {
   render() {
@@ -40,15 +40,18 @@ export default class MainLayout extends React.Component {
 	                href="css/owl.carousel/owl.carousel.css"
 	                type="text/css"
 	        />
-	        <link
+	        {/*Imported in component*/}
+	        {/*<link
 			        rel="stylesheet"
-			        href="css/site/style.css" />
+			        href="css/site/style.css" />*/}
 
 	        <link
 			        rel="shortcut icon"
 			        href="favicon.png" />
         </Helmet>
+
         {children}
+
       </div>
     );
   }
