@@ -1,36 +1,77 @@
-import React, { Component } from "react";
-import { Link } from "gatsby";
-import UserLinks from "../UserLinks/UserLinks";
-import "./Footer.css";
+/**
+ * Created by S Miller <hereiamnow@gmail.com>
+ * User: Developer
+ * Project: https://react-static-ecom-blog.netlify.com
+ * GitRepo: https://github.com/hereiamnow/react-static-ecom-blog.git
+ * Date: 12/05/2019 9:29 PM
+ * Relative Path: src/components/Footer/Footer.jsx
+ * Description: HTML & CSS based on Dotted HTML footer template.
+ */
+
+import React, { Component } from 'react'
+import SocialLinks from './SocialLinks/socialLinks'
+import RecentPosts from './RecentPosts/recentPosts'
+import UsefulLinks from './UsefulLinks/usefulLinks'
+import Contacts from './Contacts/contacts'
+import BackToTop from './BackToTop/BackToTop'
+import './style.css'
 
 class Footer extends Component {
-  render() {
-    const { config } = this.props;
-    const url = config.siteRss;
-    const { copyright } = config;
-    if (!copyright) {
-      return null;
-    }
-    return (
-      <footer className="footer">
-        <UserLinks config={config} labeled />
-        <div className="notice-container">
-          <h4>{copyright}</h4>
+	render () {
+		/*
+		const {config} = this.props
+		const url = config.siteRss
+		const {copyright} = config
+		if (!copyright) {
+			return null
+		}
+		*/
+		return (
 
-          <Link to={url}>
-            <button>Subscribe</button>
-          </Link>
-          <h4>
-            Based on{" "}
-            <a href="https://github.com/Vagr9K/gatsby-advanced-starter">
-              Gatsby Advanced Starter
-            </a>
-            .
-          </h4>
-        </div>
-      </footer>
-    );
-  }
+				<React.Fragment>
+
+					{/*
+					<UserLinks config={config} labeled />
+					<h4>{copyright}</h4>
+					<Link to={url}>
+						<button>Subscribe</button>
+					</Link>
+					*/}
+
+					<BackToTop />
+
+					<footer className="footer-v1">
+
+						<div className="container">
+
+							<div className="row">
+
+								<div className="col-md-3">
+									<SocialLinks />
+								</div>
+
+								<div className="col-md-3">
+									<RecentPosts />
+								</div>
+
+								<div className="col-md-3">
+									<UsefulLinks />
+								</div>
+
+								<div className="col-md-3">
+									<Contacts />
+								</div>
+
+							</div>{/*row*/}
+
+						</div>{/*container*/}
+
+					</footer>{/*.footer-v1*/}
+
+				</React.Fragment>
+
+		)
+	}
 }
 
-export default Footer;
+export default Footer
