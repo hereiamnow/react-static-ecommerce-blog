@@ -1,5 +1,13 @@
 ### JetBrains ###
-.idea
+.idea/*
+
+### Dotted Theme ###
+.dotted-theme
+
+### Build Output ###
+/public
+
+/.env.*
 
 ### Node ###
 # Logs
@@ -60,3 +68,4 @@ public/
 
 # Bundle stats
 bundle-stats.json
+
