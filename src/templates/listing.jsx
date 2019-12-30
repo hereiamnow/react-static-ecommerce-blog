@@ -11,18 +11,14 @@ import CategoryListing from '../components/Blog/Widget/CategoryListing';
 /*import WidgetAccordion from '../components/Blog/Widget/WidgetAccordion';*/
 /*import WidgetTabs from '../components/Blog/Widget/WidgetTabs';*/
 import WidgetText from '../components/Blog/Widget/WidgetText';
-/*Used for Call to Action component*/
-import CTA from '../components/CTA/Action01'
+import Cta from '../components/CTA/Action01'
 import SubHeader from '../components/SubHeader/SubHeader'
+/*import "./listing.css";*/
 
 const ctaHeader = 'You can make a difference with your money.'
 const ctaBody = 'Quisque id accumsan justo, id gravida ipsum. Nulla ligula mauris, viverra vel mi a, vehicula lobortis purus. Phasellus dui mi, malesuada condimentum ex id, feugiat aliquam nisl. Praesent dignissim laoreet lectus, eget ultricies mauris pretium ac volutpat. '
 const ctaButton = 'DONATE'
 const ctaUrl = '/donate'
-
-
-
-/*import "./listing.css";*/
 
 class Listing extends React.Component {
 
@@ -85,7 +81,7 @@ class Listing extends React.Component {
 					</section>
 
 					{/*Call to Action - Donate*/}
-					<CTA header={ctaHeader} body={ctaBody} button={ctaButton} url={ctaUrl} />
+					<Cta header={ctaHeader} body={ctaBody} button={ctaButton} url={ctaUrl} />
 
 				</Layout>
 		);
