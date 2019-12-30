@@ -6,6 +6,7 @@ const _ = require('lodash');
 const moment = require('moment');
 
 class PostListing extends React.Component {
+
 	getPostList () {
 		const postList = [];
 		this.props.postEdges.forEach(postEdge => {
@@ -82,7 +83,7 @@ class PostListing extends React.Component {
 												<li>
 													Category:&nbsp;
 													<span>
-													<Link to={`/tags/${_.kebabCase(post.category)}/`} className="hover-text-theme">
+													<Link to={`/categories/${_.kebabCase(post.category)}/`} className="hover-text-theme">
 													{post.category}</Link>
 													</span>
 												</li>
