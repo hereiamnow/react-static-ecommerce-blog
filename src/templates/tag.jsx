@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import Layout from '../layout';
 import PostListing from '../components/Blog/PostListing';
 import React from 'react';
-import WidgetCategory from '../components/Blog/Widget/CategoryListing';
+/*import CategoryListing from '../components/Blog/Widget/CategoryListing';*/
 import WidgetText from '../components/Blog/Widget/WidgetText';
 
 export default class TagTemplate extends React.Component {
@@ -20,7 +20,7 @@ export default class TagTemplate extends React.Component {
 							<div className="row">
 								<div className="sidebar-page">
 									<div id="sidebar" className="main-sidebar">
-										{/*<WidgetCategory> </WidgetCategory>*/}
+										{/*<CategoryListing> </CategoryListing>*/}
 										<WidgetText> </WidgetText>
 									</div>
 								</div>

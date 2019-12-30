@@ -11,7 +11,7 @@ import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
-import CategoryListing from '../components/Blog/Widget/CategoryListing';
+/*import CategoryListing from '../components/Blog/Widget/CategoryListing';*/
 import WidgetText from '../components/Blog/Widget/WidgetText';
 
 export default class PostTemplate extends React.Component {

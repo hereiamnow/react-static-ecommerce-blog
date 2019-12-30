@@ -12,7 +12,7 @@ import React from "react";
 import ListBlog from "./ListBlog";
 import PaginationBlog from "./PaginationBlog";
 import WidgetSearch from "./Widget/WidgetSearch";
-import WidgetCategory from "./Widget/CategoryListing";
+/*import CategoryListing from "./Widget/CategoryListing";*/
 import WidgetTabs from "./Widget/WidgetTabs";
 import WidgetAccordion from "./Widget/WidgetAccordion";
 import WidgetText from "./Widget/WidgetText";
@@ -30,7 +30,7 @@ class Blog extends React.Component {
             <div className="sidebar-page">
               <div id="sidebar" className="main-sidebar">
                 <WidgetSearch></WidgetSearch>
-                <WidgetCategory></WidgetCategory>
+                {/*<CategoryListing></CategoryListing>*/}
                 <WidgetTabs></WidgetTabs>
                 <WidgetAccordion></WidgetAccordion>
                 <WidgetText></WidgetText>

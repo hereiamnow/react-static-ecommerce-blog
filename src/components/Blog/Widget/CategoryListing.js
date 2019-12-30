@@ -35,7 +35,7 @@ class CategoryListing extends React.Component {
 						{/* Your post list here. */
 							categoryList.map(category => (
 									<li>
-										<Link to="/" className="hover-text-theme">
+										<Link to="/categories/" className="hover-text-theme">
 											{category.category}
 										</Link>
 										<span className="count">2</span>
