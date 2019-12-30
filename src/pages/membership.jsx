@@ -11,7 +11,7 @@ import React from 'react'
 import Helmet from "react-helmet";
 import { Link } from 'gatsby'
 import config from '../../data/SiteConfig';
-import Layout from '../Layout'
+import Layout from '../layout'
 import SEO from '../components/SEO/SEO';
 import Skus from '../components/Shop/Products/Skus';
 import ShopFooter from '../components/Shop/ShopFooter'

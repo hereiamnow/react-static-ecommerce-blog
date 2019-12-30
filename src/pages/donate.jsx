@@ -10,7 +10,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Link } from 'gatsby'
-import Layout from '../Layout'
+import Layout from '../layout'
 import ShopFooter from '../components/Shop/ShopFooter/index'
 import SubHeader from '../components/SubHeader/SubHeader'
 import Subscribe from '../components/Subscribe'
