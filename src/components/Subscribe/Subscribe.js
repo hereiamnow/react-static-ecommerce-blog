@@ -17,19 +17,14 @@ export class Subscribe extends React.Component {
 		//console.log(this.props)
 		return (
 				<section id="subcrible" className="no-padding bg-theme">
-
 					<div className="container ">
-
 						<div className="row">
-
 							<div className="subcribe-warp subcribe1-warp ">
 
 								<div className="col-md-3">
-									<h4 className="white-text">
-										Subscribe To Newsletters
-									</h4>
+									<h4 className="white-text">Subscribe To Newsletters</h4>
 									<i className="white-text">Integer neque diam, porta non augue non</i>
-								</div>{/*END COLUMN*/}
+								</div>{/*column*/}
 
 								<div className="col-md-9">
 
@@ -37,27 +32,22 @@ export class Subscribe extends React.Component {
 
 										<div className="form-group">
 											<input type="text" className="form-control" id="name" placeholder="Your name..."/>
-										</div>{/*FORM GROUP*/}
+										</div>{/*form-group*/}
 
 										<div className="form-group">
 											<input type="email" className="form-control" id="exampleInputEmail3" placeholder="Your email..."/>
-										</div>{/*FORM GROUP*/}
+										</div>{/*form-group*/}
 
 										<button type="submit" className="btn btn-default">
-											SUBCRIBE ME <i class="fa fa-chevron-right ls-preloaded" aria-hidden="true"> </i>
+											SUBCRIBE ME <i className="fa fa-chevron-right ls-preloaded" aria-hidden="true"> </i>
 										</button>
-
 
 									</form>
 
-								</div>{/*END COLUMN*/}
-
-							</div>{/*END SUBSCRIBE WRAPPER*/}
-
-						</div>{/*END ROW*/}
-
-					</div>{/*END CONTAINER*/}
-
+								</div>{/*column*/}
+							</div>{/*subscribe wrapper*/}
+						</div>{/*row*/}
+					</div>{/*container*/}
 				</section>
 		)
 	}
