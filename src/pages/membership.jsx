@@ -84,7 +84,7 @@ export default () => (
 									<div className="product-image">
 										<img alt="" src={data.thumbnail} />
 										<div className="product-overlay">
-											<Link href="/" title="Donate">
+											<Link to="/membership" title="">
 												{data.buttonText}
 											</Link>
 										</div>

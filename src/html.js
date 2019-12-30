@@ -14,10 +14,10 @@ export default function HTML (props) {
 				{props.headComponents}
 
 				{/*jquery import - works, maybe*/}
-				<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+				{/*<script src="https://code.jquery.com/jquery-3.3.1.min.js"
 				        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 				        crossOrigin="anonymous"
-				/>
+				/>*/}
 			</head>
 
 			<body {...props.bodyAttributes}>
@@ -35,6 +35,32 @@ export default function HTML (props) {
 			/>
 
 			{props.postBodyComponents}
+
+			<script src="/js/vendor/jquery.min.js"></script>
+			{/*Bootstrap 3.3.6*/}
+			<script src="/js/vendor/bootstrap.js"></script>
+
+			{/*Mobile Menu*/}
+			<script type="text/javascript" src="js/plugins/jquery.mmenu.all.min.js"></script>
+			<script type="text/javascript" src="js/plugins/mobilemenu.js"></script>
+
+			{/*External libraries: jQuery & GreenSock*/}
+			<script type="text/javascript" src="/layerslider/js/greensock.js"></script>
+
+			{/*LayerSlider script files*/}
+			<script type="text/javascript" src="/layerslider/js/layerslider.transitions.js"></script>
+			<script type="text/javascript" src="/layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+			<script type="text/javascript" src="/js/plugins/layerslider.js"></script>
+
+			{/*Initializing Owl Carousel*/}
+			<script src="/js/plugins/owl.carousel.js"></script>
+			<script src="/js/plugins/owl.js"></script>
+
+			{/*PreLoader*/}
+			<script type="text/javascript" src="/js/plugins/royal_preloader.js"></script>
+
+			{/*Global Js*/}
+			<script src="/js/plugins/template.js"></script>
 
 			</body>
 			</html>
