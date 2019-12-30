@@ -1,55 +1,79 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql, Link } from "gatsby";
-import Layout from "../layout";
-import PostListing from "../components/PostListing/PostListing";
-import SEO from "../components/SEO/SEO";
-import config from "../../data/SiteConfig";
-import "./listing.css";
+import React from 'react';
+import Helmet from 'react-helmet';
+import { graphql, Link } from 'gatsby';
+import Layout from '../layout';
+import PostListing from '../components/PostListing/PostListing';
+import SEO from '../components/SEO/SEO';
+import config from '../../data/SiteConfig';
+/*import ListBlog from '../components/Blog/ListBlog';*/
+/*import WidgetSearch from '../components/Blog/Widget/WidgetSearch';*/
+import WidgetCategory from '../components/Blog/Widget/CategoryListing';
+/*import WidgetAccordion from '../components/Blog/Widget/WidgetAccordion';*/
+/*import WidgetTabs from '../components/Blog/Widget/WidgetTabs';*/
+import WidgetText from '../components/Blog/Widget/WidgetText';
+
+/*import "./listing.css";*/
 
 class Listing extends React.Component {
-  renderPaging() {
-    const { currentPageNum, pageCount } = this.props.pageContext;
-    const prevPage = currentPageNum - 1 === 1 ? "/" : `/${currentPageNum - 1}/`;
-    const nextPage = `/${currentPageNum + 1}/`;
-    const isFirstPage = currentPageNum === 1;
-    const isLastPage = currentPageNum === pageCount;
 
-    return (
-      <div className="paging-container">
-        {!isFirstPage && <Link to={prevPage}>Previous</Link>}
-        {[...Array(pageCount)].map((_val, index) => {
-          const pageNum = index + 1;
-          return (
-            <Link
-              key={`listing-page-${pageNum}`}
-              to={pageNum === 1 ? "/" : `/${pageNum}/`}
-            >
-              {pageNum}
-            </Link>
-          );
-        })}
-        {!isLastPage && <Link to={nextPage}>Next</Link>}
-      </div>
-    );
-  }
+	renderPaging () {
+		const {currentPageNum, pageCount} = this.props.pageContext;
+		const prevPage = currentPageNum - 1 === 1 ? '/' : `/${currentPageNum - 1}/`;
+		const nextPage = `/${currentPageNum + 1}/`;
+		const isFirstPage = currentPageNum === 1;
+		const isLastPage = currentPageNum === pageCount;
 
-  render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges;
+		return (
+				<ul className="pagination pagination-blog">
 
-    return (
-      <Layout>
-        <div className="listing-container">
-          <div className="posts-container">
-            <Helmet title={config.siteTitle} />
-            <SEO />
-            <PostListing postEdges={postEdges} />
-          </div>
-          {this.renderPaging()}
-        </div>
-      </Layout>
-    );
-  }
+					{!isFirstPage && <li><Link to={prevPage}>Previous</Link></li>}
+
+					{[...Array(pageCount)].map((_val, index) => {
+						const pageNum = index + 1;
+						return (
+								<li>
+									<Link key={`listing-page-${pageNum}`} to={pageNum === 1 ? '/' : `/${pageNum}/`}>
+										{pageNum}
+									</Link>
+								</li>
+						);
+					})}
+
+					{!isLastPage && <li><Link to={nextPage}>Next</Link></li>}
+
+				</ul>
+		);
+	}
+
+	render () {
+		const postEdges = this.props.data.allMarkdownRemark.edges;
+
+		return (
+				<Layout>
+					<Helmet title={config.siteTitle} /> <SEO />
+
+					<section id="main-content">
+						<div className="container">
+							<div className="row">
+								<div className="sidebar-page">
+									<div id="sidebar" className="main-sidebar">
+										{/*<WidgetSearch></WidgetSearch>*/}
+										<WidgetCategory postEdges={postEdges}/>
+										{/*<WidgetAccordion></WidgetAccordion>*/}
+										<WidgetText></WidgetText>
+										{/*<WidgetTabs></WidgetTabs>*/}
+									</div>
+								</div>
+								<div className="main-page">
+									<PostListing postEdges={postEdges} />
+									{this.renderPaging()}
+								</div>
+							</div>
+						</div>
+					</section>
+				</Layout>
+		);
+	}
 }
 
 export default Listing;
@@ -66,7 +90,7 @@ export const listingQuery = graphql`
         node {
           fields {
             slug
-            date
+            date(formatString: "MMMM, DD, YYYY")
           }
           excerpt
           timeToRead
@@ -74,10 +98,12 @@ export const listingQuery = graphql`
             title
             tags
             cover
-            date
+            date(formatString: "MMMM, DD, YYYY")
+            category
           }
         }
       }
+      totalCount
     }
   }
 `;
