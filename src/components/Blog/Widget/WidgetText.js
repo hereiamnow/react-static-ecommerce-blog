@@ -9,24 +9,20 @@
  */
 
 import React from "react";
+import { Link } from 'gatsby'
 
 class WidgetText extends React.Component {
   render() {
     return (
       <div className="widget widget-text">
-        <h3>Text Widget</h3>
-        <p>
-          Donec justo ligula, eleifend pharetra tincidunt sed, scelerisque sit
-          amet elit. Aenean libero purus, eleifend at mauris id, fermentum
-          condimentum lectus. Quisque fringilla lectus at ligula lacinia, eu
-          molestie augue commodo.
+        <h3>This is a Text Widget</h3>
+        <p>This is a Text Widget that is located in the <strong>components/blog/widgets</strong> folder. Donec justo ligula, eleifend pharetra tincidunt sed, scelerisque sit
+          amet elit. Aenean libero purus, eleifend at mauris id, fermentum condimentum lectus.
         </p>
-        <a
-          href="#"
-          className="ot-btn btn-main-color btn-rounded text-up white-text"
-        >
+        <Link to="/"
+          className="ot-btn btn-main-color btn-rounded text-up white-text">
           Know More <i className="fa fa-plus" aria-hidden="true" />
-        </a>
+        </Link>
       </div>
     );
   }

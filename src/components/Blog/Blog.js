@@ -12,7 +12,7 @@ import React from "react";
 import ListBlog from "./ListBlog";
 import PaginationBlog from "./PaginationBlog";
 import WidgetSearch from "./Widget/WidgetSearch";
-import WidgetCategory from "./Widget/WidgetCategory";
+import WidgetCategory from "./Widget/CategoryListing";
 import WidgetTabs from "./Widget/WidgetTabs";
 import WidgetAccordion from "./Widget/WidgetAccordion";
 import WidgetText from "./Widget/WidgetText";

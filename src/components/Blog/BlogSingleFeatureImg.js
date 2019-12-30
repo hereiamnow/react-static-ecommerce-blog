@@ -15,14 +15,14 @@ class BlogSingleFeatureImg extends React.Component {
     return (
       <div className="item-blog blog-single-feature-img">
         <div className="blog-feature-warp">
-          <a href="blog-single.html">
-            <img
-              src="http://placehold.it/850x250/ccc.jpg"
-              className="img-responsive"
-              alt="Image"
-            />
-          </a>
-        </div>
+	      <a href="blog-single.html">
+		      <img
+				      src="http://placehold.it/850x250/ccc.jpg"
+				      className="img-responsive"
+				      alt="Image"
+		      />
+	      </a>
+      </div>
         <div className="blog-feature-content">
           <div className="blog-feature-content-inner">
             <div className="blog-data">

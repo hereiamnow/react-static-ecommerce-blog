@@ -16,5 +16,4 @@ class ListBlog extends React.Component {
     );
   }
 }
-
 export default ListBlog;
