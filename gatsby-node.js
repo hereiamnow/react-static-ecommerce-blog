@@ -46,6 +46,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const categoryPage = path.resolve("src/templates/category.jsx");
   const listingPage = path.resolve("./src/templates/listing.jsx");
 
+
   // Get a full list of markdown posts
   const markdownQueryResult = await graphql(`
     {
@@ -71,6 +72,10 @@ exports.createPages = async ({ graphql, actions }) => {
     console.error(markdownQueryResult.errors);
     throw markdownQueryResult.errors;
   }
+
+/*	const oldSet = new Set([1, 2]);
+	const newSet = new Set(oldSet);
+	console.log(oldSet === newSet);*/
 
   const tagSet = new Set();
   const categorySet = new Set();
@@ -101,7 +106,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   [...Array(pageCount)].forEach((_val, pageNum) => {
     createPage({
-      path: pageNum === 0 ? `/` : `/${pageNum + 1}/`,
+      path: pageNum === 0 ? `/blog/` : `/blog/${pageNum + 1}/`,
       component: listingPage,
       context: {
         limit: postsPerPage,
