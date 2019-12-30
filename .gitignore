@@ -5,7 +5,7 @@
 .dotted-theme
 
 ### Build Output ###
-/public
+public
 
 /.env.*
 

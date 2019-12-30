@@ -7,16 +7,15 @@
  * Relative Path: src/pages/membership.jsx
  */
 
-import React from 'react'
+import React from 'react';
 import Helmet from "react-helmet";
-import { Link } from 'gatsby'
+import { Link } from 'gatsby';
 import config from '../../data/SiteConfig';
-import Layout from '../layout'
+import Layout from '../layout';
 import SEO from '../components/SEO/SEO';
-import Skus from '../components/Shop/Products/Skus';
-import ShopFooter from '../components/Shop/ShopFooter'
-import SubHeader from '../components/SubHeader'
-import Subscribe from '../components/Subscribe'
+import ShopFooter from '../components/Shop/ShopFooter';
+import SubHeader from '../components/SubHeader';
+import Subscribe from '../components/Subscribe';
 
 
 function getData () {
@@ -27,7 +26,7 @@ function getData () {
 			'title': 'Annual Membership',
 			'price': '$1,000.00 ',
 			'link': '/member-01',
-			'thumbnail': 'images/membership_annual-membership_w640.png',
+			'thumbnail': '/images/usva/membership_annual-membership_w640.png',
 			'buttonText': 'Purchase',
 			'productRate': 0,
 			'customerReviews': 0
@@ -37,7 +36,7 @@ function getData () {
 			'title': 'Bi-Annual Membership',
 			'price': '$550.00',
 			'link': '/member-02',
-			'thumbnail': 'images/membership_bi-annual_w640.png',
+			'thumbnail': '/images/usva/membership_bi-annual_w640.png',
 			'buttonText': 'Purchase',
 			'productRate': 0,
 			'customerReviews': 0
@@ -47,7 +46,7 @@ function getData () {
 			'title': 'Monthly Recurring Membership',
 			'price': '$100.00',
 			'link': '/member-03',
-			'thumbnail': 'images/monthly-recurring-membership_w640.png',
+			'thumbnail': '/images/usva/monthly-recurring-membership_w640.png',
 			'buttonText': 'Purchase',
 			'productRate': 0,
 			'customerReviews': 0
@@ -57,7 +56,7 @@ function getData () {
 			'title': 'USVA Travel Fund',
 			'price': '$30.00 - $100.00',
 			'link': '/travel-fund',
-			'thumbnail': 'images/donation_travel-fund.jpeg',
+			'thumbnail': '/images/usva/donation_travel-fund.jpeg',
 			'buttonText': 'Purchase',
 			'productRate': 0,
 			'customerReviews': 0
@@ -68,6 +67,7 @@ function getData () {
 
 export default () => (
 		<Layout>
+			<Helmet title={`Membership | ${config.siteTitle}`} />
 			<SEO title="Business Membership" keywords={['USVA', 'FDA']} />
 			<SubHeader pageTitle={config.companyName + ' Membership'} breadcrumb="Membership" />
 
@@ -76,10 +76,6 @@ export default () => (
 					<div className="row">
 
 						<div className="main-shop">
-
-
-
-							<Skus />
 
 							{getData().map(data => (
 
@@ -127,17 +123,12 @@ export default () => (
 
 							))}
 
-
-
-
 						</div>{/*main-shop*/}
-
 					</div>{/*row*/}
 				</div>{/*container*/}
 			</section>
 
 			<ShopFooter />
-
 			<Subscribe/>
 
 		</Layout>
