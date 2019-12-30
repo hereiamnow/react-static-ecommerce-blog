@@ -18,7 +18,7 @@ import stripeLogo from '../../../images/powered_by_stripe.svg';
 const divStyle = {
 	clear: 'both',
 	position: 'relative',
-	'margin-top': '40px',
+	marginTop: '40px',
 	float: 'left'
 };
 
