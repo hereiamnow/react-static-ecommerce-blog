@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
 import Layout from '../layout';
-import PostListing from '../components/PostListing/PostListing';
+import PostListing from '../components/Blog/PostListing';
 import config from '../../data/SiteConfig';
 import CategoryListing from '../components/Blog/Widget/CategoryListing';
 import WidgetText from '../components/Blog/Widget/WidgetText';

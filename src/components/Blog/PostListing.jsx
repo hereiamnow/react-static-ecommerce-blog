@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import BlogSingleFeatureImg from '../../components/Blog/BlogSingleFeatureImg.js';
+import BlogSingleFeatureImg from './BlogSingleFeatureImg.js';
 
 const _ = require('lodash');
 const moment = require('moment');
