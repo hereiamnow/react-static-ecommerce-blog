@@ -95,9 +95,9 @@ class PostListing extends React.Component {
 												</li>
 
 												<li>
-													<Link to={post.path} key={post.title} className="hover-text-theme">
+													{/*<Link to={post.path} key={post.title} className="hover-text-theme">*/}
 														Time to Read:&nbsp;{post.timeToRead}&nbsp;mins
-													</Link>
+													{/*</Link>*/}
 												</li>
 
 											</ul>
