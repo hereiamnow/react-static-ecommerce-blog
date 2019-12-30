@@ -1,13 +1,12 @@
 ---
 title: "Markdown Cheatsheet"
-cover: "http://localhost:8000/images/Blog/cover.jpeg"
-category: "Development"
+cover: "/images/Blog/cover/tech/placeimg_850_250_tech(1).jpg"
+category: "development"
 date: "2019-12-26"
 slug: "markdown-cheatsheet"
 tags:
-    - Gatsby
-    - ReactJs
-    - WebPack
+    - markdown
+    - tech
 ---
 
 ##### NOTE: This "post" is based on [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and is meant to test styling of Markdown generated documents.
