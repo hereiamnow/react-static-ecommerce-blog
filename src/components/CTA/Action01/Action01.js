@@ -40,14 +40,14 @@ class Action01 extends Component {
 
 								<div className="call1">
 
-									<h3>{this.props.CTA_HEADER}</h3>
+									<h3>{this.props.header}</h3>
 
-									<p>{this.props.CTA_TEXT}</p>
+									<p>{this.props.body}</p>
 
-									<Link to={this.props.CTA_URL}
+									<Link to={this.props.url}
 									      className="ot-btn btn-main-color btn-rounded text-up white-text"
-									      title={this.props.BUTTON_TEXT}>
-											{this.props.BUTTON_TEXT} <i className="fa fa-arrow-circle-right" aria-hidden="true"> </i>
+									      title={this.props.button}>
+											{this.props.button} <i className="fa fa-arrow-circle-right" aria-hidden="true"> </i>
 									</Link>
 
 								</div>
