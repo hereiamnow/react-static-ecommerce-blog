@@ -1,9 +1,9 @@
 const config = {
 	siteTitle: 'Gatsby Default Starter', // Site title.
-	siteTitleShort: 'react-static-ecom-blog', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-	siteTitleAlt: 'react-static-ecom-blog', // Alternative site title for SEO.
+	siteTitleShort: 'react-static-ecommerce-blog', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+	siteTitleAlt: 'react-static-ecommerce-blog', // Alternative site title for SEO.
 	siteLogo: '/logos/logo-1024.png', // Logo used for SEO and manifest.
-	siteUrl: 'https://react-static-ecom-blog.netlify.com', // Domain of your website without pathPrefix.
+	siteUrl: 'react-static-ecommerce-blog.netlify.com', // Domain of your website without pathPrefix.
 	pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
 	siteDescription: 'A GatsbyJS stater with e-commerce and blog features.', // Website description used for RSS feeds/meta description tag.
 	siteRss: '/rss.xml', // Path to the RSS file.

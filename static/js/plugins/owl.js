@@ -1,7 +1,7 @@
  $(document).ready(function(){
   "use strict";
         $("#owl-project").owlCarousel({
-           
+
                 autoPlay: false, //Set AutoPlay to 3 seconds
                 items : 4,
                 itemsDesktop      : [1199,4],
@@ -21,11 +21,11 @@
           owlProject.trigger("owl.prev");
         });
 
-/* 
+/*
    Testimonial 1
    ========================================================================== */
 $("#owl-testimonial-1").owlCarousel({
-           
+
                 autoPlay: true, //Set AutoPlay to 3 seconds
                 items : 1,
                 itemsDesktop      : [1199,1],
@@ -36,11 +36,11 @@ $("#owl-testimonial-1").owlCarousel({
                 navigation:false,
                 transitionStyle : "fade"
             });
-/* 
+/*
    Testimonial 2
    ========================================================================== */
 $("#owl-testimonial-avatar").owlCarousel({
-           
+
                 autoPlay: false, //Set AutoPlay to 3 seconds
                 items : 1,
                 itemsDesktop      : [1199,1],
@@ -61,11 +61,11 @@ var owlTestimonial4 = $("#owl-testimonial-avatar");
           owlTestimonial4.trigger("owl.prev");
         });
 
-/* 
+/*
    Testimonial 3
    ========================================================================== */
 $("#owl-testimonial-3").owlCarousel({
-           
+
                 autoPlay: false , //Set AutoPlay to 3 seconds
                 items : 1,
                 itemsDesktop      : [1199,1],
@@ -112,19 +112,19 @@ var owlTestimonial2 = $("#sync3");
             afterInit : progressBar,
             afterMove : moved,
             startDragging : pauseOnDragging,
-            
+
           });
-          
+
           var time = 5; // time in seconds
 
           var $progressBar,
-              $bar, 
-              $elem, 
-              isPause, 
+              $bar,
+              $elem,
+              isPause,
               tick,
               percentTime;
 
-         
+
             //Init progressBar where elem is $("#owl-demo")
             function progressBar(elem){
               $elem = elem;
@@ -133,7 +133,7 @@ var owlTestimonial2 = $("#sync3");
               //start counting
               start();
             }
-         
+
             //create div#progressBar and div#bar then prepend to $("#owl-demo")
             function buildProgressBar(){
               $progressBar = $("<div>",{
@@ -144,7 +144,7 @@ var owlTestimonial2 = $("#sync3");
               });
               $progressBar.append($bar).prependTo($elem);
             }
-         
+
             function start() {
               //reset timer
               percentTime = 0;
@@ -152,7 +152,7 @@ var owlTestimonial2 = $("#sync3");
               //run interval every 0.01 second
               tick = setInterval(interval, 10);
             };
-         
+
             function interval() {
               if(isPause === false){
                 percentTime += 1 / time;
@@ -161,17 +161,17 @@ var owlTestimonial2 = $("#sync3");
                  });
                 //if percentTime is equal or greater than 100
                 if(percentTime >= 100){
-                  //slide to next item 
+                  //slide to next item
                   $elem.trigger('owl.next')
                 }
               }
             }
-         
-            //pause while dragging 
+
+            //pause while dragging
             function pauseOnDragging(){
               isPause = true;
             }
-         
+
             //moved callback
             function moved(){
               //clear interval
@@ -192,7 +192,7 @@ var owlTestimonial2 = $("#sync3");
               el.find(".owl-item").eq(0).addClass("synced");
             }
           });
-         
+
           function syncPosition(el){
             var current = this.currentItem;
             $("#sync4")
@@ -204,13 +204,13 @@ var owlTestimonial2 = $("#sync3");
               center(current)
             }
           }
-         
+
           $("#sync4").on("click", ".owl-item", function(e){
             e.preventDefault();
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo",number);
           });
-         
+
           function center(number){
             var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
             var num = number;
@@ -220,7 +220,7 @@ var owlTestimonial2 = $("#sync3");
                 var found = true;
               }
             }
-         
+
             if(found===false){
               if(num>sync2visible[sync2visible.length-1]){
                 sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -235,17 +235,17 @@ var owlTestimonial2 = $("#sync3");
             } else if(num === sync2visible[0]){
               sync2.trigger("owl.goTo", num-1)
             }
-            
+
           }
-         
-        }); 
+
+        });
 
 
 /* ==========================================================================
    Reward
    ========================================================================== */
 $("#owl-reward").owlCarousel({
-           
+
                 autoPlay: false , //Set AutoPlay to 3 seconds
                 items : 1,
                 itemsDesktop      : [1199,1],
@@ -269,8 +269,8 @@ var owlReward = $("#owl-reward");
 /* ==========================================================================
    Owl Blog Landing
    ========================================================================== */
-$("#owl-blog-landing").owlCarousel({
-           
+$(".owl-blog-landing").owlCarousel({
+
                 autoPlay: false , //Set AutoPlay to 3 seconds
                 items : 3,
                 itemsDesktop      : [1199,3],
@@ -280,11 +280,11 @@ $("#owl-blog-landing").owlCarousel({
                 pagination:true,
                 navigation:false,
             });
-/* 
+/*
    Partner
    ========================================================================== */
 $("#owl-partner").owlCarousel({
-   
+
         autoPlay: true, //Set AutoPlay to 3 seconds
         items : 5,
         itemsDesktop      : [1199,4],
@@ -304,11 +304,11 @@ $("body").on("click",".prev-partner",function(event){
   owlPartner.trigger("owl.prev");
 });
 
-/* 
+/*
    Recent Blog
    ========================================================================== */
 $("#owl-blog").owlCarousel({
-   
+
         autoPlay: true, //Set AutoPlay to 3 seconds
         items : 1,
         itemsDesktop      : [1199,1],
@@ -328,11 +328,11 @@ $("body").on("click",".prev-blog",function(event){
   owlBlog.trigger("owl.prev");
 });
 
-/* 
+/*
    Core Feature
    ========================================================================== */
 $("#owl-core-feature").owlCarousel({
-           
+
                 autoPlay: false, //Set AutoPlay to 3 seconds
                 items : 3,
                 itemsDesktop      : [1199,3],
@@ -356,7 +356,7 @@ $("#owl-core-feature").owlCarousel({
    Our Team
    ========================================================================== */
    $("#owl-team").owlCarousel({
-           
+
                 autoPlay: false, //Set AutoPlay to 3 seconds
                 items : 4,
                 itemsDesktop      : [1199,4],
@@ -380,7 +380,7 @@ $("#owl-core-feature").owlCarousel({
    Blog Gallery Post Type
    ========================================================================== */
   $("#owl-gallery-blog-post").owlCarousel({
-           
+
                 autoPlay: true, //Set AutoPlay to 3 seconds
                 items : 1,
                 itemsDesktop      : [1199,1],
@@ -404,7 +404,7 @@ $("#owl-core-feature").owlCarousel({
    Relate Blog
    ========================================================================== */
 $("#owl-relate-blog").owlCarousel({
-           
+
             autoPlay: true, //Set AutoPlay to 3 seconds
             items : 3,
             itemsDesktop      : [1199,3],
@@ -428,7 +428,7 @@ $("#owl-relate-blog").owlCarousel({
    Portfolio Gallery Post Type
    ========================================================================== */
   $("#owl-gallery-portfolio-post").owlCarousel({
-           
+
                 autoPlay: true, //Set AutoPlay to 3 seconds
                 items : 1,
                 itemsDesktop      : [1199,1],
@@ -453,7 +453,7 @@ $("#owl-relate-blog").owlCarousel({
    Relate Blog
    ========================================================================== */
 $("#owl-relate-portfolio").owlCarousel({
-           
+
             autoPlay: true, //Set AutoPlay to 3 seconds
             items : 3,
             itemsDesktop      : [1199,3],
@@ -475,7 +475,7 @@ $("#owl-relate-portfolio").owlCarousel({
 
 // owl Skill Single Team
 $("#owl-skill").owlCarousel({
-           
+
                 autoPlay: false , //Set AutoPlay to 3 seconds
                 items : 5,
                 itemsDesktop      : [1199,5],
