@@ -302,6 +302,10 @@ div.legal-docs li {
     margin-left: 5px;
 }
 
+
+
+
+
 /* ==========================================================================
    Main Navi
    ========================================================================== */
@@ -585,6 +589,10 @@ div.legal-docs li {
     display: none;
 }
 
+
+
+
+
 /* ==========================================================================
    Top bar
    ========================================================================== */
@@ -661,6 +669,8 @@ div.legal-docs li {
 .topbar-info-3 li a {
     color: #999;
 }
+
+
 
 /* ==========================================================================
    Logo
@@ -1253,7 +1263,7 @@ div.legal-docs li {
 }
 
 .bg-overlay-img-1 {
-    background:              url(../../images/Testimonials/bg1.jpg) 50% 0 no-repeat fixed;
+    background:              url(../../images/pages/testimonials/bg-overlay-img.jpg) 50% 0 no-repeat fixed;
     -webkit-background-size: cover;
     background-size:         cover;
     position:                absolute;
@@ -1266,7 +1276,7 @@ div.legal-docs li {
 }
 
 .bg-twitter {
-    background:          rgba(34, 34, 34, 0.8) url(../../images/Demo/bg-twitter.png) no-repeat;
+    background:          rgba(34, 34, 34, 0.8) url(../../images/pages/demo/bg-twitter.png) no-repeat;
     background-position: bottom center;
 }
 
@@ -1275,7 +1285,7 @@ div.legal-docs li {
 }
 
 .bg-overlay-img-2 {
-    background:              url(../../images/Demo/bg-overlay-2.jpg) no-repeat fixed;
+    background:              url(../../images/pages/demo/bg-overlay-2.jpg) no-repeat fixed;
     -webkit-background-size: cover;
     background-size:         cover;
     position:                absolute;
@@ -5024,7 +5034,7 @@ blockquote.quote-1 i.fa-quote-left {
 }
 
 .bg404 {
-    background:              url("../../images/404/1.jpg") no-repeat;
+    background:              url("../../images/pages/404/1.jpg") no-repeat;
     -webkit-background-size: cover;
     background-size:         cover;
     background-attachment:   fixed;
@@ -5147,7 +5157,7 @@ blockquote.quote-1 i.fa-quote-left {
 }
 
 .bgcms {
-    background:              url("../../images/ComingSoon/1.jpg") no-repeat;
+    background:              url("../../images/pages/comingsoon/1.jpg") no-repeat;
     -webkit-background-size: cover;
     background-size:         cover;
     background-attachment:   fixed;
