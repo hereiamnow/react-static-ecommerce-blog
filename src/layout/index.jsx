@@ -45,7 +45,7 @@ export default class MainLayout extends React.Component {
 						<link rel="stylesheet"
 						      href="/css/site/style.css"/>
 
-						<link rel="shortcut icon" href="/favicon.png"/>
+						<link rel="shortcut icon" href="/favicon.ico"/>
 					</Helmet>
 					<Header/>
 					{children}
