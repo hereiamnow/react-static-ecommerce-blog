@@ -276,8 +276,9 @@ const SupportView = () => (
 										src='http://placehold.it/1698x1131/DEB152/000000.png'
 										className='img-responsive' alt='Image'/>*/}
 									<img
-										src='images/45baed25b8f9afe6a618d5bf648eb487.jpg'
-										className='img-responsive' alt='Image'/>
+										src='/images/pages/faq/1234567890.jpg'
+										className='img-responsive'
+										alt='Image'/>
 
 								</div>
 								<div className='content-support bg-sub'>
