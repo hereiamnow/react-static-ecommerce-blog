@@ -13,8 +13,13 @@ capabilities.  Be sure to check out all the features of this starter in detail.
 - Fast pre-rendered HTML5 and automatic chunk loading of JS files thanks to [Gatsby v2](https://www.gatsbyjs.org/) 
 - `/static/` and content folders are available to use with [gatsby-image](https://www.gatsbyjs.org/docs/gatsby-image/) out of the box for optimized image generation
 - **High configurability**
-
-####SEO
+- [NetlifyCMS](https://www.netlifycms.org) support
+- PWA features
+  - Offline support
+  - Web App Manifest support
+  - Loading progress for slow networks
+  
+#### SEO
   - [Google Analytics](https://marketingplatform.google.com/about/analytics/) support
   - Sitemap generation
   - robots.txt
@@ -24,11 +29,11 @@ capabilities.  Be sure to check out all the features of this starter in detail.
   - [Twitter Tags (Twitter Cards)](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup)
   - [RSS feeds](https://www.gatsbyjs.org/docs/adding-an-rss-feed/)
 
-####Ecommerce
+#### Ecommerce
 - Paypal Support (comming soon)
 - Stripe Support
 
-####Blog
+#### Blog
 - Blog Posts in Markdown
 - Code syntax highlighting
 - Embed YouTube videos
@@ -39,28 +44,14 @@ capabilities.  Be sure to check out all the features of this starter in detail.
   - *Separate page for posts under each tag and category*
 - [Disqus](https://disqus.com/) support
 
-
-
-
-
-  
-  
-- [NetlifyCMS](https://www.netlifycms.org) support
-- PWA features
-  - Offline support
-  - Web App Manifest support
-  - Loading progress for slow networks
-  
-
-  
-####Social 
+#### Social 
   - Twitter tweet button
   - Facebook share/share count
   - Reddit share/share count
   - LinkedIn share button
   - Telegram share button
   
-####React Components
+#### React Components
   - SEO
   - TopBar 
   - Header
@@ -72,7 +63,7 @@ capabilities.  Be sure to check out all the features of this starter in detail.
   - Subscribe
   - Testimonial
   
-####Development Tools
+#### Development Tools
   - [ESLint](https://eslint.org/) for linting
   - [Prettier](https://prettier.io/) for code formatting
   - Remark-Lint for linting Markdown
