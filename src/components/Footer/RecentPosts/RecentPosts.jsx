@@ -11,7 +11,7 @@
 /* Based on Dotted HTML template. See copyrights in readme.md */
 import React from 'react';
 import { StaticQuery, graphql, Link } from 'gatsby';
-import './style.scss'
+import './style.css'
 
 const RecentPosts = () => (
 		<StaticQuery query={graphql`
