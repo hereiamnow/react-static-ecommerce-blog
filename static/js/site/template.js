@@ -103,7 +103,7 @@ $(document).ready(function () {
 	'use strict';
 	Royal_Preloader.config({
 		mode: 'logo',
-		logo: 'logos/logo-192.png',
+		logo: 'logos/logo-128.png',
 		timeout: 1,
 		showInfo: false,
 		opacity: 1,
