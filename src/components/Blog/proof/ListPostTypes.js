@@ -1,8 +1,8 @@
 import React from "react";
-import BlogSingleFeatureImg from "./BlogSingleFeatureImg";
-import BlogVideoPopup from "./BlogVideoPopup";
-import BlogGalleryFeatureImg from "./BlogGalleryFeatureImg";
-import BlogFeatureAudio from "./BlogFeatureAudio";
+import BlogSingleFeatureImg from "./types/BlogSingleFeatureImg";
+import BlogVideoPopup from "./types/BlogVideoPopup";
+import BlogGalleryFeatureImg from "./types/BlogGalleryFeatureImg";
+import BlogFeatureAudio from "./types/BlogFeatureAudio";
 
 class ListBlog extends React.Component {
   render() {
