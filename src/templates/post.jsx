@@ -1,18 +1,18 @@
 import React from "react";
+import config from "../../data/SiteConfig";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
+import SEO from "../components/SEO/SEO";
+import SubHeader from '../components/SubHeader/SubHeader';
+import Categories from '../components/Blog/CategoryListing';
+import WidgetText from '../components/Blog/Widget/WidgetText';
+import PostTags from "../components/Blog/PostTags";
 import UserInfo from "../components/UserInfo/UserInfo";
 import Disqus from "../components/Disqus/Disqus";
-import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
-import SEO from "../components/SEO/SEO";
-/*import Footer from "../components/Footer/Footer";*/
-import config from "../../data/SiteConfig";
-import "./b16-tomorrow-dark.css";
-import "./post.css";
-/*import CategoryListing from '../components/Blog/Widget/CategoryListing';*/
-import WidgetText from '../components/Blog/Widget/WidgetText';
+import "./style/b16-tomorrow-dark.css";
+import "./style/post.css";
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -32,28 +32,25 @@ export default class PostTemplate extends React.Component {
 		      <title>{`${post.title} | ${config.siteTitle}`}</title>
 	      </Helmet>
 	      <SEO postPath={slug} postNode={postNode} postSEO />
+	      <SubHeader pageTitle={post.title} breadcrumb="Categories" />
 	      <section id="main-content">
 		      <div className="container">
 			      <div className="row">
 				      <div className="sidebar-page">
 					      <div id="sidebar" className="main-sidebar">
-						      {/*<CategoryListing> </CategoryListing>*/}
-						      <WidgetText> </WidgetText>
+						      <Categories/>
+						      <WidgetText/>
 					      </div>
 				      </div>
 				      <div className="main-page">
 					      <h1>{post.title}</h1>
-
 					      <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-
 					      <div className="post-meta">
 						      <PostTags tags={post.tags} />
 						      <SocialLinks postPath={slug} postNode={postNode} />
 					      </div>
-
 					      <UserInfo config={config} />
 					      <Disqus postNode={postNode} />
-					      {/*<Footer config={config} />*/}
 				      </div>
 			      </div>
 		      </div>
@@ -63,7 +60,6 @@ export default class PostTemplate extends React.Component {
   }
 }
 
-/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {

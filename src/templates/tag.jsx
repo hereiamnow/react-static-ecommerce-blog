@@ -1,11 +1,12 @@
+import React from 'react';
 import config from '../../data/SiteConfig';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Layout from '../layout';
-import PostListing from '../components/Blog/PostListing';
-import React from 'react';
-/*import CategoryListing from '../components/Blog/Widget/CategoryListing';*/
+import SubHeader from '../components/SubHeader/SubHeader';
+import Categories from '../components/Blog/CategoryListing';
 import WidgetText from '../components/Blog/Widget/WidgetText';
+import PostListing from '../components/Blog/PostListing';
 
 export default class TagTemplate extends React.Component {
 	render () {
@@ -14,14 +15,14 @@ export default class TagTemplate extends React.Component {
 		return (
 				<Layout>
 					<Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
-
+					<SubHeader pageTitle={`Posts tagged as category "${tag}" | ${config.siteTitle}`} breadcrumb="Tags" />
 					<section id="main-content">
 						<div className="container">
 							<div className="row">
 								<div className="sidebar-page">
 									<div id="sidebar" className="main-sidebar">
-										{/*<CategoryListing> </CategoryListing>*/}
-										<WidgetText> </WidgetText>
+										<Categories/>
+										<WidgetText/>
 									</div>
 								</div>
 								<div className="main-page">
@@ -35,7 +36,6 @@ export default class TagTemplate extends React.Component {
 	}
 }
 
-/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query TagPage($tag: String) {
     allMarkdownRemark(
