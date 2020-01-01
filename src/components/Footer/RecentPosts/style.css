@@ -1,11 +1,30 @@
+.bx-wrapper .bx-viewport {
+    background-color:   transparent;
+    border:             0;
+    -webkit-box-shadow: none;
+    box-shadow:         none;
+}
+
+.widget .blog2-item h3 {
+    margin-bottom: 15px;
+}
+
+.bx-wrapper {
+    max-width: 100% !important;
+}
+
+.bx-wrapper li {
+    width: 100% !important;
+}
+
 .blog2-detail {
-    padding-left: 100px;
-    padding-right: 7px;
+    padding-left:   100px;
+    padding-right:  7px;
     padding-bottom: 9px;
 }
 
-.blog2-detail > .post-date{
+.blog2-detail > .post-date {
     margin-top: 5px;
-    font-size: .9em;
-    color: #deb152;
+    font-size:  .9em;
+    color:      #deb152;
 }

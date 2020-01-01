@@ -35,36 +35,36 @@ export default function HTML (props) {
 			/>
 
 			{props.postBodyComponents}
-
+			{/*jQuery v2.2.4*/}
 			<script src="/js/vendor/jquery.min.js"></script>
 			{/*Bootstrap 3.3.6*/}
 			<script src="/js/vendor/bootstrap.js"></script>
 
-			{/*Mobile Menu*/}
+			{/*jQuery mmenu v5.6.5*/}
 			<script type="text/javascript" src="js/plugins/jquery.mmenu.all.min.js"></script>
-			<script type="text/javascript" src="js/plugins/mobilemenu.js"></script>
+			<script type="text/javascript" src="js/site/mobilemenu.js"></script>
 
-			{/*External libraries: jQuery & GreenSock*/}
+			{/*GreenSock*/}
 			<script type="text/javascript" src="/layerslider/js/greensock.js"></script>
 
-			{/*LayerSlider script files*/}
+			{/*LayerSlider Library and init*/}
 			<script type="text/javascript" src="/layerslider/js/layerslider.transitions.js"></script>
 			<script type="text/javascript" src="/layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
-			<script type="text/javascript" src="/js/plugins/layerslider.js"></script>
+			<script type="text/javascript" src="/js/site/layerslider.js"></script>
 
-			{/*Initializing Owl Carousel*/}
+			{/*Owl Carousel Library and init*/}
 			<script src="/js/plugins/owl.carousel.js"></script>
-			<script src="/js/plugins/owl.js"></script>
+			<script src="/js/site/owl.js"></script>
 
-			{/*PreLoader*/}
+			{/*PreLoader Library*/}
 			<script type="text/javascript" src="/js/plugins/royal_preloader.js"></script>
 
-			{/*Bx Slider*/}
+			{/*Bx Slider Library and init*/}
 			<script src="/js/plugins/jquery.bxslider.min.js"></script>
-			<script src="/js/plugins/bx-blog.js"></script>
+			<script src="/js/site/bx-blog.js"></script>
 
-			{/*Global Js*/}
-			<script src="/js/plugins/template.js"></script>
+			{/*Global Js initialize jquery libraries*/}
+			<script src="/js/site/template.js"></script>
 
 			</body>
 			</html>
