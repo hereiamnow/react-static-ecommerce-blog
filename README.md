@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6e14b0bd-89b0-4ec4-bd54-30b6aad8c403/deploy-status)](https://app.netlify.com/sites/react-static-ecommerce-blog/deploys)
+
 # JAMstack e-commerce blog starter
 
 A [Gatsby](https://github.com/gatsbyjs/gatsby/) starter e-commerce blog with advanced [features](#features) and pwa [(progressive web app)](https://developers.google.com/web/progressive-web-apps) 
@@ -6,21 +8,59 @@ capabilities.  Be sure to check out all the features of this starter in detail.
 [Here is a demo](https://react-static-ecommerce-blog.netlify.com) hosted at Netlify.
 
 ### Features
-- [JAMstack](https://jamstack.org/) support
-- [Gatsby v2](https://www.gatsbyjs.org/) support
-- Fast pre-rendered HTML5 and automatic chunk loading of JS files
+- [JAMstack](https://jamstack.org/) / [Gatsby](https://www.gatsbyjs.org/) support
+- Deploy to [Netlify](https://www.gatsbyjs.org/docs/deploying-to-netlify), [AWS Amplify](https://www.gatsbyjs.org/docs/deploying-to-aws-amplify) , [GitHub Pages](https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages/), [Surge.sh,](https://www.gatsbyjs.org/docs/deploying-to-surge/) [Aerobatic](https://www.gatsbyjs.org/docs/deploying-to-aerobatic/), [ZEIT Now](https://www.gatsbyjs.org/docs/deploying-to-zeit-now/) and others
+- Fast pre-rendered HTML5 and automatic chunk loading of JS files thanks to [Gatsby v2](https://www.gatsbyjs.org/) 
+- `/static/` and content folders are available to use with [gatsby-image](https://www.gatsbyjs.org/docs/gatsby-image/) out of the box for optimized image generation
+- **High configurability**
+
+####SEO
+  - [Google Analytics](https://marketingplatform.google.com/about/analytics/) support
+  - Sitemap generation
+  - robots.txt
+  - General description tags
+  - [Schema.org JSONLD (Google Rich Snippets)](https://schema.org/)
+  - [OpenGraph Tags (Facebook/Google+/Pinterest)](https://ogp.me/)
+  - [Twitter Tags (Twitter Cards)](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup)
+  - [RSS feeds](https://www.gatsbyjs.org/docs/adding-an-rss-feed/)
+
+####Ecommerce
+- Paypal Support (comming soon)
+- Stripe Support
+
+####Blog
 - Blog Posts in Markdown
-  - Code syntax highlighting
-  - Embed YouTube videos
-  - Embed Tweets
+- Code syntax highlighting
+- Embed YouTube videos
+- Embed Tweets
 - Pagination
   - Configurable via 'SiteConfig.js'
 - Tags and Categories
-  - Separate page for posts under each tag and category
+  - *Separate page for posts under each tag and category*
 - [Disqus](https://disqus.com/) support
-- `/static/` and content folders are available to use with [gatsby-image](https://www.gatsbyjs.org/docs/gatsby-image/) out of the box for optimized image generation
-- High configurability
-- Separate components for everything:
+
+
+
+
+
+  
+  
+- [NetlifyCMS](https://www.netlifycms.org) support
+- PWA features
+  - Offline support
+  - Web App Manifest support
+  - Loading progress for slow networks
+  
+
+  
+####Social 
+  - Twitter tweet button
+  - Facebook share/share count
+  - Reddit share/share count
+  - LinkedIn share button
+  - Telegram share button
+  
+####React Components
   - SEO
   - TopBar 
   - Header
@@ -31,27 +71,8 @@ capabilities.  Be sure to check out all the features of this starter in detail.
   - User Info
   - Subscribe
   - Testimonial
-- [NetlifyCMS](https://www.netlifycms.org) support
-- PWA features
-  - Offline support
-  - Web App Manifest support
-  - Loading progress for slow networks
-- SEO
-  - [Google Analytics](https://marketingplatform.google.com/about/analytics/) support
-  - Sitemap generation
-  - robots.txt
-  - General description tags
-  - [Schema.org JSONLD (Google Rich Snippets)](https://schema.org/)
-  - [OpenGraph Tags (Facebook/Google+/Pinterest)](https://ogp.me/)
-  - [Twitter Tags (Twitter Cards)](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup)
-  - [RSS feeds](https://www.gatsbyjs.org/docs/adding-an-rss-feed/)
-- Social features
-  - Twitter tweet button
-  - Facebook share/share count
-  - Reddit share/share count
-  - LinkedIn share button
-  - Telegram share button
-- Development tools
+  
+####Development Tools
   - [ESLint](https://eslint.org/) for linting
   - [Prettier](https://prettier.io/) for code formatting
   - Remark-Lint for linting Markdown
@@ -137,6 +158,7 @@ module.exports = {
 If want to customize Netlify CMS, e.g. registering custom widgets or styling the preview pane, you can do so by editing `src/netlifycms/index.js`:
 
 ```js
+
 import CMS from "netlify-cms-app";
 
 CMS.init({
@@ -159,4 +181,4 @@ module.exports = {
 
 NOTE:  Make sure to edit `static/robots.txt` to include your domain for the sitemap!
 
-Shawn Miller ([LinkedIn](https://linkedin.com/in/hereiamnow))
+Copyright 2019 Shawn Miller ([LinkedIn](https://linkedin.com/in/hereiamnow))
