@@ -10,7 +10,7 @@
 
 import React, { Component } from 'react'
 import SocialLinks from './SocialLinks/socialLinks'
-import RecentPosts from './RecentPosts/recentPosts'
+import RecentPosts from './RecentPosts/RecentPosts'
 import UsefulLinks from './UsefulLinks/usefulLinks'
 import Contacts from './Contacts/contacts'
 import BackToTop from './BackToTop/BackToTop'

@@ -4,18 +4,17 @@
  * Project: https://react-static-ecom-blog.netlify.com
  * GitRepo: https://github.com/hereiamnow/react-static-ecom-blog.git
  * Date: 12/23/2019 12:29 AM
- * Relative Path: src/components/Blog/Blog.js
+ * Relative Path: src/components/Blog/proof/Blog.js
  * Description: HTML & CSS based on Dotted HTML Blog layout.
  */
 
 import React from "react";
-import ListBlog from "./ListBlog";
+import ListBlog from "./ListPostTypes";
 import PaginationBlog from "./PaginationBlog";
-import WidgetSearch from "./Widget/WidgetSearch";
-/*import CategoryListing from "./Widget/CategoryListing";*/
-import WidgetTabs from "./Widget/WidgetTabs";
-import WidgetAccordion from "./Widget/WidgetAccordion";
-import WidgetText from "./Widget/WidgetText";
+import WidgetSearch from "../Widget/WidgetSearch";
+import WidgetTabs from "../Widget/WidgetTabs";
+import WidgetAccordion from "../Widget/WidgetAccordion";
+import WidgetText from "../Widget/WidgetText";
 
 class Blog extends React.Component {
   render() {
@@ -24,16 +23,15 @@ class Blog extends React.Component {
         <div className="container">
           <div className="row">
             <div className="main-page">
-              <ListBlog></ListBlog>
-              <PaginationBlog></PaginationBlog>
+              <ListBlog/>
+              <PaginationBlog/>
             </div>
             <div className="sidebar-page">
               <div id="sidebar" className="main-sidebar">
-                <WidgetSearch></WidgetSearch>
-                {/*<CategoryListing></CategoryListing>*/}
-                <WidgetTabs></WidgetTabs>
-                <WidgetAccordion></WidgetAccordion>
-                <WidgetText></WidgetText>
+                <WidgetSearch/>
+                <WidgetTabs/>
+                <WidgetAccordion/>
+                <WidgetText/>
               </div>
             </div>
           </div>

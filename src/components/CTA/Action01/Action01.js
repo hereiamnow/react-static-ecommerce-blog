@@ -45,8 +45,7 @@ class Action01 extends Component {
 									<p>{this.props.body}</p>
 
 									<Link to={this.props.url}
-									      className="ot-btn btn-main-color btn-rounded text-up white-text"
-									      title={this.props.button}>
+									      className="ot-btn btn-main-color btn-rounded text-up white-text">
 											{this.props.button} <i className="fa fa-arrow-circle-right" aria-hidden="true"> </i>
 									</Link>
 

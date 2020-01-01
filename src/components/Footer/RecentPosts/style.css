@@ -1,0 +1,11 @@
+.blog2-detail {
+    padding-left: 100px;
+    padding-right: 7px;
+    padding-bottom: 9px;
+}
+
+.blog2-detail > .post-date{
+    margin-top: 5px;
+    font-size: .9em;
+    color: #deb152;
+}

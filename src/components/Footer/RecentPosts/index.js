@@ -1,1 +1,1 @@
-export { default } from './recentPosts.jsx';
+export { default } from './RecentPosts.jsx';

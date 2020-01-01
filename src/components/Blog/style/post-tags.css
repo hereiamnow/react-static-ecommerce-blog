@@ -1,0 +1,9 @@
+.post-tag-container {
+    margin:         0px;
+    padding-top:    11px;
+    padding-bottom: 11px;
+}
+
+.post-tag-container a {
+    margin-right: 4px;
+}

@@ -59,6 +59,10 @@ export default function HTML (props) {
 			{/*PreLoader*/}
 			<script type="text/javascript" src="/js/plugins/royal_preloader.js"></script>
 
+			{/*Bx Slider*/}
+			<script src="/js/plugins/jquery.bxslider.min.js"></script>
+			<script src="/js/plugins/bx-blog.js"></script>
+
 			{/*Global Js*/}
 			<script src="/js/plugins/template.js"></script>
 
