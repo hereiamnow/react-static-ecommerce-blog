@@ -31,7 +31,7 @@ export class SubHeader extends React.Component {
 								<ol className="breadcrumb">
 									<li>You are here:</li>
 									<li>
-										<Link to="/" title={config.companyName + ' Home'}>
+										<Link to="/">
 											 Home
 										</Link>
 									</li>
