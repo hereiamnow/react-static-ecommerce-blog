@@ -11,7 +11,7 @@ import React from 'react';
 import { StaticQuery, graphql, Link } from 'gatsby';
 
 const CategoryListing = () => (
-		<StaticQuery query={graphql`
+	<StaticQuery query={graphql`
             query staticQuery {
                 allMarkdownRemark {
                     totalCount
@@ -19,20 +19,18 @@ const CategoryListing = () => (
                 }
             }
         `} render={(data) => (
-				<div className="widget widget-category">
-					<h3>Category</h3>
-					<ul className="category">
-						{data.allMarkdownRemark.distinct.map(category => (
-								<li key={category}>
-									<Link to={"/blog/categories/" + category}
-											className="hover-text-theme">
-										{category}
-									</Link>
-									<span className="count">0</span>
-								</li>
-						))}
-					</ul>
-				</div>
-		)} />
+		<div className="widget widget-category">
+			<h3>Category</h3>
+			<ul className="category">
+				{data.allMarkdownRemark.distinct.map(category => (
+					<li key={category}>
+						<Link to={'/blog/categories/' + category} className="hover-text-theme">
+							{category}
+						</Link> <span className="count">0</span>
+					</li>
+				))}
+			</ul>
+		</div>
+	)} />
 );
 export default CategoryListing;
