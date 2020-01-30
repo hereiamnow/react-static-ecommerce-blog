@@ -82,13 +82,13 @@ class PostListing extends React.Component {
 											<li>
 												Category:&nbsp;
 												<span><Link
-															to={`/categories/${_.kebabCase(post.category)}/`}
+															to={`/blog/categories/${_.kebabCase(post.category)}/`}
 															className="hover-text-theme">{post.category}</Link></span>
 											</li>
 											<li>
 												Tags: {post.tags.map(tag => (
 													<span key={tag}>&nbsp;<Link
-															to={`/tags/${_.kebabCase(tag)}/`}
+															to={`/blog/tags/${_.kebabCase(tag)}/`}
 															className="hover-text-theme">{tag}</Link></span>
 											))}
 											</li>

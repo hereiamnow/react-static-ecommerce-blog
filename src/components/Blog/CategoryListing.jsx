@@ -24,7 +24,7 @@ const CategoryListing = () => (
 					<ul className="category">
 						{data.allMarkdownRemark.distinct.map(category => (
 								<li key={category}>
-									<Link to={"/categories/" + category}
+									<Link to={"/blog/categories/" + category}
 											className="hover-text-theme">
 										{category}
 									</Link>
