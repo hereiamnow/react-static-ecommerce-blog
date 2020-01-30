@@ -1,6 +1,10 @@
 ### JetBrains ###
 .idea/*
 
+### My PayPal Stuff ###
+.paypal
+
+
 ### Dotted Theme ###
 .dotted-theme
 

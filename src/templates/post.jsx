@@ -12,7 +12,7 @@ import UserInfo from "../components/UserInfo/UserInfo";
 import Disqus from "../components/Disqus/Disqus";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import "./style/b16-tomorrow-dark.css";
-import "./style/style.css";
+import "./style/post.scss";
 
 const moment = require('moment');
 const _ = require('lodash');

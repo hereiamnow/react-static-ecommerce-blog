@@ -1,14 +1,13 @@
 /**
  * Created by S Miller <hereiamnow@gmail.com>
- * Date: 12/20/2019 2:20 AM
+ * Date: 12/05/2019 12:11 AM
  * Project: react-static-ecommerce-blog - a site built for gatsby
  * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
  * Relative Path: src/components/Testimonial/Testimonial.js
- * Description:
+ * Description: USVA Theme demo
  */
 
 import React, { Component } from 'react';
-import './style.css';
 
 class Testimonial extends Component {
 	render () {

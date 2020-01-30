@@ -4,6 +4,7 @@
  * Project: react-static-ecommerce-blog - a site built for gatsby
  * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
  * Relative Path: src/components/Footer/Footer.jsx
+ * Description: USVA Theme demo
  */
 
 import React, { Component } from 'react'
@@ -12,7 +13,7 @@ import RecentPosts from './RecentPosts/RecentPosts'
 import UsefulLinks from './UsefulLinks/usefulLinks'
 import Contacts from './Contacts/contacts'
 import BackToTop from './BackToTop/BackToTop'
-import './style.css'
+import './Footer.scss'
 
 class Footer extends Component {
 	render () {

@@ -1,3 +1,12 @@
+/**
+ * Created by S Miller <hereiamnow@gmail.com>
+ * Date: 12/05/2019 7:20 PM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
+ * Relative Path: src/components/Team/
+ * Description: USVA Theme demo
+ */
+
 import React from "react";
 import TeamItem from "./TeamItem";
 

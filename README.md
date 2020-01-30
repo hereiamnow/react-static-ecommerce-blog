@@ -1,6 +1,26 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6e14b0bd-89b0-4ec4-bd54-30b6aad8c403/deploy-status)](https://app.netlify.com/sites/react-static-ecommerce-blog/deploys)
 
+<p align="center">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  </a>
+</p>
+
+https://developers.google.com/maps/documentation/javascript/adding-a-google-map#key
+https://github.com/google-map-react/google-map-react/tree/master/src
+https://medium.com/@kristin_baumann/react-countdown-6455838b6faf
+
+
+
 # JAMstack e-commerce blog starter
+
+This Project was forked from [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter)
+
+A starter skeleton with advanced features for Gatsby.
+
+Developed for creating modern websites.
+
+Demo
 
 A [Gatsby](https://github.com/gatsbyjs/gatsby/) starter e-commerce blog with advanced [features](#features) and pwa [(progressive web app)](https://developers.google.com/web/progressive-web-apps) 
 capabilities.  Be sure to check out all the features of this starter in detail.
@@ -71,6 +91,27 @@ capabilities.  Be sure to check out all the features of this starter in detail.
   - gh-pages for deploying to GitHub pages
   - [Netlify](https://www.netlify.com/) deploy configuration
   - [CodeClimate](https://codeclimate.com/) configuration file and badge
+
+
+
+
+
+
+
+
+
+gatsby-plugin-breadcrumb
+
+
+
+
+
+
+
+
+
+
+
 
 ## Getting Started
 
@@ -171,5 +212,41 @@ module.exports = {
 ```
 
 NOTE:  Make sure to edit `static/robots.txt` to include your domain for the sitemap!
+
+`gatsby-config.js`
+
+**plugins:**
+- [gatsby-plugin-react-helmet](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-react-helmet "gatsby-plugin-react-helmet")
+- [gatsby-plugin-lodash](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-lodash "gatsby-plugin-lodash")
+- [gatsby-plugin-stripe](https://github.com/njosefbeck/gatsby-plugin-stripe "gatsby-plugin-stripe")
+- [gatsby-plugin-sass](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sass "gatsby-plugin-sass")
+- [gatsby-source-stripe](https://github.com/njosefbeck/gatsby-source-stripe "gatsby-source-stripe")
+- [gatsby-source-filesystem](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-filesystem "gatsby-source-filesystem")
+- [gatsby-transformer-remark](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-transformer-remark "gatsby-transformer-remark")
+- [gatsby-remark-embed-video](https://github.com/borgfriend/gatsby-remark-embed-video "gatsby-remark-embed-video")
+- [gatsby-plugin-google-analytics](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-google-analytics "gatsby-plugin-google-analytics")
+- [gatsby-plugin-sharp](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sharp "gatsby-plugin-sharp")
+- [gatsby-transformer-sharp](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-transformer-sharp "gatsby-transformer-sharp")
+- [gatsby-plugin-catch-links](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-catch-links "gatsby-plugin-catch-links")
+- [gatsby-plugin-twitter](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-twitter "gatsby-plugin-twitter")
+- [gatsby-plugin-sitemap](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sitemap "gatsby-plugin-sitemap")
+- [gatsby-plugin-manifest](https://www.npmjs.com/package/gatsby-plugin-manifest "gatsby-plugin-manifest")
+- [gatsby-plugin-netlify-cms](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-netlify-cms "gatsby-plugin-netlify-cms")
+- [gatsby-plugin-feed](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-feed "gatsby-plugin-feed")
+
+
+		// In order to get production's app-ID, you will have to send your app to Paypal for approval first
+		// For your sandbox Client-ID (after logging into your developer account, please locate the "REST API apps" section,
+		// click "Create App" unless you have already done so):
+		//   => https://developer.paypal.com/docs/classic/lifecycle/sb_credentials/
+		// Note: IGNORE the Sandbox test AppID - this is ONLY for Adaptive APIs, NOT REST APIs)
+		// For production app-ID:
+		//   => https://developer.paypal.com/docs/classic/lifecycle/goingLive/
+
+		// NB. You can also have many Paypal express checkout buttons on page, just pass in the correct amount and they will
+		// work!
+
+
+
 
 Copyright 2019 Shawn Miller ([LinkedIn](https://linkedin.com/in/hereiamnow))
