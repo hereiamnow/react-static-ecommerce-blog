@@ -1,8 +1,8 @@
 import React from "react";
 import config from "../../data/SiteConfig";
 import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "../layout";
+import { graphql, Link } from "gatsby";
+import Layout from "../layout/index";
 import SEO from "../components/SEO/SEO";
 import SubHeader from '../components/SubHeader/SubHeader';
 import Categories from '../components/Blog/CategoryListing';
@@ -12,7 +12,10 @@ import UserInfo from "../components/UserInfo/UserInfo";
 import Disqus from "../components/Disqus/Disqus";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import "./style/b16-tomorrow-dark.css";
-import "./style/post.css";
+import "./style/style.css";
+
+const moment = require('moment');
+const _ = require('lodash');
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -28,11 +31,16 @@ export default class PostTemplate extends React.Component {
     }
     return (
       <Layout>
+
 	      <Helmet>
 		      <title>{`${post.title} | ${config.siteTitle}`}</title>
 	      </Helmet>
+
 	      <SEO postPath={slug} postNode={postNode} postSEO />
-	      <SubHeader pageTitle={post.title} breadcrumb="Categories" />
+
+	      <SubHeader title={post.title}
+		      crumbLabel="Categories" />
+
 	      <section id="main-content">
 		      <div className="container">
 			      <div className="row">
@@ -55,6 +63,7 @@ export default class PostTemplate extends React.Component {
 			      </div>
 		      </div>
 	      </section>
+
       </Layout>
     );
   }

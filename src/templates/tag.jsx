@@ -2,7 +2,7 @@ import React from 'react';
 import config from '../../data/SiteConfig';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
-import Layout from '../layout';
+import Layout from '../layout/index';
 import SubHeader from '../components/SubHeader/SubHeader';
 import Categories from '../components/Blog/CategoryListing';
 import WidgetText from '../components/Blog/Widget/WidgetText';
@@ -14,8 +14,12 @@ export default class TagTemplate extends React.Component {
 		const postEdges = this.props.data.allMarkdownRemark.edges;
 		return (
 				<Layout>
+
 					<Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
-					<SubHeader pageTitle={`Posts tagged as category "${tag}" | ${config.siteTitle}`} breadcrumb="Tags" />
+
+					<SubHeader title={`Posts tagged as category "${tag}" | ${config.siteTitle}`}
+						crumbLabel="Tags" />
+
 					<section id="main-content">
 						<div className="container">
 							<div className="row">
@@ -31,6 +35,7 @@ export default class TagTemplate extends React.Component {
 							</div>
 						</div>
 					</section>
+
 				</Layout>
 		);
 	}
