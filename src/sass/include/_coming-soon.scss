@@ -1,0 +1,136 @@
+/**
+ * Created by S Miller <hereiamnow@gmail.com>
+ * Date: 1/29/2020 12:24 PM
+ * Relative Path: src/sass/include/_coming-soon.scss
+ */
+
+%extend_countdown {
+    background: $color_log_cabin_approx;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+}
+
+.hero-wrap {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    margin: 0 auto;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-50%);
+}
+
+.hero-wrap .title {
+    color: $white;
+}
+
+.bgcms {
+    background: url(/images/pages/comingsoon/1.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.overlay-cms {
+    background: #303335;
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.hero-wrap-cms {
+    .heading-cms {
+        font-size: 48px;
+        text-transform: capitalize;
+        font-weight: bold;
+        line-height: 64px;
+        margin-bottom: 25px;
+        color: $white;
+    }
+    .sub-heading-cms {
+        color: $white;
+    }
+    a {
+        color: $white;
+    }
+}
+
+.custom-countdown {
+    display: inline-block;
+    margin: 40px 0;
+    background-color: $white_10;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 650px;
+}
+
+.countdown {
+    list-style: none;
+    width: 100%;
+    li {
+        width: 25%;
+        display: inline-block;
+        float: left;
+        text-align: center;
+        //Instead of the line below you could use @include box-sizing($bs)
+        box-sizing: border-box;
+        padding: 0 20px;
+        span {
+            @extend %extend_countdown;
+            font-size: 24px;
+            font-weight: bold;
+            color: $white;
+
+            &::before {
+                display: block;
+                content: "";
+                background: $color_anzac_approx;
+                width: 76%;
+                height: 2px;
+                position: absolute;
+                left: 12%;
+                bottom: 0;
+            }
+        }
+        p {
+            @extend %extend_countdown;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 11px;
+        }
+    }
+}
+
+.social-big-white {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    li {
+        margin: 0 20px;
+        font-size: 24px;
+        margin-top: 20px;
+        display: inline-block;
+        a {
+            color: $white;
+            //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+            transition: all 0.6s;
+            &:hover {
+                color: $color_anzac_approx;
+            }
+        }
+    }
+}

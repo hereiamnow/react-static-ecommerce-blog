@@ -1,0 +1,310 @@
+/**
+ * Created by S Miller <hereiamnow@gmail.com>
+ * Date: 1/29/2020 12:24 PM
+ * Relative Path: src/sass/include/_timeline.scss
+ */
+
+.timeline {
+    list-style: none;
+    padding: 20px 0;
+    position: relative;
+    &::before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: $color_gallery_approx;
+        left: 50%;
+        margin-left: -1.5px;
+    }
+    > li {
+        margin-bottom: 90px;
+        position: relative;
+        width: 50%;
+        float: left;
+        clear: left;
+        &::before {
+            content: " ";
+            display: table;
+        }
+        &::after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        > {
+            .timeline-panel {
+                width: calc(100% - 40px);
+                float: left;
+                border: 1px solid $color_quill_gray_approx;
+                position: relative;
+                box-shadow: 0 1px 6px $black_17_5;
+                &::before {
+                    position: absolute;
+                    top: 26px;
+                    right: -15px;
+                    display: inline-block;
+                    border-top: 15px solid transparent;
+                    border-left: 15px solid $color_celeste_approx;
+                    border-right: 0 solid $color_celeste_approx;
+                    border-bottom: 15px solid transparent;
+                    content: " ";
+                }
+                &::after {
+                    position: absolute;
+                    top: 27px;
+                    right: -14px;
+                    display: inline-block;
+                    border-top: 14px solid transparent;
+                    border-left: 14px solid $white;
+                    border-right: 0 solid $white;
+                    border-bottom: 14px solid transparent;
+                    content: " ";
+                }
+            }
+            .blog-data {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: auto;
+                transform: translateX(50%);
+            }
+        }
+        &.timeline-inverted {
+            float: right;
+            clear: right;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            > {
+                .timeline-panel {
+                    float: right;
+                    &::before {
+                        border-left-width: 0;
+                        border-right-width: 15px;
+                        left: -15px;
+                        right: auto;
+                    }
+                    &::after {
+                        border-left-width: 0;
+                        border-right-width: 14px;
+                        left: -14px;
+                        right: auto;
+                    }
+                }
+                .blog-data {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: auto;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        &:nth-child(2) {
+            margin-top: 140px;
+        }
+    }
+}
+
+.timeline-panel {
+    .item-blog {
+        margin-bottom: 0;
+    }
+    .blog-feature-warp {
+        border: 0;
+    }
+    .blog-feature-content-inner {
+        padding: 10px;
+    }
+    .blog-video-popup {
+        border: 0;
+        .blog-feature-warp {
+            width: 100%;
+        }
+        .blog-feature-content {
+            width: 100%;
+        }
+        .blog-footer-2 {
+            width: 100%;
+            padding: 10px;
+            min-height: 38px;
+            background: $concrete;
+            font-size: 12px;
+            border-top-width: 2px;
+            border-top-style: solid;
+            position: static;
+        }
+    }
+    .blog-embed-video-feature {
+        width: 100%;
+    }
+    .overlay-btn-video {
+        background: rgba(255, 255, 255, 0) url('/images/Icon/btn-play.png') center center no-repeat;
+    }
+}
+
+.timeline-1-side {
+    list-style: none;
+    padding: 20px 0 20px 20px;
+    position: relative;
+    &:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: $color_gallery_approx;
+        left: 20px;
+    }
+    > li {
+        margin-bottom: 30px;
+        position: relative;
+        width: 100%;
+        float: right;
+        clear: right;
+        &:before {
+            content: " ";
+            display: table;
+        }
+        &:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        > {
+            .timeline-panel {
+                width: calc(100% - 40px);
+                float: right;
+                border: 1px solid $color_quill_gray_approx;
+                position: relative;
+                box-shadow: 0 1px 6px $black_17_5;
+                &:before {
+                    position: absolute;
+                    top: 26px;
+                    left: -15px;
+                    display: inline-block;
+                    border-top: 15px solid transparent;
+                    border-right: 15px solid $color_celeste_approx;
+                    border-left: 0 solid $color_celeste_approx;
+                    border-bottom: 15px solid transparent;
+                    content: " ";
+                }
+                &:after {
+                    position: absolute;
+                    top: 27px;
+                    left: -14px;
+                    display: inline-block;
+                    border-top: 14px solid transparent;
+                    border-right: 14px solid $white;
+                    border-left: 0 solid $white;
+                    border-bottom: 14px solid transparent;
+                    content: " ";
+                }
+            }
+            .blog-data {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .timeline-panel {
+        .item-blog {
+            margin-bottom: 0;
+        }
+        .blog-feature-warp {
+            border: 0;
+        }
+        .blog-feature-content-inner {
+            padding: 10px;
+        }
+        .blog-video-popup {
+            border: 0;
+            .blog-feature-warp {
+                width: 100%;
+            }
+            .blog-feature-content {
+                width: 100%;
+            }
+            .blog-footer-2 {
+                width: 100%;
+                padding: 10px;
+                min-height: 38px;
+                background: $concrete;
+                font-size: 12px;
+                border-top-width: 2px;
+                border-top-style: solid;
+                position: static;
+            }
+        }
+        .blog-embed-video-feature {
+            width: 100%;
+        }
+        .overlay-btn-video {
+            background: rgba(255, 255, 255, 0) url('/images/Icon/btn-play.png') center center no-repeat;
+        }
+    }
+}
+@media(max-width: 767px) {
+    ul.timeline {
+        padding-right: 15px;
+        &:before {
+            left: 40px;
+        }
+        > li {
+            margin-bottom: 20px;
+            position: relative;
+            width: 100%;
+            float: left;
+            clear: left;
+            > {
+                .timeline-panel {
+                    width: calc(100% - 80px);
+                    float: right;
+                    &:before {
+                        border-left-width: 0;
+                        border-right-width: 15px;
+                        left: -15px;
+                        right: auto;
+                    }
+                    &:after {
+                        border-left-width: 0;
+                        border-right-width: 14px;
+                        left: -14px;
+                        right: auto;
+                    }
+                }
+                .blog-data {
+                    position: absolute;
+                    top: 0;
+                    right: auto;
+                    left: 0;
+                    transform: translateX(50%);
+                }
+            }
+            &.timeline-inverted > .blog-data {
+                position: absolute;
+                top: 0;
+                right: auto;
+                left: 0;
+                transform: translateX(50%);
+            }
+        }
+    }
+    .timeline > li.timeline-inverted {
+        float: left;
+        clear: left;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+.timeline-body > ul {
+    padding: 20px;
+    margin-bottom: 0;
+}
+.timeline-1-side-body > ul {
+    padding: 20px;
+    margin-bottom: 0;
+}

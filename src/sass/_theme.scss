@@ -1,0 +1,47 @@
+.bg-theme {
+    background: $color_anzac_approx;
+}
+
+.bg-theme-callback {
+    background: $color_anzac_approx;
+}
+
+.color-theme {
+    color: $color_anzac_approx;
+}
+
+.border-color-theme {
+    border-color: $color_anzac_approx;
+}
+
+.hover-text-dark {
+    &:hover {
+        color: $color_log_cabin_approx;
+    }
+    &:focus {
+        color: $color_log_cabin_approx;
+    }
+}
+
+.bg-sub {
+    background: $color_log_cabin_approx;
+}
+
+.bg-sub-theme-callback {
+    background: $color_log_cabin_approx;
+    &:hover {
+        background: $color_anzac_approx;
+    }
+}
+
+.bg-hover-theme:hover {
+    background: $color_anzac_approx;
+}
+
+.hover-text-theme:hover {
+    color: $color_anzac_approx;
+}
+
+.hover-border-theme:hover {
+    border-color: $color_anzac_approx;
+}
