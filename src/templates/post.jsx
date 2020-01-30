@@ -11,11 +11,11 @@ import PostTags from "../components/Blog/PostTags";
 import UserInfo from "../components/UserInfo/UserInfo";
 import Disqus from "../components/Disqus/Disqus";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
-import "./style/b16-tomorrow-dark.css";
+import "./style/b16-tomorrow-dark.scss";
 import "./style/post.scss";
 
-const moment = require('moment');
-const _ = require('lodash');
+/*const moment = require('moment');*/
+/*const _ = require('lodash');*/
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -38,7 +38,8 @@ export default class PostTemplate extends React.Component {
 
 	      <SEO postPath={slug} postNode={postNode} postSEO />
 
-	      <SubHeader title={post.title}
+	      <SubHeader
+		      title={post.title}
 		      crumbLabel="Categories" />
 
 	      <section id="main-content">

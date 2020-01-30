@@ -1,0 +1,221 @@
+/* SCSS is based on the Base16 Tomorrow Dark Syntax theme */
+
+//colors & fonts
+$color_mirage_approx :#1d1f21;
+$color_pumice_approx :#c5c8c6;
+$color_nobel_approx :#b4b7b4;
+$color_mountain_mist_approx :#969896;
+$color_di_serria_approx :#de935f;
+$color_rob_roy_approx :#f0c674;
+$color_bali_hai_approx :#81a2be;
+$color_neptune_approx :#8abeb7;
+$color_amethyst_smoke_approx :#b294bb;
+$color_wild_willow_approx :#b5bd68;
+$white :#fff;
+$color_chestnut_rose_approx :#c66;
+
+$font_0 :'Consolas';
+$font_1 :'Menlo';
+$font_2 :'Monaco';
+$font_3 :'Andale Mono WT';
+$font_4 :'Andale Mono';
+$font_5 :'Lucida Console';
+$font_6 :'Lucida Sans Typewriter';
+$font_7 :'DejaVu Sans Mono';
+$font_8 :'Bitstream Vera Sans Mono';
+$font_9 :'Liberation Mono';
+$font_10 :'Nimbus Mono L';
+$font_11 :'Courier New';
+$font_12 :'Courier';
+$font_13 :'monospace';
+
+//@extend-elements code[class*="language-"], pre[class*="language-"]
+%extend_1{
+    font-family  :$font_0, $font_1, $font_2, $font_3, $font_4, $font_5, $font_6, $font_7, $font_8, $font_9, $font_10, $font_11, $font_12, $font_13;
+    font-size    :14px;
+    line-height  :1.375;
+    direction    :ltr;
+    text-align   :left;
+    white-space  :pre;
+    word-spacing :normal;
+    word-break   :normal;
+    tab-size     :4;
+    hyphens      :none;
+    background   :$color_mirage_approx;
+    color        :$color_pumice_approx;
+}
+
+
+code[class*="language-"]{
+    @extend %extend_1;
+    ::-moz-selection{
+        text-shadow :none;
+        background  :$color_nobel_approx;
+    }
+    ::selection{
+        text-shadow :none;
+        background  :$color_nobel_approx;
+    }
+}
+
+
+pre[class*="language-"]{
+    @extend %extend_1;
+    padding  :1em;
+    margin   :0.5em 0;
+    overflow :auto;
+    ::-moz-selection{
+        text-shadow :none;
+        background  :$color_nobel_approx;
+    }
+    ::selection{
+        text-shadow :none;
+        background  :$color_nobel_approx;
+    }
+}
+
+
+pre[class*="language-"]::-moz-selection{
+    text-shadow :none;
+    background  :$color_nobel_approx;
+}
+
+
+code[class*="language-"]::-moz-selection{
+    text-shadow :none;
+    background  :$color_nobel_approx;
+}
+
+
+pre[class*="language-"]::selection{
+    text-shadow :none;
+    background  :$color_nobel_approx;
+}
+
+
+code[class*="language-"]::selection{
+    text-shadow :none;
+    background  :$color_nobel_approx;
+}
+
+
+.token{
+    &.comment{
+        color :$color_mountain_mist_approx;
+    }
+    &.prolog{
+        color :$color_mountain_mist_approx;
+    }
+    &.doctype{
+        color :$color_mountain_mist_approx;
+    }
+    &.cdata{
+        color :$color_mountain_mist_approx;
+    }
+    &.punctuation{
+        color :$color_pumice_approx;
+    }
+    &.namespace{
+        opacity :0.7;
+    }
+    &.operator{
+        color :$color_di_serria_approx;
+    }
+    &.boolean{
+        color :$color_di_serria_approx;
+    }
+    &.number{
+        color :$color_di_serria_approx;
+    }
+    &.property{
+        color :$color_rob_roy_approx;
+    }
+    &.tag{
+        color :$color_bali_hai_approx;
+    }
+    &.string{
+        color :$color_neptune_approx;
+    }
+    &.selector{
+        color :$color_amethyst_smoke_approx;
+    }
+    &.attr-name{
+        color :$color_di_serria_approx;
+    }
+    &.entity{
+        color  :$color_neptune_approx;
+        cursor :help;
+    }
+    &.url{
+        color :$color_neptune_approx;
+    }
+    &.attr-value{
+        color :$color_wild_willow_approx;
+    }
+    &.keyword{
+        color :$color_wild_willow_approx;
+    }
+    &.control{
+        color :$color_wild_willow_approx;
+    }
+    &.directive{
+        color :$color_wild_willow_approx;
+    }
+    &.unit{
+        color :$color_wild_willow_approx;
+    }
+    &.statement{
+        color :$color_neptune_approx;
+    }
+    &.regex{
+        color :$color_neptune_approx;
+    }
+    &.atrule{
+        color :$color_neptune_approx;
+    }
+    &.placeholder{
+        color :$color_bali_hai_approx;
+    }
+    &.variable{
+        color :$color_bali_hai_approx;
+    }
+    &.deleted{
+        text-decoration :line-through;
+    }
+    &.inserted{
+        border-bottom   :1px dotted $white;
+        text-decoration :none;
+    }
+    &.italic{
+        font-style :italic;
+    }
+    &.important{
+        font-weight :bold;
+        color       :$color_chestnut_rose_approx;
+    }
+    &.bold{
+        font-weight :bold;
+    }
+}
+
+
+:not(pre) > code[class*="language-"]{
+    padding       :0.1em;
+    border-radius :0.3em;
+}
+
+
+.language-css .token.string{
+    color :$color_neptune_approx;
+}
+
+
+.style .token.string{
+    color :$color_neptune_approx;
+}
+
+
+pre > code.highlight{
+    outline        :0.4em solid $color_chestnut_rose_approx;
+    outline-offset :0.4em;
+}
