@@ -1,7 +1,7 @@
 const config = {
-	siteTitle: "Gatsby E-commerce Blog Starter",
-	siteTitleShort: "Gatsby Starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-	siteTitleAlt: "react-static-ecommerce-blog alt", // Alternative site title for SEO.
+	siteTitle: "United States Vaping Association",
+	siteTitleShort: "USVA", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+	siteTitleAlt: "United States Vaping Association (USVA)", // Alternative site title for SEO.
 	siteLogo: "/logos/logo-1024.png",
 	siteUrl: "https://react-static-ecommerce-blog.netlify.com",
 	pathPrefix: "/",
@@ -16,17 +16,23 @@ const config = {
 	metaPageTitle : 'Site Demo',
 	companyName : 'United States Vaping Association (USVA)',
 	companyAddress : '100 E Whitestone Blvd Cedar Park, Tx 78613',
+
 	slogan : 'The gene pool could use a little chlorine',
 	aboutText : 'Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow\'s nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon starboard grog black jack gangway rutters.',
+
+	disqusShortname: 'react-static-ecommerce-blog-1.disqus.com', // Disqus shortname.
 	urlTwitter : 'https://twitter.com/TheUsva',
 	urlFacebook : 'https://www.facebook.com/TheUSVA',
-	googleAnalyticsID: "UA-47311644-5",
+	urlLinkedIn: 'https://www.linkedin.com/in/hereiamnow',
+	urlYouTubeChanel: 'https://www.youtube.com/channel/UCdIRb1EcGMa3SO8oHeLW_6A',
+	googleAnalyticsID: "UA-157322220-1", /*See https://analytics.google.com/*/
+	googleCloudPlatformAPIKey: "AIzaSyALIDKuIvgtK4QD7qf-9rcrHU3q8W82Fok", /*See https://console.cloud.google.com/*/
 	paypalCredentialsSandbox: 'sb-zd43ob395816@business.example.com',
 	paypalCredentialsProduction: 'AbO5PIj8kw8t8UKOFpeoKGwu7O76Ej9Bo_zmIdFBVYu7X7ZZM561rxIAQQb0Du5YR7SFWqbb0u-4XtQp',
 	stripeSecretKey: 'sk_test_OxcRGXwa8vyXhvj34pOAKmjs',
 	gatsbyStripePublicKey: 'pk_test_dvbj8EdCZ1MSrA65EHRDCBtg',
-	disqusShortname: 'react-static-ecommerce-blog-1.disqus.com', // Disqus shortname.
-	postDefaultCategoryID: "Animals",
+
+	postDefaultCategoryID: "Default",
 	dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
 	dateFormat: "DD/MM/YYYY", // Date format for display.
 	postsPerPage: 3, // Amount of posts displayed per listing page.
@@ -47,6 +53,12 @@ const config = {
 		url: 'https://www.facebook.com/theusva',
 		iconClassName: 'fa fa-facebook'
 		},
+		{
+			label: 'YouTube',
+			url: 'https://www.youtube.com/channel/UCdIRb1EcGMa3SO8oHeLW_6A',
+			iconClassName: 'fa fa-youtube-play'
+		},
+
 		{
 		  label: "Email",
 		  url: "mailto:hereiamnow@gmail.com",

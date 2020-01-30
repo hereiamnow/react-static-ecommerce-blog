@@ -1,0 +1,165 @@
+/**
+ * Created by S Miller <hereiamnow@gmail.com>
+ * Date: 1/29/2020 12:24 PM
+ * Relative Path: src/sass/include/_loader.scss
+ */
+
+body.royal_loader {
+    /*background : none;*/
+    /*visibility : hidden;*/
+}
+
+#royal_preloader {
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+    font-size: 12px;
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999999999;
+    transition: opacity 0.2s linear 0.8s;
+    &.complete {
+        opacity: 0;
+    }
+    .background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $black;
+        transition: background 0.5s linear;
+    }
+    &.number {
+        .name {
+            position: absolute;
+            top: 20%;
+            left: 0;
+            right: 0;
+            text-transform: uppercase;
+            color: $color_gallery_approx;
+            text-align: center;
+            opacity: 0;
+            transition: transform 0.3s linear;
+            animation: fly 0.3s;
+        }
+        .percentage {
+            color: $white;
+            font-family: Impact, Arial;
+            text-shadow: 1px 1px 2px $black_50;
+            text-align: center;
+            margin: -90px 0 0 -90px;
+            background-image: url(/images/loader.gif);
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            padding-top: 80px;
+            width: 180px;
+            position: absolute;
+            font-size: 50px;
+            top: 50%;
+            left: 50%;
+            transition: all 0.3s linear 0.5s;
+        }
+    }
+    &.logo {
+        .loader {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -74px 0 0 -60px;
+            background-size: 100% auto;
+            overflow: hidden;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            div {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                opacity: 0.7;
+                filter: alpha(opacity=70);
+                transition: bottom 0.3s linear;
+            }
+        }
+        .percentage {
+            position: absolute;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            font-family: Open Sans, sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            letter-spacing: 2px;
+            top: 50%;
+            left: 50%;
+            margin: 53px 0 0 -40px;
+            color: $white;
+            text-align: center;
+        }
+    }
+    &.text .loader {
+        position: absolute;
+        text-shadow: 0 0 15px $black_30;
+        text-transform: uppercase;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        width: 240px;
+        margin-left: -60px;
+        height: 60px;
+        line-height: 60px;
+        margin-top: -30px;
+        font-size: 30px;
+        white-space: nowrap;
+        div {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $black;
+            opacity: 0.7;
+            filter: alpha(opacity=70);
+            transition: left 0.3s linear;
+        }
+    }
+}
+
+@-webkit-keyframes fly {
+    0% {
+        opacity: 0;
+        top: 50%;
+    }
+    20% {
+        opacity: 1;
+        top: 40%;
+    }
+    100% {
+        opacity: 0;
+        top: 20%;
+    }
+}
+
+@keyframes fly {
+    0% {
+        opacity: 0;
+        top: 50%;
+    }
+    20% {
+        opacity: 1;
+        top: 40%;
+    }
+    100% {
+        opacity: 0;
+        top: 20%;
+    }
+}

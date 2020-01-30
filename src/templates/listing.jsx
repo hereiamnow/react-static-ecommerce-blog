@@ -2,7 +2,7 @@ import React from 'react';
 import config from '../../data/SiteConfig';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
-import Layout from '../layout';
+import Layout from '../layout/index';
 import SubHeader from '../components/SubHeader/SubHeader'
 import SEO from '../components/SEO/SEO';
 import PostListing from '../components/Blog/PostListing';
@@ -20,8 +20,12 @@ class Listing extends React.Component {
 		return (
 				<Layout>
 					<Helmet title={config.siteTitle} />
+
 					<SEO />
-					<SubHeader pageTitle={'Blog News | ' + config.siteTitle} breadcrumb="Blog Timeline" />
+
+					<SubHeader title={'Blog News | ' + config.siteTitle}
+						crumbLabel="Blog Timeline" />
+
 					<section id="main-content">
 						<div className="container">
 							<div className="row">
@@ -38,7 +42,9 @@ class Listing extends React.Component {
 							</div>
 						</div>
 					</section>
+
 					<Cta header={ctaHeader} body={ctaBody} button={ctaButton} url={ctaUrl} />
+
 				</Layout>
 		);
 	}
@@ -58,7 +64,7 @@ class Listing extends React.Component {
 					{[...Array(pageCount)].map((_val, index) => {
 						const pageNum = index + 1;
 						return (
-								<li>
+								<li key={index}>
 									<Link key={`listing-page-${pageNum}`} to={pageNum === 1 ? '/blog/' : `/blog/${pageNum}/`}>
 										{pageNum}
 									</Link>

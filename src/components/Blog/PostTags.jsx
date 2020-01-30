@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import _ from "lodash";
 import { Link } from "gatsby";
-import "./style/post-tags.css"
+import "./style/style.css"
 
 class PostTags extends Component {
   render() {
@@ -14,7 +14,7 @@ class PostTags extends Component {
               key={tag}
               style={{ textDecoration: "none" }}
               className={'ot-btn btn-main-color btn-rounded text-up white-text'}
-              to={`/tags/${_.kebabCase(tag)}`}
+              to={`/blog/tags/${_.kebabCase(tag)}`}
             >{tag} <i className="fa fa-tag" aria-hidden="true"> </i>
             </Link>
           ))}

@@ -1,0 +1,67 @@
+//colors
+$color_0: rgba(255, 255, 255, 0.1);
+$color_1: #222;
+$color_2: #fff;
+$color_3: #deb152;
+
+//@extend-elements .countdown li span, .countdown li p
+%extend_1 {
+    background: $color_1;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color:       $color_3;
+    font-family: 'Oswald', sans-serif;
+}
+
+h3,h4 {
+    font-weight: 300;
+}
+
+.custom-countdown {
+    display: inline-block;
+    margin: 40px 0;
+    background-color: $color_0;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 650px;
+}
+.countdown {
+    list-style: none;
+    width: 100%;
+    li {
+        width: 25%;
+        display: inline-block;
+        float: left;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0 20px;
+        span {
+            @extend %extend_1;
+            font-size: 24px;
+            font-weight: bold;
+            color: $color_2;
+            text-transform: uppercase;
+            &:before {
+                display: block;
+                content: "";
+                background: $color_3;
+                width: 60%;
+                height: 2px;
+                position: absolute;
+                left: 20%;
+                bottom: 0;
+            }
+        }
+        p {
+            @extend %extend_1;
+            color: $color_2;
+            text-transform: uppercase;
+            font-size: 11px;
+        }
+    }
+}

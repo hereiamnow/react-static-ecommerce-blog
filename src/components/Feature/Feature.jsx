@@ -1,16 +1,14 @@
 /**
- * Created by Shawn Miller
- * User: Developer
- * Project: react-static-ecom-blog
- * GitRepo: https://github.com/hereiamnow/react-static-ecom-blog.git
+ * Created by S Miller <hereiamnow@gmail.com>
  * Date: 12/07/2019 11:19 AM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
  * Relative Path: src/components/Feature/Feature.jsx
  */
 
 import React from 'react'
 import { Link } from 'gatsby'
 
-/*Based on Dotted HTML template*/
 const Feature = () => (
 
 		<section id="feature" className="bg-light-grey">
@@ -28,7 +26,7 @@ const Feature = () => (
 							<p className="feature-des-text">Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis. Phasellus felis diam, egestas non hendrerit a, lacinia a neque. </p>
 
 							<div className="discover">
-								<img src="http://placehold.it/316x330/ccc.jpg" className="img-responsive" alt="Image" />
+								<img src="https://placehold.it/316x330/ccc.png" className="img-responsive" alt="Image" />
 
 								<ul className="feature">
 

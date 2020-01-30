@@ -1,9 +1,8 @@
 /**
- * Created by Shawn Miller
- * User: Developer
- * Project: react-static-ecom-blog
- * GitRepo: https://github.com/hereiamnow/react-static-ecom-blog.git
+ * Created by S Miller <hereiamnow@gmail.com>
  * Date: 12/09/2019 10:15 AM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
  * Relative Path: src/components/Slider/Slides/Slide01/Slide01.jsx
  * Description: Based on Dotted HTML template
  */
@@ -36,10 +35,10 @@ const Slider01 = () => (
 
 		<div className="ls-slide" data-ls="transition2d: 1; durationin:500">
 
-			<img className="ls-bg" src="http://placehold.it/1900x590/ccc.png" alt="Image" />
+			<img className="ls-bg" src="https://placehold.it/1900x590/ccc.png" alt="Image" />
 
 			<img className="ls-l"
-			     src="http://placehold.it/700x532/6495ED/FFFFFF.png"
+			     src="https://placehold.it/700x532/6495ED/FFFFFF.png"
 			     alt="Image"
 			     style={imageStyle}
 			     data-ls="offsetxin:100;delayin:1000;offsetyout:0;offsetxout:100;durationin:500" />

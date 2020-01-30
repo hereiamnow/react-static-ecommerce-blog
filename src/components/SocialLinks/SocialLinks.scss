@@ -1,0 +1,19 @@
+.social-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: left;
+    align-items: left;
+    margin: 0;
+    > div {
+        margin: 0 2px;
+        cursor: pointer;
+    }
+}
+.share-count {
+    text-align: center;
+}
+.blog-footer-2 div.social-share {
+    float: right;
+}

@@ -1,11 +1,9 @@
 /**
- * Created by Shawn Miller
- * User: Developer
- * Project: react-static-ecom-blog
- * GitRepo: https://github.com/hereiamnow/react-static-ecom-blog.git
+ * Created by S Miller <hereiamnow@gmail.com>
  * Date: 12/09/2019 10:15 AM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
  * Relative Path: src/components/Slider/LayerSlider/LayerSlider.js
- * Description: Based on Dotted HTML template
  */
 
 import React from 'react'

@@ -1,8 +1,7 @@
 /**
- * Created by Shawn Miller
- * User: Developer
- * Project: react-static-ecom-blog
+ * Created by S Miller <hereiamnow@gmail.com>
  * Date: 12/07/2019 12:52 AM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
  * Relative Path: src/components/IconBox/IconBox.jsx
  */
 import React from 'react'

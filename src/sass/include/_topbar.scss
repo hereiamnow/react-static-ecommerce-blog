@@ -1,0 +1,69 @@
+/**
+ * Created by S Miller <hereiamnow@gmail.com>
+ * Date: 1/29/2020 12:24 PM
+ * Relative Path: src/sass/include/_topbar.scss
+ */
+
+.topbar-1 {
+    width: 100%;
+    height: 40px;
+    background: #444;
+    .topbar-1-inner {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+        height: 40px;
+        padding: 5px 13px;
+    }
+}
+
+.topbar-info-1 {
+    float: right;
+    li {
+        line-height: 30px;
+        color: #fff;
+        margin-right: 25px;
+        span {
+            color: #333;
+        }
+        a {
+            color: #333;
+        }
+    }
+}
+
+.topbar-info-2 {
+    float: right;
+    li {
+        line-height: 30px;
+        color: #444;
+        margin-right: 25px;
+        span {
+            color: #999;
+        }
+        a {
+            color: #999;
+        }
+    }
+}
+
+.topbar-info-3 {
+    float: right;
+    li {
+        line-height: 30px;
+        color: #444;
+        margin-right: 25px;
+        span {
+            color: #999;
+        }
+        a {
+            color: #999;
+        }
+    }
+}
+
+.topbar-info li {
+    display: inline-block;
+    font-size: 11px;
+    font-family: Lato, sans-serif;
+}

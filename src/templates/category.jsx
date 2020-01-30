@@ -2,7 +2,7 @@ import React from 'react';
 import config from '../../data/SiteConfig';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
-import Layout from '../layout';
+import Layout from '../layout/index';
 import SubHeader from '../components/SubHeader/SubHeader';
 import PostListing from '../components/Blog/PostListing';
 import Categories from '../components/Blog/CategoryListing';
@@ -20,9 +20,11 @@ export default class CategoryTemplate extends React.Component {
 
 		return (
 				<Layout>
+
 					<Helmet title={`Posts in category "${category}" | ${config.siteTitle}`} />
 
-					<SubHeader pageTitle={`Posts in category "${category}" | ${config.siteTitle}`} breadcrumb="Categories" />
+					<SubHeader title={`Posts in category "${category}" | ${config.siteTitle}`}
+						crumbLabel="Categories" />
 
 					<section id="main-content">
 						<div className="container">

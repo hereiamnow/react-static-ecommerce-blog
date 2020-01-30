@@ -1,0 +1,83 @@
+/**
+ * Created by S Miller <hereiamnow@gmail.com>
+ * Date: 1/29/2020 12:24 PM
+ * Relative Path: src/sass/include/_copyright.scss
+ */
+
+.warp-copyright-1 {
+    display: block;
+    padding: 15px 0 10px;
+    width: 100%;
+    float: left;
+    color: $color_silver_approx;
+}
+
+#copyright-1 {
+    background: $color_rangoon_green_approx;
+}
+
+.copyright-1 {
+    float: left;
+    list-style: none;
+    li {
+        display: inline-block;
+        padding: 0 15px;
+        position: relative;
+        text-transform:none;
+        a {
+            color: $color_silver_approx;
+            font-family: Oswald, sans-serif;
+            font-weight: 400;
+            &:visited {
+                color: $white_30;
+                text-decoration:underline;
+            }
+            &:hover {
+                color: $white;
+                text-decoration:underline;
+            }
+
+        }
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child::after {
+            display: none;
+        }
+    }
+    li::after {
+        content: "|";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+    }
+}
+
+.text-copyright-2 {
+    float: left;
+    a {
+        color: $white;
+    }
+}
+
+.text-copyright-1 {
+    float: right;
+    alignment: right;
+    text-transform: capitalize;
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+    a {
+        color: $white;
+    }
+}
+
+.warp-copyright-2 {
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: transparent;
+    padding: 30px 0;
+    display: block;
+    float: left;
+    width: 100%;
+}

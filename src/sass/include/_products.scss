@@ -1,0 +1,185 @@
+/**
+ * Created by S Miller <hereiamnow@gmail.com>
+ * Date: 1/29/2020 12:24 PM
+ * Relative Path: src/sass/include/_products.scss
+ */
+
+//selectors .product-sale, .product-new, .product-hot, .product-out-stock
+%extend_product {
+    border-radius: 50%;
+    color: $white;
+    font-size: 11px;
+    font-weight: 600;
+    height: 42px;
+    right: 10px;
+    line-height: 42px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 1px 2px 1px $black_14;
+    top: 10px;
+    width: 42px;
+    z-index: 5;
+    transition: all .4s ease;
+}
+
+//selectors .product-reviews, .product-reviews a
+%extend_reviews {
+    color: $color_slate_gray_approx;
+    float: right;
+    font-size: 13px;
+}
+
+//selectors .product-title h3, .product-title h3 a
+%extend_title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: $color_log_cabin_approx;
+    transition: all 0.3s;
+}
+
+.product {
+    margin-bottom: 40px;
+    position: relative;
+    display: block;
+    width: 33.333%;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    &:hover {
+        border-color: $mercury;
+        .product-overlay {
+            opacity: 0.9;
+            bottom: 0;
+        }
+    }
+    .product-hot {
+        background: $color_amaranth_approx;
+    }
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    > a {
+        transition: all .4s ease;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.product-description {
+    padding: 8px 0 10px;
+}
+
+.product-sale {
+    @extend %extend_product;
+    background: $color_amber_approx;
+}
+
+.product-new {
+    @extend %extend_product;
+    background: $color_robins_egg_blue_approx;
+}
+
+.product-hot {
+    @extend %extend_product;
+}
+
+.product-out-stock {
+    @extend %extend_product;
+}
+
+.product-overlay {
+    position: absolute;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    bottom: -42px;
+    left: 0;
+    z-index: 6;
+    transition: all .4s ease;
+    transition: all .3s ease;
+    a {
+        transition: all .3s ease;
+        color: $white;
+        display: block;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: $color_anzac_approx;
+        text-align: center;
+    }
+}
+
+.product-category {
+    display: block;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    min-height: 35px;
+    width: 74%;
+    h3 {
+        @extend %extend_title;
+        a {
+            @extend %extend_title;
+            &:hover {
+                color: $color_anzac_approx;
+            }
+        }
+        &:hover {
+            color: $color_anzac_approx;
+        }
+    }
+}
+
+.product-reviews {
+    @extend %extend_reviews;
+    a {
+        @extend %extend_reviews;
+    }
+}
+
+.product-price {
+    width: 26%;
+    float: right;
+    margin-bottom: 0;
+    text-align: right;
+    ins {
+        color: $color_tundora_approx;
+        font-size: 1em;
+        margin-bottom: 4px;
+        text-decoration: none;
+    }
+}
+
+.product-rate {
+    height: 23px;
+    float: left;
+    color: $color_amber_approx;
+}
+
+.product-sale-off {
+    background: $color_amber_approx;
+    border-radius: 12px 0 0;
+    bottom: 0;
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    height: 42px;
+    line-height: 42px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-shadow: 1px 2px 1px $black_14;
+    width: 88px;
+    z-index: 5;
+}

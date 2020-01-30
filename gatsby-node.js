@@ -11,11 +11,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === "MarkdownRemark") {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
+    /*console.log("Content Type : " + node.frontmatter.contentType);*/
     if (
       Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, "title")
     ) {
       slug = `/${_.kebabCase(node.frontmatter.title)}`;
+      /*console.log("default: " + node.frontmatter.contentType + ": " + slug);*/
     } else if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
       slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
     } else if (parsedFilePath.dir === "") {
@@ -74,10 +76,6 @@ exports.createPages = async ({ graphql, actions }) => {
     throw markdownQueryResult.errors;
   }
 
-/*	const oldSet = new Set([1, 2]);
-	const newSet = new Set(oldSet);
-	console.log(oldSet === newSet);*/
-
   const tagSet = new Set();
   const categorySet = new Set();
 
@@ -107,7 +105,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   [...Array(pageCount)].forEach((_val, pageNum) => {
     createPage({
-      path: pageNum === 0 ? `/blog/` : `/blog/${pageNum + 1}/`,
+      path: pageNum === 0 ? `/blog` : `/blog/${pageNum + 1}/`,
       component: listingPage,
       context: {
         limit: postsPerPage,
@@ -139,7 +137,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const prevEdge = postsEdges[prevID];
 
     createPage({
-      path: edge.node.fields.slug,
+      path: `/blog${edge.node.fields.slug}`,
       component: postPage,
       context: {
         slug: edge.node.fields.slug,
@@ -154,18 +152,20 @@ exports.createPages = async ({ graphql, actions }) => {
   //  Create tag pages
   tagSet.forEach(tag => {
     createPage({
-      path: `/tags/${_.kebabCase(tag)}/`,
+      path: `/blog/tags/${_.kebabCase(tag)}/`,
       component: tagPage,
       context: { tag }
     });
+	  /*console.log("gatsby-node.js, Tag Created: " + tag)*/
   });
 
   // Create category pages
   categorySet.forEach(category => {
     createPage({
-      path: `/categories/${_.kebabCase(category)}/`,
+      path: `/blog/categories/${_.kebabCase(category)}/`,
       component: categoryPage,
       context: { category }
     });
+    /*console.log("gatsby-node.js, Category Created: " + category)*/
   });
 };

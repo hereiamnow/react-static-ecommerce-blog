@@ -1,0 +1,26 @@
+/**
+ * Created by S Miller <hereiamnow@gmail.com>
+ * Date: 1/29/2020 12:24 PM
+ * Relative Path: src/sass/include/_gatsby.scss
+ */
+
+* { box-sizing: border-box;}
+
+html { height: 100%;}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#___gatsby #gatsby-focus-wrapper {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.layout-container {
+    min-height: 100vh;
+    min-width: 100vw;
+}

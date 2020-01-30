@@ -1,9 +1,8 @@
 /**
- * Created by Shawn Miller
- * User: Developer
- * Project: react-static-ecom-blog
- * GitRepo:
+ * Created by S Miller <hereiamnow@gmail.com>
  * Date: 12/09/2019 3:33 PM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo:
  * Relative Path: src/components/RecentBlog/RecentBlog.jsx
  * Description: Based on Dotted HTML template
  */
@@ -32,8 +31,8 @@ function getData () {
 			'postedBy': 'Shawn Miller',
 			'theText': 'Congress may delegate discretion to the Executive if it supplies an intelligible principle: by defining the general policy, the official to whom authority is delegated, and the limits of the delegated authority',
 			'fileURL': 'documents/433909258-20191106-mtd-memo.pdf',
-			'thumbnailSmall': 'http://placehold.it/20x24/FFFAFA.png',
-			'thumbnailLarge': 'http://placehold.it/640x640/FFFAFA.png',
+			'thumbnailSmall': 'https://placehold.it/20x24/FFFAFA.png',
+			'thumbnailLarge': 'https://placehold.it/640x640/FFFAFA.png',
 			'category': 'Litigation',
 			'comments': '12'
 		}, {
@@ -45,8 +44,8 @@ function getData () {
 			'postedBy': 'admin',
 			'theText': 'Defendants have announced their intent to clear the market of more than 90% of the products Plaintiffs sell within 30 days of the announcement of a revised policy,and that announcement has been promised such that it may come at any moment now.',
 			'fileURL': 'documents/431916164-20191023-response-in-oppo-to-govt.pdf',
-			'thumbnailSmall': 'http://placehold.it/20x24/FFFAFA.png',
-			'thumbnailLarge': 'http://placehold.it/640x640/FFFAFA.png',
+			'thumbnailSmall': 'https://placehold.it/20x24/FFFAFA.png',
+			'thumbnailLarge': 'https://placehold.it/640x640/FFFAFA.png',
 			'category': 'Litigation',
 			'comments': '12'
 		}, {
@@ -58,8 +57,8 @@ function getData () {
 			'postedBy': 'admin',
 			'theText': 'Defendants have announced their intent to clear the market of more than 90% of the products Plaintiffs sell within 30 days of the announcement of a revised policy,and that announcement has been promised such that it may come at any moment now.',
 			'fileURL': 'public/documents/435017530-111319-reply-usva.pdf',
-			'thumbnailSmall': 'http://placehold.it/20x24/FFFAFA.png',
-			'thumbnailLarge': 'http://placehold.it/640x640/FFFAFA.png',
+			'thumbnailSmall': 'https://placehold.it/20x24/FFFAFA.png',
+			'thumbnailLarge': 'https://placehold.it/640x640/FFFAFA.png',
 			'category': 'Litigation',
 			'comments': '12'
 		}, {
@@ -71,8 +70,8 @@ function getData () {
 			'postedBy': 'admin',
 			'theText': 'Defendants have announced their intent to clear the market of more than 90% of the products Plaintiffs sell within 30 days of the announcement of a revised policy,and that announcement has been promised such that it may come at any moment now.',
 			'fileURL': 'public/documents/435017530-111319-reply-usva.pdf',
-			'thumbnailSmall': 'http://placehold.it/20x24/FFFAFA.png',
-			'thumbnailLarge': 'http://placehold.it/640x640/FFFAFA.png',
+			'thumbnailSmall': 'https://placehold.it/20x24/FFFAFA.png',
+			'thumbnailLarge': 'https://placehold.it/640x640/FFFAFA.png',
 			'category': 'Litigation',
 			'comments': '12'
 		}, {
@@ -84,8 +83,8 @@ function getData () {
 			'postedBy': 'admin',
 			'theText': 'Defendants have announced their intent to clear the market of more than 90% of the products Plaintiffs sell within 30 days of the announcement of a revised policy,and that announcement has been promised such that it may come at any moment now.',
 			'fileURL': 'public/documents/435017530-111319-reply-usva.pdf',
-			'thumbnailSmall': 'http://placehold.it/20x24/FFFAFA.png',
-			'thumbnailLarge': 'http://placehold.it/640x640/FFFAFA.png',
+			'thumbnailSmall': 'https://placehold.it/20x24/FFFAFA.png',
+			'thumbnailLarge': 'https://placehold.it/640x640/FFFAFA.png',
 			'category': 'Litigation',
 			'comments': '12'
 		}

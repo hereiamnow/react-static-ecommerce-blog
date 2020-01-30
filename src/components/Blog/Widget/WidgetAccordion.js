@@ -1,11 +1,10 @@
 /**
  * Created by S Miller <hereiamnow@gmail.com>
- * User: Developer
- * Project: https://react-static-ecom-blog.netlify.com
- * GitRepo: https://github.com/hereiamnow/react-static-ecom-blog.git
  * Date: 12/23/2019 01:44 AM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
  * Relative Path: src/components/Blog/Widget/WidgetAccordion.js
- * Description: HTML & CSS based on Dotted HTML Blog layout.
+ * Description: A Responsive HTML and CSS site built for Gatsby :)
  */
 
 import React from "react";

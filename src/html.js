@@ -7,25 +7,21 @@ export default function HTML (props) {
 			<head>
 				<meta charSet="utf-8" />
 				<meta httpEquiv="x-ua-compatible" content="ie=edge" />
-				<meta
-						name="viewport"
-						content="width=device-width, initial-scale=1, shrink-to-fit=no"
+				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
 				/>
+				{/* Bootstrap & Google Fonts */}
+				<link rel="stylesheet" href="/css/bootstrap/3.3.6/bootstrap.css"/>
+				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,700,300"/>
+				<link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic"/>
 				{props.headComponents}
-
-				{/*jquery import - works, maybe*/}
-				{/*<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-				        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-				        crossOrigin="anonymous"
-				/>*/}
+				<link rel="shortcut icon" href="/favicon.png"/>
 			</head>
-
 			<body {...props.bodyAttributes}>
 
 			{props.preBodyComponents}
 
 			<noscript key="noscript" id="gatsby-noscript">
-				This app works best with JavaScript enabled.
+				This app works best with JavaScript enabled. :)
 			</noscript>
 
 			<div
@@ -35,37 +31,6 @@ export default function HTML (props) {
 			/>
 
 			{props.postBodyComponents}
-			{/*jQuery v2.2.4*/}
-			<script src="/js/vendor/jquery.min.js"></script>
-			{/*Bootstrap 3.3.6*/}
-			<script src="/js/vendor/bootstrap.js"></script>
-
-			{/*jQuery mmenu v5.6.5*/}
-			<script type="text/javascript" src="js/plugins/jquery.mmenu.all.min.js"></script>
-			<script type="text/javascript" src="js/site/mobilemenu.js"></script>
-
-			{/*GreenSock*/}
-			<script type="text/javascript" src="/layerslider/js/greensock.js"></script>
-
-			{/*LayerSlider Library and init*/}
-			<script type="text/javascript" src="/layerslider/js/layerslider.transitions.js"></script>
-			<script type="text/javascript" src="/layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
-			<script type="text/javascript" src="/js/site/layerslider.js"></script>
-
-			{/*Owl Carousel Library and init*/}
-			<script src="/js/plugins/owl.carousel.js"></script>
-			<script src="/js/site/owl.js"></script>
-
-			{/*PreLoader Library*/}
-			<script type="text/javascript" src="/js/plugins/royal_preloader.js"></script>
-
-			{/*Bx Slider Library and init*/}
-			<script src="/js/plugins/jquery.bxslider.min.js"></script>
-			<script src="/js/site/bx-blog.js"></script>
-
-			{/*Global Js initialize jquery libraries*/}
-			<script src="/js/site/template.js"></script>
-
 			</body>
 			</html>
 	)

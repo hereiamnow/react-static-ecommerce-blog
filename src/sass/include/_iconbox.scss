@@ -1,0 +1,160 @@
+/**
+ * Created by S Miller <hereiamnow@gmail.com>
+ * Date: 1/29/2020 12:24 PM
+ * Relative Path: src/sass/include/_iconbox.scss
+ */
+
+//colors
+$mercury: #e5e5e5;
+$color_tundora_approx: #4f4045;
+$color_anzac_approx: #deb152;
+$color_mountain_mist_approx: #999;
+$color_alabaster_approx: #fbfbfb;
+$white: #fff;
+
+.iconbox-set-1-warp {
+    margin-top: 70px;
+}
+
+.iconbox-set-2-warp {
+    margin-top: 70px;
+}
+
+.iconbox-set-1 {
+    padding: 30px 20px;
+    border: 1px solid $mercury;
+    text-align: center;
+    h4 {
+        margin-top: 20px;
+        font-family: 'Oswald', 'sans-serif';
+        font-weight: 300;
+    }
+    a {
+        margin-top: 12px;
+    }
+    p {
+        margin-top: 30px;
+    }
+    &:hover .icon-1 {
+        background: $color_tundora_approx;
+    }
+}
+
+.icon-1 {
+    width: 120px;
+    height: 120px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: $mercury;
+    border-radius: 50%;
+    line-height: 120px;
+    text-align: center;
+    margin: 0 auto;
+    transition: all 0.3s;
+    i {
+        font-size: 44px;
+        color: $color_anzac_approx;
+    }
+}
+
+.des-text {
+    font-size: 16px;
+    font-style: italic;
+    padding-top: 20px;
+}
+
+.iconbox-set-2 {
+    padding: 30px 20px;
+    border: 1px solid $mercury;
+    position: relative;
+    float: left;
+    width: 100%;
+    h4 {
+        margin-top: 10px;
+        margin-left: 150px;
+    }
+    a {
+        margin-top: 12px;
+        margin-left: 150px;
+        display: inline-block;
+        float: left;
+        margin-top: 0;
+    }
+    .ot-btn {
+        margin-top: 20px;
+    }
+    .icon-1 {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        transition: all 0.6s;
+    }
+    p.sub-text {
+        margin-top: 12px;
+        margin-left: 150px;
+        display: inline-block;
+        float: left;
+        margin-top: 0;
+        color: $color_mountain_mist_approx;
+        font-size: 12px;
+        font-style: italic;
+    }
+    &:hover .icon-1 {
+        background-color: $color_tundora_approx;
+    }
+}
+
+.iconbox-set-3 {
+    position: relative;
+    margin: 15px 0;
+    float: left;
+    width: 100%;
+    h4 {
+        margin-left: 90px;
+        margin-top: 0;
+    }
+    p {
+        margin-top: 12px;
+        margin-left: 90px;
+        display: inline-block;
+        float: left;
+        margin-top: 0;
+    }
+    &:hover .icon-2 {
+        background: $color_anzac_approx;
+        i {
+            color: $white !important;
+        }
+    }
+}
+
+.icon-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    line-height: 72px;
+    text-align: center;
+    transition: all 0.3s;
+    i {
+        font-size: 22px;
+        transition: all 0.3s;
+    }
+}
+
+.iconbox {
+    transition: all 0.6s;
+    &:hover {
+        background: $color_alabaster_approx;
+        .hover-text-theme {
+            color: $color_anzac_approx;
+        }
+    }
+    .hover-text-theme {
+        transition: all 0.6s;
+    }
+}

@@ -1,0 +1,186 @@
+/**
+ * Created by S Miller <hereiamnow@gmail.com>
+ * Date: 1/29/2020 12:24 PM
+ * Relative Path: src/sass/include/_basic.scss
+ */
+
+//fonts
+$font_0 :'Oswald';
+$font_1 :'sans-serif';
+$font_2 :'Lato';
+$font_3 :'sans-serif';
+
+::-moz-selection{
+    background :#deb152;
+    color      :#fff;
+}
+
+
+::selection{
+    background :#deb152;
+    color      :#fff;
+}
+
+
+::-moz-selection{
+    background :#deb152;
+    color      :#fff;
+}
+
+
+h1{
+    font-size   :40px;
+    line-height :1.2;
+    margin-top  :0;
+    color       :$color_tundora_approx;
+    font-family :$font_0, $font_1;
+}
+
+
+h2{
+    font-size   :36px;
+    line-height :1.2;
+    margin-top  :0;
+    color       :$color_tundora_approx;
+    font-family :$font_0, $font_1;
+}
+
+
+h3{
+    font-size   :24px;
+    line-height :1.2;
+    margin-top  :0;
+    color       :$color_tundora_approx;
+    font-family :$font_0, $font_1;
+    font-weight :300;
+}
+
+
+h4{
+    font-size   :18px;
+    line-height :1.2;
+    margin-top  :0;
+    color       :$color_tundora_approx;
+    font-family :$font_0, $font_1;
+    font-weight :300;
+}
+
+
+h5{
+    font-size   :15px;
+    line-height :1.2;
+    margin-top  :0;
+    color       :$color_tundora_approx;
+    font-family :$font_0, $font_1;
+}
+
+
+h6{
+    font-size   :12px;
+    line-height :1.2;
+    margin-top  :0;
+    color       :$color_tundora_approx;
+    font-family :$font_0, $font_1;
+}
+
+
+a{
+    text-decoration :none;
+    &:hover{
+        text-decoration :none;
+        outline         :none;
+        text-decoration :none;
+    }
+    &:focus{
+        outline         :none;
+        text-decoration :none;
+    }
+}
+
+
+ul{
+    padding-left :0;
+    margin       :0;
+}
+
+
+body{
+    font-family :$font_2, $font_3;
+    font-size   :13px;
+    line-height :20px;
+    color       :$color_storm_dust_approx;
+}
+
+
+p{
+    margin-bottom :0;
+}
+
+
+section{
+    padding    :70px 0;
+    overflow-x :hidden;
+}
+
+
+/* background & Overlay */
+
+.bg-light-grey{
+    background :#f2f2f2;
+}
+
+
+.bg-mid-grey{
+    background-color :rgba(34, 34, 34, 0.8);
+}
+
+
+.bg-dark-grey{
+    background :#222;
+}
+
+
+.bg-overlay-img-1{
+    background              :url(/images/pages/testimonials/bg-overlay-img.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size :cover;
+    background-size         :cover;
+    position                :absolute;
+    top                     :0;
+    left                    :0;
+    right                   :0;
+    bottom                  :0;
+    z-index                 :0;
+    width                   :100%;
+}
+
+
+.bg-white{
+    background :#fff;
+}
+
+
+.bg-overlay-img-2{
+    background              :url(/images/pages/demo/bg-overlay-2.jpg) no-repeat fixed;
+    -webkit-background-size :cover;
+    background-size         :cover;
+    position                :absolute;
+    top                     :0;
+    left                    :0;
+    right                   :0;
+    bottom                  :0;
+    z-index                 :0;
+    width                   :100%;
+}
+
+
+.bg-overlay-color{
+    background :rgba(222, 177, 82, 0.8);
+    position   :absolute;
+    top        :0;
+    left       :0;
+    right      :0;
+    bottom     :0;
+    z-index    :0;
+    width      :100%;
+    height     :100%;
+}

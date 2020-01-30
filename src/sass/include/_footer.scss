@@ -1,0 +1,181 @@
+/**
+ * Created by S Miller <hereiamnow@gmail.com>
+ * Date: 1/29/2020 12:24 PM
+ * Relative Path: src/sass/include/_footer.scss
+ */
+
+footer {
+    padding: 70px 0;
+    background: $color_log_cabin_approx;
+    color: $color_concrete_approx;
+    h3 {
+        color: $white;
+    }
+}
+
+.widget-footer {
+    margin-bottom: 0;
+    .title-inline a {
+        color: $white;
+        &:visited {
+            color: $white;
+        }
+        &:hover {
+            color: $white;
+            text-decoration: underline;
+        }
+        &:active {
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.widget-footer-blog {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    .ot-btn {
+        float: left;
+    }
+}
+
+.useful-link {
+    display: block;
+    list-style: none;
+    width: 100%;
+    clear: both;
+    margin-top: 40px;
+    li {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid $white_10;
+        padding: 12px 0;
+        a {
+            color: $color_mountain_mist_approx;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $white;
+            }
+        }
+        &:last-child {
+            border: 0;
+        }
+    }
+}
+
+.footer-v1 {
+    .text-about {
+        margin-top: 14px;
+    }
+    .contact-f1 {
+        display: block;
+        width: 100%;
+        clear: both;
+        margin-top: 12px;
+        float: left;
+        a {
+            color: $color_mountain_mist_approx;
+            transition: all 0.3s;
+            &:hover {
+                color: $white;
+            }
+        }
+        img {
+            width: 100%;
+            max-width: 100%;
+            margin-top: 25px;
+        }
+    }
+    .contact-f2 {
+        display: block;
+        width: 100%;
+        clear: both;
+        margin-top: 12px;
+        float: left;
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                width: 100%;
+                padding: 12px 0;
+                color: $color_mountain_mist_approx;
+                border-bottom: 1px solid $white_10;
+                a {
+                    color: $color_mountain_mist_approx;
+                    transition: slow;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+                i {
+                    color: $color_anzac_approx;
+                    margin-right: 5px;
+                }
+                &:last-child {
+                    border: 0;
+                }
+            }
+        }
+    }
+    .ot-btn:hover {
+        background: $white;
+        color: $color_tundora_approx;
+    }
+}
+
+.footer-v2 {
+    .title-warp {
+        display: block;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .flickr-warp {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+        float: left;
+        img {
+            display: inline-block;
+            width: 75px;
+            height: 75px;
+            float: left;
+            margin: 0 5px 5px 0;
+        }
+    }
+    .footer-tag {
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        li a {
+            display: inline-block;
+            float: left;
+            line-height: 28px;
+            padding: 0 20px;
+            background: $color_masala_approx;
+            color: $color_mountain_mist_approx;
+            transition: all 0.3s;
+            margin-right: 5px;
+            font-style: italic;
+            margin-bottom: 5px;
+            &:hover {
+                background: $color_mine_shaft_approx;
+                color: $white;
+            }
+        }
+    }
+}
+
+.footer-v3 {
+    position: relative;
+    overflow-y: hidden;
+    .widget-footer-list-link {
+        width: 25%;
+        padding-right: 30px;
+        display: inline-block;
+        float: left;
+    }
+}

@@ -1,11 +1,10 @@
 /**
  * Created by S Miller <hereiamnow@gmail.com>
- * User: Developer
- * Project: https://react-static-ecom-blog.netlify.com
- * GitRepo: https://github.com/hereiamnow/react-static-ecom-blog.git
  * Date: 12/23/2019 12:33 AM
- * Relative Path: src/components/Blog/BlogGalleryFeatureImg.js
- * Description: HTML & CSS based on Dotted HTML Blog layout.
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
+ * Relative Path: src/components/Blog/proof/types/BlogGalleryFeatureImg.js
+ * Description: A Responsive HTML and CSS site built for Gatsby :)
  */
 
 import React from "react";
@@ -24,28 +23,28 @@ class BlogGalleryFeatureImg extends React.Component {
             >
               <div className="item">
                 <img
-                  src="http://placehold.it/850x250/ccc.jpg"
+                  src="https://placehold.it/850x250/ccc.jpg"
                   className="img-responsive"
                   alt="Image"
                 />
               </div>
               <div className="item">
                 <img
-                  src="http://placehold.it/850x250/ccc.jpg"
+                  src="https://placehold.it/850x250/ccc.jpg"
                   className="img-responsive"
                   alt="Image"
                 />
               </div>
               <div className="item">
                 <img
-                  src="http://placehold.it/850x250/ccc.jpg"
+                  src="https://placehold.it/850x250/ccc.jpg"
                   className="img-responsive"
                   alt="Image"
                 />
               </div>
               <div className="item">
                 <img
-                  src="http://placehold.it/850x250/ccc.jpg"
+                  src="https://placehold.it/850x250/ccc.jpg"
                   className="img-responsive"
                   alt="Image"
                 />
@@ -62,7 +61,7 @@ class BlogGalleryFeatureImg extends React.Component {
               </div>
               <div className="blog-type">
                 <img
-                  src="http://placehold.it/24x20/ccc.jpg"
+                  src="https://placehold.it/24x20/ccc.jpg"
                   className="img-responsive"
                   alt="Image"
                 />

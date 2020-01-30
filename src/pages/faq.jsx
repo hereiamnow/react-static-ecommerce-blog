@@ -1,9 +1,8 @@
 /**
- * Created by Shawn Miller
- * User: Developer
- * Project: react-static-ecom-blog
- * GitRepo: https://github.com/hereiamnow/react-static-ecom-blog.git
+ * Created by S Miller <hereiamnow@gmail.com>
  * Date: 12/05/2019 9:29 PM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
  * Relative Path: src/pages/faq.jsx
  */
 
