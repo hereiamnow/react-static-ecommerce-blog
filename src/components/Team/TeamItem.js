@@ -7,7 +7,7 @@ class TeamItem extends React.Component {
         <div className="team-item-img-container">
           <Link href="team-single.html">
             <img
-              src="http://placehold.it/400x400/ccc.jpg"
+              src="https://placehold.it/400x400/ccc.png"
               className="img-responsive"
               alt="Image"
             />
@@ -18,7 +18,7 @@ class TeamItem extends React.Component {
             </Link>
             <Link
               className="single-img-popup"
-              href="http://placehold.it/400x400/ccc.jpg"
+              href="https://placehold.it/400x400/ccc.png"
             >
               <i className="fa fa-expand hover-border-theme " />
             </Link>

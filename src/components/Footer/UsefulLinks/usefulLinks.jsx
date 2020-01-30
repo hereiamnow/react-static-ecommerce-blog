@@ -1,9 +1,8 @@
 /**
- * Created by Shawn Miller
- * User: Developer
- * Project: react-static-ecom-blog
- * GitRepo:
+ * Created by S Miller <hereiamnow@gmail.com>
  * Date: 12/05/2019 1:12 AM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo:
  * Relative Path: src/components/Footer/UsefulLinks/usefulLinks.js
  * Description: Component is a child of the Footer component.
  */
@@ -31,11 +30,11 @@ function getDataFromSource () {
 			'title': 'Donate'
 		}, {
 			'id': 'terms',
-			'url': '/terms-of-service',
+			'url': '/legal/terms-of-service',
 			'title': 'Terms of Service'
 		}, {
 			'id': 'privacy',
-			'url': '/privacy-policy',
+			'url': '/legal/privacy-policy',
 			'title': 'Privacy Policy'
 		}
 	]

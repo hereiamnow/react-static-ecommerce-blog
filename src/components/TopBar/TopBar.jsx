@@ -1,9 +1,8 @@
 /**
  * Created by S Miller <hereiamnow@gmail.com>
- * User: Developer
- * Project: https://react-static-ecom-blog.netlify.com
- * GitRepo: https://github.com/hereiamnow/react-static-ecom-blog.git
  * Date: 12/20/2019 2:12 AM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
  * Relative Path: src/components/TopBar/TopBar.js
  * Description:
  */

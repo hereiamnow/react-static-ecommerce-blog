@@ -1,9 +1,8 @@
 /**
- * Created by Shawn Miller
- * User: Developer
+ * Created by S Miller <hereiamnow@gmail.com>
+ * Date: 12/6/2019 12:37 PM
  * Project: The USVA Demo
  * Filename: components/SubFooter/SubFooter.js
- * Date: 12/6/2019 12:37 PM
  */
 
 import React from 'react'
@@ -15,62 +14,57 @@ function getDataFromSource () {
 		{
 			'id': 'home',
 			'url': '/',
-			'title': 'HOME'
+			'title': 'Home'
 		}, {
-			'id': 'apparel',
-			'url': '/apparel',
-			'title': 'APPAREL'
+			'id': 'swag',
+			'url': '/coming-soon',
+			'title': 'Swag'
 		}, {
 			'id': 'membership',
 			'url': '/membership',
-			'title': 'MEMBERSHIP'
+			'title': 'Membership'
 		},
 		{
 			'id': 'donate',
 			'url': '/donate',
-			'title': 'DONATE'
+			'title': 'Donate'
 		}, {
 			'id': 'terms',
-			'url': '/terms-of-service',
-			'title': 'TERMS OF SERVICE'
+			'url': '/legal/terms-of-service',
+			'title': 'Terms Of Service'
 		}, {
 			'id': 'privacy',
-			'url': '/privacy-policy',
-			'title': 'PRIVACY POLICY'
+			'url': '/legal/privacy-policy',
+			'title': 'Privacy Policy'
+		}, {
+			'id': 'contact',
+			'url': '/contact',
+			'title': 'Contact'
 		}
+
 	]
 }
 
 const SubFooter = (props) => (
-
 		<section className="no-padding" id="copyright-1">
-
 			<div className="container">
-
 				<div className="row">
-
 					<div className="warp-copyright-1">
-
 						<ul className="copyright-1">
-							{getDataFromSource().map(data => (
-									<li key={data.id}>
+							{getDataFromSource().map((data, index) => (
+									<li key={index}>
 										<Link to={data.url} title={data.title}>
 											{data.title}
 										</Link>
 									</li>
 							))}
 						</ul>
-
 						<p className="text-copyright-1">
 							{config.siteCopyright}
 						</p>
-
 					</div>
-
 				</div>
-
 			</div>
-
 		</section>
 )
 

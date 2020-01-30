@@ -1,14 +1,14 @@
 /**
- * Created by Shawn Miller
- * User: Developer
- * Project: react-static-ecom-blog
- * GitRepo:
+ * Created by S Miller <hereiamnow@gmail.com>
  * Date: 12/05/2019 9:29 PM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
  * Relative Path: src/components/Subscribe/Subscribe.js
  * Description: Based on Dotted HTML template
  */
 
 import React from 'react'
+import "./Subscribe.scss"
 
 /* Based on Dotted HTML template*/
 export class Subscribe extends React.Component {

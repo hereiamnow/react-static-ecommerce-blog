@@ -1,9 +1,8 @@
 /**
- * Created by Shawn Miller
- * User: Developer
- * Project: react-static-ecom-blog
- * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog
+ * Created by S Miller <hereiamnow@gmail.com>
  * Date: 12/05/2019 12:29 AM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog
  * Relative Path: src/components/Footer/RecentPosts/RecentPosts.jsx
  * Description: Component is a child of the Footer component.
  */

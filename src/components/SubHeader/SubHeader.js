@@ -1,52 +1,31 @@
 /**
- * Created by Shawn Miller
- * User: Developer
- * Project: react-static-ecom-blog
- * GitRepo:
+ * Created by S Miller <hereiamnow@gmail.com>
  * Date: 11/23/2019 7:41 PM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
  * Relative Path: src/components/SubHeader/SubHeader.jsx
  */
 
 import React from 'react'
 import {Link} from 'gatsby'
-import config from "../../../data/SiteConfig"
 
-export class SubHeader extends React.Component {
-
-	render () {
-
-		/*console.log (this.props)*/
-
+export const SubHeader =({location, title, crumbLabel, crumbLink})=> {
 		return (
 				<section id="subheader" className="no-padding sub-header-border">
-
 					<div className="container">
-
 						<div className="row">
-
 							<div className="sub-header-warp">
-
-								<h3 className="title-subheader">{this.props.pageTitle}</h3>
-
+								<h3 className="title-subheader">{title}</h3>
 								<ol className="breadcrumb">
 									<li>You are here:</li>
-									<li>
-										<Link to="/">
-											 Home
-										</Link>
-									</li>
-									<li className="active">{this.props.breadcrumb}</li>
+									<li><Link to={'/index'}>Home</Link></li>
+									<li className="active"><Link to={crumbLink}>{crumbLabel}</Link></li>
 								</ol>
-
 							</div>
-
 						</div>
-
 					</div>
-
 				</section>
 		);
-	}
 }
 
 export default SubHeader

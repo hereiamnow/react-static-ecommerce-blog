@@ -1,33 +1,17 @@
 /**
- * Created by Shawn Miller
- * User: Developer
- * Project: react-static-ecom-blog
- * GitRepo: https://github.com/hereiamnow/react-static-ecom-blog.git
+ * Created by S Miller <hereiamnow@Gmail.com>
  * Date: 12/07/2019 9:19 AM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
  * Relative Path: src/components/CTA/Action01/Action01.js
  * Description: Simple Call to Action Page Section
  */
 
-import React, { Component } from 'react'
+import React  from 'react'
 import { Link } from 'gatsby'
 import './style.css'
 
-class Action01 extends Component {
-
-	// constructor(props){
-	// super(props);
-	// this.state = {};
-	// }
-
-	// componentWillMount(){}
-	// componentDidMount(){}
-	// componentWillUnmount(){}
-
-	// componentWillReceiveProps(){}
-	// shouldComponentUpdate(){}
-	// componentWillUpdate(){}
-	// componentDidUpdate(){}
-
+class Action01 extends React.Component {
 	render () {
 		return (
 				<section id="call" className="bg-light-grey">

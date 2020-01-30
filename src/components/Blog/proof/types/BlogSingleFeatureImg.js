@@ -1,11 +1,10 @@
 /**
  * Created by S Miller <hereiamnow@gmail.com>
- * User: Developer
- * Project: https://react-static-ecom-blog.netlify.com
- * GitRepo: https://github.com/hereiamnow/react-static-ecom-blog.git
  * Date: 12/23/2019 12:42 AM
- * Relative Path: src/components/Blog/BlogSingleFeatureImg.js
- * Description: HTML & CSS based on Dotted HTML Blog layout.
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
+ * Relative Path: src/components/Blog/proof/types/BlogSingleFeatureImg.js
+ * Description: A Responsive HTML and CSS site built for Gatsby :)
  */
 
 import React from "react";
@@ -17,7 +16,7 @@ class BlogSingleFeatureImg extends React.Component {
         <div className="blog-feature-warp">
 	      <a href="blog-single.html">
 		      <img
-				      src="http://placehold.it/850x250/ccc.jpg"
+				      src="https://placehold.it/850x250/ccc.jpg"
 				      className="img-responsive"
 				      alt="Image"
 		      />
@@ -32,7 +31,7 @@ class BlogSingleFeatureImg extends React.Component {
               </div>
               <div className="blog-type">
                 <img
-                  src="http://placehold.it/20x24/ccc.jpg"
+                  src="https://placehold.it/20x24/ccc.jpg"
                   className="img-responsive"
                   alt="Image"
                 />

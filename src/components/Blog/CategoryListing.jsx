@@ -1,11 +1,10 @@
 /**
  * Created by S Miller <hereiamnow@gmail.com>
- * User: Developer
- * Project: https://react-static-ecom-blog.netlify.com
- * GitRepo: https://github.com/hereiamnow/react-static-ecom-blog.git
  * Date: 12/23/2019 01:46 AM
- * Relative Path: src/components/Blog/CategoryListing.jsx
- * Description: HTML & CSS based on Dotted HTML Blog layout.
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
+ * Relative Path: src/components/Blog/CategoryListing.js
+ * Description: A Responsive HTML and CSS site built for Gatsby :)
  */
 
 import React from 'react';
@@ -32,11 +31,6 @@ const CategoryListing = () => (
 									<span className="count">0</span>
 								</li>
 						))}
-
-						<li>
-							<Link className="hover-text-theme">page totals: </Link>
-							<span className="count">{data.allMarkdownRemark.totalCount}</span>
-						</li>
 					</ul>
 				</div>
 		)} />

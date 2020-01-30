@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import _ from "lodash";
 import { Link } from "gatsby";
-import "./style/post-tags.css"
+import "./style/style.css"
 
 class PostTags extends Component {
   render() {

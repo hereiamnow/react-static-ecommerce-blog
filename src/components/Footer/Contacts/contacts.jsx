@@ -1,66 +1,48 @@
 /**
- * Created by Shawn Miller
- * User: Developer
- * Project: react-static-ecom-blog
- * GitRepo:
+ * Created by S Miller <hereiamnow@gmail.com>
+ * Project: react-static-ecommerce-blog - a site built for gatsby
  * Date: 12/05/2019 12:22 AM
+ * GitRepo:
  * Relative Path: src/components/Footer/Contacts/contacts.jsx
  * Description: Component is a child of the Footer component.
  */
 
-/* Based on Dotted HTML template. See copyrights in readme.md */
 import React, { Component } from 'react';
-import config from "../../../../data/SiteConfig"
-import './style.css';
+import { Link } from 'gatsby';
+import GoogleMap from '../../../components/GoogleMap';
+import config from '../../../../data/SiteConfig';
 
-const URL_TELE = 'tel:' + config.companyTelephone
-const URL_FAX = 'fax:' + config.companyFax
-const URL_EMAIL = 'mailto:' + config.emailSupport
+const URL_TELE = 'tel:' + config.companyTelephone;
+const URL_FAX = 'fax:' + config.companyFax;
+const URL_EMAIL = 'mailto:' + config.emailSupport;
 
 class Contacts extends Component {
-
-/*
-	constructor (props) {
-		super(props)
-		this.state = {}
+	render () {
+		const divStyle = {
+			marginTop: '10px',
+			height: 'auto',
+			padding: '0',
+			border: '1px solid #e5e5e5'
+		};
+		const mapCanvas = {
+			height: '160px'
+		};
+		return (
+			<div className="widget widget-footer">
+				<div className="title-warp">
+					<h3 className="title-inline"><Link to={'/contact'}>Contact Us</Link></h3>
+				</div>
+				<div className="contact-f1">
+					<p>Telephone: <Link href={URL_TELE}>{config.companyTelephone}</Link></p>
+					<p>Fax: <Link href={URL_FAX}>{config.companyFax}</Link></p>
+					<p>E-mail: <Link href={URL_EMAIL}>{config.emailSupport}</Link></p>
+					<div className="map-warp" style={divStyle}>
+						<GoogleMap id={'map-canvas'} style={mapCanvas} />
+					</div>
+				</div>
+			</div>
+		);
 	}
-*/
-/*
-	componentWillMount () {}
-*/
-/*
-	componentDidMount () {}
-*/
-/*
-	componentWillUnmount () {}
-*/
-/*
-	componentWillReceiveProps () {}
-*/
-/*
-	shouldComponentUpdate () {}
-*/
-/*
-	componentWillUpdate () {}
-*/
-/*
-	componentDidUpdate () {}
-*/
-
-  render() {
-    return (
-		    <div className="widget widget-footer">
-			    <div className="title-warp">
-				    <h3 className="title-inline">Contacts</h3>
-			    </div>
-			    <div className="contact-f1">
-				    <p>Telephone: <a href={URL_TELE}>{config.companyTelephone}</a></p>
-				    <p>Fax: <a href={URL_FAX}>{config.companyFax}</a></p>
-				    <p>E-mail: <a href={URL_EMAIL}>{config.emailSupport}</a></p>
-				    <img className="img-responsive" alt="Image" src="http://placehold.it/270x152/DEB152/FFFFFF.png" /></div>
-		    </div>
-    );
-  }
 }
 
 export default Contacts;

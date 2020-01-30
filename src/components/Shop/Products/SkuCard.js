@@ -1,10 +1,9 @@
 /**
  * Created by S Miller <hereiamnow@gmail.com>
- * User: Developer
- * Project: https://react-static-ecom-blog.netlify.com
- * GitRepo: https://github.com/hereiamnow/react-static-ecom-blog.git
  * Date: 12/22/2019 12:04 AM
- * Relative Path: ${FILE_NAME}
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
+ * Relative Path: src/components/Shop/Products/SkuCard.js
  * Description:
  */
 import React, { Component } from 'react';

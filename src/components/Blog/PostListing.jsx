@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import BlogSingleFeatureImg from './proof/types/BlogSingleFeatureImg.js';
+import "./style/style.css"
 
 const _ = require('lodash');
 const moment = require('moment');
@@ -11,7 +12,7 @@ class PostListing extends React.Component {
 		const postList = [];
 		this.props.postEdges.forEach(postEdge => {
 			postList.push({
-				path: postEdge.node.fields.slug,
+				path: `blog` + postEdge.node.fields.slug,
 				tags: postEdge.node.frontmatter.tags,
 				cover: postEdge.node.frontmatter.cover,
 				title: postEdge.node.frontmatter.title,
@@ -30,11 +31,12 @@ class PostListing extends React.Component {
 		return (
 				<div>
 					{postList.map(post => (
-							<div className="item-blog blog-single-feature-img">
-								{/*Post Big Image*/}
+							<div key={post.title} className="item-blog blog-single-feature-img">
+
 								<div className="blog-feature-warp">
 									<Link to={post.path} key={post.title}>
-										<img src={post.cover} className="img-responsive" alt="Image" /> </Link>
+										<img src={post.cover} className="img-responsive" alt="Image" />
+									</Link>
 								</div>
 
 								<div className="blog-feature-content">
@@ -44,23 +46,21 @@ class PostListing extends React.Component {
 										<div className="blog-data">
 
 											<div className="date-time bg-theme">
-
-												{/*DATE-TIME * DAY/MONTH*/}
-												<span className="date">15</span>
-												<span className="month">MAY</span>
-
+												<span className="date">{moment(post.date).format("D")}</span>
+												<span className="month">{moment(post.date).format("MMM")}</span>
+												<span className="year">{moment(post.date).format("YYYY")}</span>
 											</div>
 
 											<div className="blog-type">
 												{/*Small Image*/}
-												<img src="http://placehold.it/20x24/CCC.png" className="img-responsive" alt="Image" />
+												<img src="https://placehold.it/20x24/CCC.png" className="img-responsive" alt="Image" />
 											</div>
 
 										</div>
 										{/*eo blog-data*/}
 
 										<div className="blog-text">
-											<Link to={post.path} key={post.title}>
+											<Link to={post.path} key={post.id}>
 												<h4 className="hover-text-theme">{post.title}</h4>
 											</Link>
 
@@ -86,8 +86,8 @@ class PostListing extends React.Component {
 															className="hover-text-theme">{post.category}</Link></span>
 											</li>
 											<li>
-												Tags:{' '} {post.tags.map(tag => (
-													<span>&nbsp;<Link
+												Tags: {post.tags.map(tag => (
+													<span key={tag}>&nbsp;<Link
 															to={`/tags/${_.kebabCase(tag)}/`}
 															className="hover-text-theme">{tag}</Link></span>
 											))}

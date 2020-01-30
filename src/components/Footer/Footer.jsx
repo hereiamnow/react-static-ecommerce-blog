@@ -1,11 +1,9 @@
 /**
  * Created by S Miller <hereiamnow@gmail.com>
- * User: Developer
- * Project: https://react-static-ecom-blog.netlify.com
- * GitRepo: https://github.com/hereiamnow/react-static-ecom-blog.git
  * Date: 12/05/2019 9:29 PM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
  * Relative Path: src/components/Footer/Footer.jsx
- * Description: HTML & CSS based on Dotted HTML footer template.
  */
 
 import React, { Component } from 'react'
