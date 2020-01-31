@@ -5,6 +5,7 @@
  * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
  * Relative Path: src/components/GoogleMap/GoogleMap.js
  */
+
 import React from 'react';
 import GoogleMap from 'google-map-react';
 import Config from '../../../data/SiteConfig.js'
@@ -45,7 +46,7 @@ const BaseMap = (props) => (
 			defaultCenter={defaultProps.center}
 			defaultZoom={defaultProps.zoom}
 			>
-			<Label  lat={30.522160} lng={-97.830190} text={'USVA'} /* USVA */ />
+			<Label lat={30.522160} lng={-97.830190} text={'USVA'} /* USVA */ />
 		</GoogleMap>
 	</div>
 )

@@ -14,6 +14,7 @@ import './style.css'
 class Action01 extends React.Component {
 	render () {
 		return (
+			/*<section id="call" className="bg-light-grey">*/
 				<section id="call" className="bg-light-grey">
 
 					<div className="container">
