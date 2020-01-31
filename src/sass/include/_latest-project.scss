@@ -1,0 +1,61 @@
+/**
+ * Created by S Miller <hereiamnow@gmail.com>
+ * Date: 1/29/2020 12:24 PM
+ * Relative Path: src/sass/include/_latest-project.scss
+ */
+
+.lastest-project-warp {
+    clear      : both;
+    margin-top : 20px;
+    display    : block;
+    width      : 100%;
+    float      : left;
+}
+
+.project-item {
+    width      : calc(100% - 30px);
+    border     : 1px solid $mercury;
+    margin     : 15px;
+    background : $white;
+    h4 {
+        font-size     : 16px;
+        text-align    : center;
+        margin-top    : 16px;
+        margin-bottom : 12px;
+        transition    : all 0.3s;
+    }
+    p {
+        text-align    : center;
+        margin-bottom : 20px;
+        a {
+            transition : all 0.3s;
+        }
+    }
+    img {
+        padding       : 9px;
+        border-bottom : 1px solid $mercury;
+    }
+    &:hover .overlay-1 {
+        opacity : 1;
+        .fa {
+            opacity : 1;
+        }
+        .fa-link {
+            transform : translate(10px, -50%);
+        }
+        .fa-expand {
+            transform : translate(-44px, -50%);
+        }
+    }
+}
+
+.project-item-img-container {
+    position : relative;
+    width    : 100%;
+    height   : auto;
+    display  : block;
+}
+
+.owl-project .owl-wrapper-outer {
+    width : 100%;
+}

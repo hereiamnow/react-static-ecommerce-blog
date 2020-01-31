@@ -1,0 +1,252 @@
+/**
+ * Created by S. Miller <hereiamnow@gmail.com>
+ * Date: 1/30/2020 11:13 PM
+ * Relative Path: src/sass/include/_testimonial.scss
+ * License: MIT
+ * Description: Testimonial
+ */
+
+.owl-testimonial-1 {
+    float      : left;
+    clear      : both;
+    margin-top : 30px;
+    .owl-controls {
+        position   : absolute;
+        width      : 100%;
+        bottom     : -45px;
+        text-align : center;
+    }
+}
+
+.arrow-down {
+    width            : 0;
+    height           : 0;
+    border-left      : 12px solid transparent !important;
+    border-right     : 12px solid transparent !important;
+    border-top-width : 14px;
+    border-top-style : solid;
+    position         : relative;
+    left             : 50%;
+    transform        : translateX(-50%);
+    float            : left;
+}
+
+.testimonial-1-item {
+    padding             : 40px 70px;
+    font-style          : italic;
+    display             : block;
+    width               : 100%;
+    position            : relative;
+    background          : $color_log_cabin_approx;
+    border-bottom-width : 3px;
+    border-bottom-style : solid;
+    i {
+        position  : absolute;
+        top       : 15px;
+        left      : 15px;
+        font-size : 50px;
+        color     : $black;
+        opacity   : .5;
+    }
+    blockquote {
+        border     : 0;
+        text-align : center;
+        margin     : 0;
+        padding    : 0;
+        font-size  : 16px;
+        color      : $color_silver_approx;
+    }
+    footer {
+        font-size  : 16px;
+        color      : $color_silver_approx;
+        margin-top : 20px;
+        padding    : 0;
+    }
+}
+
+blockquote {
+    color : $color_concrete_approx;
+}
+
+.owl-page {
+    cursor        : pointer;
+    width         : 10px;
+    height        : 10px;
+    display       : inline-block;
+    background    : $white;
+    border-radius : 50%;
+    margin        : 0 5px;
+}
+
+.owl-testimonial-2 {
+    display       : inline-block;
+    float         : left;
+    clear         : both;
+    margin-top    : 30px;
+    margin-bottom : 15px;
+}
+
+.testimonial-2-item {
+    padding             : 40px 70px;
+    font-style          : italic;
+    display             : block;
+    width               : 100%;
+    position            : relative;
+    background          : $color_tundora_approx;
+    border-bottom-width : 3px;
+    border-bottom-style : solid;
+    i {
+        position  : absolute;
+        top       : 0;
+        left      : 0;
+        font-size : 72px;
+        color     : $color_masala_approx;
+    }
+    blockquote {
+        border     : 0;
+        text-align : center;
+        margin     : 0;
+        padding    : 0;
+        font-size  : 16px;
+    }
+}
+
+.thumb-owl-testimonial-2 {
+    display : inline-block;
+    width   : 100%;
+    clear   : both;
+    .thumb-owl-2 {
+        margin-top : 0;
+    }
+    .owl-item.synced .thumb-owl-2 .avatar-owl-2 {
+        transition   : all 0.6s;
+        border-color : $color_anzac_approx;
+    }
+}
+
+.thumb-owl-2 {
+    cursor     : pointer;
+    margin-top : 25px;
+    .avatar-owl-2 {
+        width        : 70px;
+        height       : 70px;
+        display      : block;
+        float        : left;
+        border-width : 3px;
+        border-style : solid;
+        border-color : $mercury;
+        img {
+            width : 100%;
+        }
+    }
+    .info-client {
+        padding-left : 90px;
+        h4 {
+            color       : $color_tundora_approx;
+            font-size   : 16px;
+            font-weight : 400;
+            padding-top : 10px;
+        }
+    }
+}
+
+.arrow-down-l {
+    width            : 0;
+    height           : 0;
+    border-left      : 12px solid transparent !important;
+    border-right     : 12px solid transparent !important;
+    border-top-width : 14px;
+    border-top-style : solid;
+    position         : relative;
+    left             : 30px;
+    float            : left;
+}
+
+.owl-testimonial-3 {
+    float      : left;
+    clear      : both;
+    margin-top : 30px;
+}
+
+.testimonial-3-item {
+    font-style : italic;
+    display    : block;
+    width      : 100%;
+    position   : relative;
+    .avatar {
+        width    : 105px;
+        height   : 105px;
+        padding  : 10px;
+        border   : 1px solid $mercury;
+        position : absolute;
+        top      : 0;
+        left     : 0;
+    }
+    blockquote {
+        border      : 0;
+        margin-left : 125px;
+        padding     : 0;
+        float       : left;
+        color       : $color_storm_dust_approx;
+        font-size   : 16px;
+    }
+    footer {
+        font-size   : 16px;
+        margin-top  : 20px;
+        font-family : $font_Oswald, $font_sans-serif;
+        font-size   : 16px;
+        font-weight : 300;
+        color       : $color_tundora_approx;
+        font-style  : normal;
+        padding     : 0;
+        background  : transparent;
+        cite {
+            font-style : normal;
+        }
+    }
+}
+
+.arrow-down-l-2 {
+    width            : 0;
+    height           : 0;
+    border-left      : 1px solid transparent !important;
+    border-right     : 8px solid transparent !important;
+    border-top-width : 7px;
+    border-top-style : solid;
+    left             : 5px;
+    bottom           : -7px;
+    float            : left;
+    position         : absolute;
+}
+
+.testimonial-3-col-warp {
+    margin-top : 40px;
+    display    : inline-block;
+}
+
+.testimonial-2-col-warp {
+    margin-top : 40px;
+    display    : inline-block;
+    .testimonial-3-item {
+        min-height : 160px;
+    }
+}
+
+span.quote-square {
+    display       : inline-block;
+    padding       : 3px 12px;
+    color         : $white;
+    font-size     : 12px;
+    margin-right  : 10px;
+    margin-bottom : 5px;
+    float         : left;
+    position      : relative;
+    overflow      : visible;
+}
+
+.owl-with-avatar footer {
+    margin-top : 20px;
+    padding    : 0;
+    background : transparent;
+    text-align : center;
+}

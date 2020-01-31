@@ -6,14 +6,25 @@
 
 @import "~tachyons-sass/tachyons.scss";
 @import "variables";
-@import "include/basic";
+@import "theme";
 @import "include/gatsby";
+@import "include/basic";
 @import "include/loader";
-@import "include/topbar";
+@import "include/titles";
 @import "include/products";
 @import "include/blog";
-@import "include/coming-soon";
-@import "include/copyright";
+@import "include/timeline";
+@import "include/page-portfolio";
+@import "include/latest-project";
+@import "include/testimonial";
+@import "include/topbar";
 @import "include/footer";
+@import "include/copyright";
+@import "include/twitter-widget";
 @import "include/iconbox";
-@import "theme";
+@import "include/coming-soon";
+@import "vendor/animate.min";
+
+
+
+

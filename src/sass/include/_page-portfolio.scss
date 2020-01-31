@@ -1,0 +1,163 @@
+/**
+ * Created by S. Miller <hereiamnow@gmail.com>
+ * Date: 1/30/2020 11:10 PM
+ * Relative Path: src/sass/include/_page-portfolio.scss
+ * License: MIT
+ * Description: Page Portfolio
+ */
+
+.portfolio-warp {
+    overflow : hidden;
+}
+
+.list-portfolio-warp {
+    width       : calc(100% + 15px);
+    margin-left : -15px;
+}
+
+.portfolio-3-col {
+    clear      : both;
+    margin-top : 55px;
+    display    : inline-block;
+    .element-item {
+        width : 33.33%;
+    }
+}
+
+.portfolio-4-col {
+    clear      : both;
+    margin-top : 55px;
+    display    : inline-block;
+    .element-item {
+        width : 25%;
+    }
+}
+
+.filter-portfolio-warp {
+    width : 100%;
+    float : left;
+    clear : both;
+}
+
+.project-style-1 {
+    border        : 1px solid $mercury;
+    border-radius : 3px;
+    float         : left;
+    a {
+        display    : inline-block;
+        float      : left;
+        padding    : 8px 20px;
+        opacity    : .5;
+        transition : all 0.3s;
+        position   : relative;
+        &:hover {
+            opacity    : 1;
+            background : $concrete;
+        }
+        h4 {
+            font-family : 'Oswald', 'sans-serif';
+            font-size   : 16px;
+            margin      : 0;
+        }
+        &.current {
+            opacity    : 1;
+            background : $concrete;
+        }
+        + a {
+            border-left : 1px solid $mercury;
+        }
+    }
+}
+
+.project-style-2 {
+    border        : 1px solid $mercury;
+    border-radius : 3px;
+    float         : left;
+    background    : $white;
+    a {
+        display    : inline-block;
+        float      : left;
+        padding    : 8px 20px;
+        opacity    : .5;
+        transition : all 0.3s;
+        position   : relative;
+        &:hover {
+            opacity    : 1;
+            background : $color_anzac_approx;
+            h4 {
+                color : $white;
+            }
+        }
+        h4 {
+            font-family : 'Oswald', 'sans-serif';
+            font-size   : 16px;
+            margin      : 0;
+            color       : $black;
+        }
+        &.current {
+            opacity    : 1;
+            background : $color_anzac_approx;
+            h4 {
+                color : $white;
+            }
+        }
+        + a {
+            border-left : 1px solid $mercury;
+        }
+    }
+}
+
+.no-gutter {
+    width       : 100%;
+    margin-left : 0;
+    .project-item {
+        margin   : 0;
+        width    : 100%;
+        border   : 0 !important;
+        position : relative;
+        img {
+            padding : 0;
+        }
+        h4 {
+            display    : block;
+            position   : absolute;
+            bottom     : 45px;
+            color      : $white;
+            left       : 50%;
+            transform  : translate(-50%, 100px);
+            opacity    : 0;
+            transition : all 0.3s;
+            width      : 80%;
+        }
+        p {
+            display          : block;
+            position         : absolute;
+            bottom           : 5px;
+            left             : 50%;
+            transform        : translate(-50%, 100px);
+            color            : $white;
+            opacity          : 0;
+            transition       : all 0.3s;
+            transition-delay : .1s;
+            a {
+                color : $white;
+                &:hover {
+                    color : $color_anzac_approx;
+                }
+            }
+        }
+        &:hover {
+            h4 {
+                opacity   : 1;
+                transform : translate(-50%, 0);
+            }
+            p {
+                opacity   : 1;
+                transform : translate(-50%, 0);
+            }
+        }
+        .overlay-1 .fa {
+            top : 40%;
+        }
+    }
+}

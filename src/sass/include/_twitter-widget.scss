@@ -1,0 +1,154 @@
+/**
+ * Created by S. Miller <hereiamnow@gmail.com>
+ * Date: 1/30/2020 11:19 PM
+ * Relative Path: src/sass/include/_twitter-widget.scss
+ * License: MIT
+ * Description: Twitter Widget
+ */
+
+//fonts
+$font_FontAwesome: 'FontAwesome';
+
+.twitter-warp {
+    position: relative;
+}
+
+.twitter1-warp {
+    min-height: 68px;
+    width: calc(100% - 165px);
+    padding-left: 100px;
+}
+
+.twitter-logo-fix {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: $color_anzac_approx;
+    display: inline-block;
+    float: left;
+    line-height: 56px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.twitter-widget-2 {
+    font-size: 13px;
+    color: $color_mountain_mist_approx;
+    margin-top: 0;
+    li {
+        min-height: 180px;
+        padding-left: 50px;
+    }
+    a {
+        color: $white;
+        &:hover {
+            color: $color_anzac_approx;
+        }
+    }
+    img {
+        display: none;
+    }
+    .interact {
+        display: none;
+    }
+    .timePosted {
+        text-align: right;
+        font-style: italic;
+        font-size: 12px;
+        margin-top: 10px;
+        a {
+            color: $color_anzac_approx;
+        }
+    }
+    ul > li:before {
+        content: "\f099";
+        font-family: $font_FontAwesome;
+        font-size: 36px;
+        color: $color_cerulean_approx;
+        position: absolute;
+        top: 7px;
+        left: 0;
+    }
+}
+.icon-twitter-3 {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $color_anzac_approx;
+    color: $color_anzac_approx;
+    display: block;
+    line-height: 68px;
+    text-align: center;
+    font-size: 36px;
+    margin: 25px auto;
+}
+.twitter-owl-warp {
+    color: $color_celeste_approx;
+    ul {
+        list-style: none !important;
+    }
+    li {
+        max-width: 760px;
+        padding: 0 15px;
+        margin: 0 auto;
+        display: block;
+    }
+    a {
+        color: $white;
+        transition: all 0.6s;
+        &:hover {
+            color: $color_anzac_approx;
+        }
+    }
+    .timePosted {
+        text-align: center;
+        a {
+            display: inline-block;
+            margin: 25px auto;
+            padding: 7px 25px;
+            color: $white;
+            background: $color_anzac_approx;
+        }
+    }
+    .interact {
+        text-align: center;
+        a {
+            margin: 0 15px;
+        }
+    }
+    .tweet {
+        text-align: center;
+    }
+    .owl-controls {
+        text-align: center;
+        margin-top: 25px;
+    }
+}
+.twitter-widget-1 ul {
+    display: inline-block;
+    width: calc(100% - 30px);
+    font-size: 16px;
+    img {
+        display: none;
+    }
+    a {
+        color: $color_cerulean_approx;
+        margin-right: 10px;
+        &:hover {
+            color: $color_anzac_approx;
+        }
+    }
+    .interact {
+        display: none;
+    }
+    .timePosted a {
+        color: $color_anzac_approx;
+        text-align: right;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
