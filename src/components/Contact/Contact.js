@@ -12,9 +12,9 @@ class Contact extends React.Component {
 	render () {
 		return (
 
-				<form className="form-inline" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-					<input type="hidden" name="bot-field" />
-					<input type="hidden" name="form-name" value="contact" />
+			<form name="contact" method="post" action="/success"  data-netlify="true" data-netlify-honeypot="bot-field" className="form-inline" >
+				<input type="hidden" name="bot-field" />
+				<input type="hidden" name="form-name" value="contact" />
 
 				<div className="left-form-comment">
 
@@ -33,7 +33,8 @@ class Contact extends React.Component {
 
 				<div className="right-form-comment">
 					<textarea name="message" id="textarea" className="form-control" rows="7" required="required" placeholder="Your Message"> </textarea>
-				</div>{/*text-area*/}
+				</div>
+				{/*text-area*/}
 
 			</form>
 		);
