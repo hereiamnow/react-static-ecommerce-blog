@@ -8,11 +8,14 @@
  */
 
 import React from 'react';
-import Layout from '../layout';
+import Layout from '../layout/index';
 import LayerSlider from '../components/Slider/LayerSlider';
 import IconBox from '../components/IconBox';
 import Feature from '../components/Feature';
 import Cta from '../components/CTA/Action01';
+import LatestTwitter from '../components/Twitter/index.js';
+import TwitterCarousel from '../components/Twitter/TwitterCarousel';
+import Contact from '../components/Contact/Form1';
 /*import RecentBlog from '../components/RecentBlog/RecentBlog'*/
 
 export default function Landing () {
@@ -21,14 +24,16 @@ export default function Landing () {
 	const ctaButton = 'MEMBERSHIP';
 	const ctaUrl = '/membership';
 	return (
-
-			<Layout>
-				<LayerSlider />
-				<IconBox />
-				<Cta header={ctaHeader} body={ctaBody} button={ctaButton} url={ctaUrl} />
-				{/*<RecentBlog sectionTitle={'Recent Blog'}/>*/}
-				<Feature />
-			</Layout>
+		<Layout>
+			<LayerSlider />
+			<IconBox />
+			<Cta header={ctaHeader} body={ctaBody} button={ctaButton} url={ctaUrl} />
+			{/*<RecentBlog sectionTitle={'Recent Blog'}/>*/}
+			<Feature />
+			<LatestTwitter />
+			<TwitterCarousel />
+			<Contact class={'bg-mid-grey'} />
+		</Layout>
 	);
 }
 
