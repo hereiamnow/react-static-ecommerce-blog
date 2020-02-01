@@ -10,7 +10,7 @@
 import React from 'react';
 import GoogleMap from '../../components/GoogleMap';
 
-class Form1 extends React.Component {
+class ContactPlus extends React.Component {
 	render () {
 		const mapCanvas = {
 			height: '380px'
@@ -55,4 +55,4 @@ class Form1 extends React.Component {
 	}
 }
 
-export default Form1;
+export default ContactPlus;

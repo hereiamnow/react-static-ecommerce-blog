@@ -4,13 +4,13 @@
  * Project: react-static-ecommerce-blog - a site built for gatsby
  * Relative Path: src/components/IconBox/IconBox.jsx
  */
+
 import React from 'react'
 import {Link} from 'gatsby'
 
-/* Based on Dotted HTML template*/
-const IconBox = () => (
+const IconBox = (props) => (
 
-		<section id="iconbox" className="dskt-padding-55">
+		<section id="iconbox" className={"dskt-padding-55 " + props.color}>
 			<div className="container">
 				<div className="row">
 

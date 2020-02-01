@@ -15,7 +15,8 @@ class Action01 extends React.Component {
 	render () {
 		return (
 			/*<section id="call" className="bg-light-grey">*/
-				<section id="call" className="bg-light-grey">
+
+				<section id="call" className={this.props.color}>
 
 					<div className="container">
 

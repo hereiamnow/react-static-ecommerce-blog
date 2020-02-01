@@ -96,19 +96,14 @@ export class RecentBlog extends React.Component {
 	render () {
 		console.log(this.props)
 		return (
-
-				<section id="blog" className="bg-light-grey">
-
+				<section id="blog" className={this.props.sectionTitle}>
 					<div className="container">
-
 						<div className="row">
 
 							<div className="col-md-12">
 								<div className="title-warp">
 									<h3 className="title-landing">{this.props.sectionTitle}</h3>
 								</div>
-
-
 							</div>{/*column*/}
 
 							<div className="col-md-12">
