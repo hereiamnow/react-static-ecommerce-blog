@@ -15,19 +15,9 @@ export default class MainLayout extends React.Component {
 					<Helmet>
 						<body className="royal_loader" />
 						<meta name="description" content={config.siteDescription} />
-
-						{/* Font Awesome */}
-						<link rel="stylesheet" href="/css/fonts/font-awesome/css/font-awesome.min.css" />
-						{/* TODO: Layer Slider */}
 						<link rel="stylesheet" href="/layerslider/css/layerslider.css" />
-						{/* TODO: Layer Slider */}
 						<link rel="stylesheet" href="/css/owl.carousel/owl.carousel.css" />
-
 						<link rel="stylesheet" href="/css/site/style.css" />
-
-
-
-
 					</Helmet>
 
 					<Header />
@@ -39,10 +29,9 @@ export default class MainLayout extends React.Component {
 					<SubFooter />
 				</div>
 
-				{/*jQuery v2.2.4*/}
-				<script src="/js/vendor/jquery.min.js"></script>
-				{/*Bootstrap 3.3.6*/}
-				<script src="/js/vendor/bootstrap.js"></script>
+
+
+
 
 				{/*jQuery mmenu v5.6.5*/}
 				<script type="text/javascript" src="js/plugins/jquery.mmenu.all.min.js"></script>

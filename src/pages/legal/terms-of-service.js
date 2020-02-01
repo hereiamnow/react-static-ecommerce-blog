@@ -8,7 +8,7 @@
 
 import React from 'react'
 import Helmet from "react-helmet";
-import Layout from '../../layout/index'
+import Layout from '../../layout/layout1'
 import SubHeader from '../../components/SubHeader/index'
 import Subscribe from '../../components/Subscribe/index'
 import config from '../../../data/SiteConfig';

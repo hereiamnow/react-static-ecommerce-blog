@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Layout from '../../layout/index';
+import Layout from '../../layout/layout1';
 import SubHeader from '../../components/SubHeader';
 import Subscribe from '../../components/Subscribe';
 import {PayPalButton} from "react-paypal-button-v2";

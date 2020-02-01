@@ -1,10 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Layout from '../layout/index';
+import Layout from '../layout/layout1';;
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import GoogleMap from '../components/GoogleMap';
-import FormInline from '../components/Contact';
+import FormInline from '../components/Forms/index';
 
 class ContactPage extends React.Component {
 

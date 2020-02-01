@@ -2,7 +2,7 @@ import React from 'react';
 import config from '../../data/SiteConfig';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
-import Layout from '../layout/index';
+import Layout from '../layout/layout1';
 import SubHeader from '../components/SubHeader/SubHeader';
 import Categories from '../components/Blog/CategoryListing';
 import WidgetText from '../components/Blog/Widget/WidgetText';

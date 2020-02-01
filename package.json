@@ -44,8 +44,10 @@
     "owl.carousel": "^2.3.4",
     "popper.js": "^1.15.0",
     "prismjs": "^1.16.0",
+    "prop-types": "latest",
     "react": "^16.10.1",
     "react-async-script-loader": "^0.3.0",
+    "react-bootstrap": "^1.0.0-beta.16",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.10.1",
     "react-helmet": "^5.2.1",
@@ -55,8 +57,7 @@
     "react-share": "^3.0.1",
     "react-twitter-widgets": "^1.7.1",
     "tachyons-sass": "^4.7.1",
-    "url-join": "^4.0.0",
-    "prop-types": "latest"
+    "url-join": "^4.0.0"
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",

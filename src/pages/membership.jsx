@@ -10,7 +10,7 @@ import React from 'react';
 import Helmet from "react-helmet";
 import { Link } from 'gatsby';
 import config from '../../data/SiteConfig';
-import Layout from '../layout';
+import Layout from '../layout/layout1';;
 import SEO from '../components/SEO/SEO';
 import ShopFooter from '../components/Shop/ShopFooter';
 import SubHeader from '../components/SubHeader';
