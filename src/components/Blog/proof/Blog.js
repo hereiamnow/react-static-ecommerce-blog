@@ -14,13 +14,15 @@ import WidgetSearch from "../Widget/WidgetSearch";
 import WidgetTabs from "../Widget/WidgetTabs";
 import WidgetAccordion from "../Widget/WidgetAccordion";
 import WidgetText from "../Widget/WidgetText";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 class Blog extends React.Component {
   render() {
     return (
       <section id="main-content">
-        <div className="container">
-          <div className="row">
+        <Container>
+          <Row>
             <div className="main-page">
               <ListBlog/>
               <PaginationBlog/>
@@ -33,8 +35,8 @@ class Blog extends React.Component {
                 <WidgetText/>
               </div>
             </div>
-          </div>
-        </div>
+          </Row>
+        </Container>
       </section>
     );
   }

@@ -8,15 +8,18 @@
  */
 
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import './TwitterCarousel.scss';
 
 class TwitterCarousel extends React.Component {
 	render () {
 		return (
 			<section id="twitter" className="bg-light-grey">
-				<div className="container">
-					<div className="row">
-						<div className="col-md-12">
+				<Container>
+					<Row>
+						<Col md={12}>
 							<div className="twitter-warp">
 								<div className="customNavigation customNavigation-4">
 									<a className="btn-1 prev-twitter-2 hover-border-theme hover-text-theme">
@@ -31,9 +34,9 @@ class TwitterCarousel extends React.Component {
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
+						</Col>
+					</Row>
+				</Container>
 			</section>
 		);
 	}

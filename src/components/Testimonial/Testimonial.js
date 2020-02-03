@@ -7,20 +7,21 @@
  * Description: USVA Theme demo
  */
 
-import React, { Component } from 'react';
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-class Testimonial extends Component {
+class Testimonial extends React.Component {
 	render () {
 		return (
 				<section id="testimonial">
-					<div className="container">
-						<div className="row">
-							<div className="col-md-8">
+					<Container>
+						<Row>
+							<Col md={8}>
 								<ul className="nav nav-tabs responsive tab1" id="myTab">
 									<li className="test-class active">
-										<a className="deco-none  red-class" href="#resp-tab1"><h4> Cras Suscipit
-										                                                           Pulvinar Dui
-										                                                           Vitae</h4></a>
+										<a className="deco-none  red-class" href="#resp-tab1"><h4> Cras Susci Pulvinar Dui Vitae</h4></a>
 									</li>
 									<li className="test-class">
 										<a className="" href="#resp-tab2"><h4> Morbi Ante Mi Commodo Nec Dignissim</h4>
@@ -37,7 +38,7 @@ class Testimonial extends Component {
 										<img style="max-width: 260px;" src="https://placehold.it/740x460/ccc.png" className="img-responsive img-tab-demo" alt="Image" />
 										<div className="tab-text-warp">
 											<h3>
-												Why Choose Dotted? </h3>
+												Why Choose Us? </h3>
 											<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
 											   molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
 											   eros et accumsan et iusto odio dignissim.</p><br />
@@ -84,9 +85,8 @@ class Testimonial extends Component {
 										</div>
 									</div>
 								</div>
-							</div>
-
-							<div className="col-md-4">
+							</Col>
+							<Col md={4}>
 								<div className="title-warp">
 									<h3 className="title-inline">Testimonial</h3>
 									<div className="customNavigation customNavigation-1">
@@ -164,9 +164,9 @@ class Testimonial extends Component {
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
+							</Col>
+						</Row>
+					</Container>
 				</section>
 	);
 	}

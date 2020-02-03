@@ -1,5 +1,7 @@
 import React from 'react';
 import Helmet from "react-helmet";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import { Link } from 'gatsby';
 import config from '../../../data/SiteConfig';
 import product from '../../../data/Products';
@@ -20,8 +22,8 @@ export default () => (
 				crumbLabel="Memberships" />
 
 			<section id="main-content">
-				<div className="container">
-					<div className="row">
+				<Container>
+					<Row>
 						<div className="main-shop">
 							{
 								product.items
@@ -65,8 +67,8 @@ export default () => (
 										})
 							}
 						</div>{/*main-shop*/}
-					</div>{/*row*/}
-				</div>{/*container*/}
+					</Row>
+				</Container>
 			</section>
 
 			<ShopFooter />

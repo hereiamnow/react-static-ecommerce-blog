@@ -17,7 +17,7 @@ import Cta from '../components/CTA/Action01';
 import LatestTwitter from '../components/Twitter/index.js';
 import TwitterCarousel from '../components/Twitter/TwitterCarousel';
 import Contact from '../components/Section/ContactPlus';
-import RecentBlog from '../components/Section/RecentBlogBootstrap';
+import RecentBlog from '../components/RecentBlog/RecentBlog';
 import config from '../../data/SiteConfig';
 import SEO from '../components/SEO/SEO';
 

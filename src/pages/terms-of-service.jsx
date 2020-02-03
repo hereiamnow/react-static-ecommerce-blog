@@ -8,28 +8,21 @@
 
 import React from 'react'
 import Helmet from "react-helmet";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import Layout from '../layout/layout1';
 import SubHeader from '../components/SubHeader'
 import Subscribe from '../components/Subscribe'
 
+import config from '../../data/SiteConfig';
+
 const TermsOfServiceView = (props) => (
 		<Layout>
-			<Helmet>
-				<title>Terms of Service</title>
-				<meta name="description" content="The USVA represents the e-liquid manufacturers, device manufacturers,
-								wholesalers, distributors, vape shop owners, small business owners and entrepreneurs who have developed
-								innovative and quality vapor products" />
-				<meta name="Keywords" content="United States Vaping Association, Vaping Association, Frequently Asked Questions" />
-				<meta name="robots" content="index, nofollow, noarchive" />
-			</Helmet>
-
+			<Helmet title={`Terms of Service | ${config.siteTitle}`} />
 			<SubHeader pageTitle="Terms of Service - United States Vaping Association (USVA)" breadcrumb="Legal" />
-
 			<section>
-
-				<div className="container">
-
-					<div className="row">
+				<Container>
+					<Row>
 
 						<div className="heading-services">
 
@@ -150,13 +143,10 @@ const TermsOfServiceView = (props) => (
 							   documents filed in the courts by The USVA. Contact us If you have any questions about our
 							   Refund Policy, please contact us at membership@theusva.org</p>
 						</div>
-					</div>
-				</div>
-
+					</Row>
+				</Container>
 			</section>
-
 			<Subscribe/>
-
 		</Layout>
 )
 

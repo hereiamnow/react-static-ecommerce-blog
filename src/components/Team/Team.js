@@ -8,30 +8,33 @@
  */
 
 import React from "react";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import TeamItem from "./TeamItem";
 
 class TeamThreeCol extends React.Component {
   render() {
     return (
       <section className="bg-light-grey">
-        <div className="container">
-          <div className="row">
+        <Container>
+          <Row>
             <div className="team-warp-page team-3-col">
-              <div className="col-md-12">
+              <Col md={12}>
                 <h3 className>Support Team 3 Columns</h3>
-              </div>
-              <div className="col-md-4">
+              </Col>
+              <Col md={4}>
                 <TeamItem></TeamItem>
-              </div>
-              <div className="col-md-4">
+              </Col>
+              <Col md={4}>
                 <TeamItem></TeamItem>
-              </div>
-              <div className="col-md-4">
+              </Col>
+              <Col md={4}>
                 <TeamItem></TeamItem>
-              </div>
+              </Col>
             </div>
-          </div>
-        </div>
+          </Row>
+        </Container>
       </section>
     );
   }

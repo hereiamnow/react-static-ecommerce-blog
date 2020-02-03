@@ -12,8 +12,9 @@ class ComingSoonPage extends Component {
 
 		return (
 				<Layout>
-					<Helmet title={`Site Coming Soon | ${config.siteTitle}`} />
+					<Helmet title={`Coming Soon | ${config.siteTitle}`} />
 					<section className="section full-height bgcms">
+
 						<div className="overlay-cms full-height"></div>
 
 						<div className="hero-wrap hero-wrap-cms">
@@ -42,6 +43,7 @@ class ComingSoonPage extends Component {
 
 						</div>
 					</section>
+
 					<script src="/js/plugins/countdown-custom.js"></script>
 				</Layout>
 		);

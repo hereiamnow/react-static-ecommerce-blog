@@ -7,6 +7,8 @@
 
 import React from 'react'
 import { Link } from 'gatsby'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import config from "../../../data/SiteConfig";
 
 function getDataFromSource () {
@@ -47,10 +49,11 @@ function getDataFromSource () {
 
 const SubFooter = (props) => (
 		<section className="no-padding" id="copyright-1">
-			<div className="container">
-				<div className="row">
+			<Container>
+				<Row>
 					<div className="warp-copyright-1">
 						<ul className="copyright-1">
+							{/*Iterate from list above*/}
 							{getDataFromSource().map((data, index) => (
 									<li key={index}>
 										<Link to={data.url} title={data.title}>
@@ -63,9 +66,9 @@ const SubFooter = (props) => (
 							{config.siteCopyright}
 						</p>
 					</div>
-				</div>
-			</div>
+				</Row>
+			</Container>
 		</section>
-)
+);
 
 export default SubFooter

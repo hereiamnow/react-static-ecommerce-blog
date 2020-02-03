@@ -8,6 +8,9 @@
 
 import React from 'react'
 import Helmet from "react-helmet";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Layout from '../../layout/layout1'
 import SubHeader from '../../components/SubHeader/index'
 import Subscribe from '../../components/Subscribe/index'
@@ -15,19 +18,14 @@ import config from '../../../data/SiteConfig';
 
 export const TermsOfServiceView = (props, location) => (
 		<Layout location={location} crumbLabel="Terms of Service">
-			<Helmet>
-				<title>Terms of Service</title>
-				<meta name="description" content="The USVA represents the e-liquid manufacturers, device manufacturers,
-								wholesalers, distributors, vape shop owners, small business owners and entrepreneurs who have developed
-								innovative and quality vapor products" />
-				<meta name="Keywords" content="United States Vaping Association, Vaping Association, Frequently Asked Questions" />
-				<meta name="robots" content="index, nofollow, noarchive" />
-			</Helmet>
+			<Helmet title={`Terms of Service | ${config.siteTitle}`} />
+
 			<SubHeader title={`Terms of Service | ${config.siteTitle}`}
 				crumbLink={'/legal/terms-of-service'}  crumbLabel="Terms of Service" />
+
 			<section>
-				<div className="container">
-					<div className="row">
+				<Container>
+					<Row>
 						<div className="heading-services">
 							<p className="services-heading">
 								This Membership Agreement (the Agreement) is effective July 26, 2019 by and between the
@@ -129,8 +127,8 @@ export const TermsOfServiceView = (props, location) => (
 							   documents filed in the courts by The USVA. Contact us If you have any questions about our
 							   Refund Policy, please contact us at membership@theusva.org</p>
 						</div>
-					</div>
-				</div>
+					</Row>
+				</Container>
 			</section>
 			<Subscribe/>
 		</Layout>

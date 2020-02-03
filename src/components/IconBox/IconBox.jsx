@@ -7,20 +7,20 @@
 
 import React from 'react'
 import {Link} from 'gatsby'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const IconBox = (props) => (
-
 		<section id="iconbox" className={"dskt-padding-55 " + props.color}>
-			<div className="container">
-				<div className="row">
-
+			<Container>
+				<Row>
 					<div className="header-iconbox">
 						<h3 className="text-cap text-center">WELCOME TO THE USVA</h3>
 						<p className="text-center des-text">United States Vaping Association is a trade association whose purpose is to provide information and assistance to its members to combat unlawful government regulations, and to represent the vaping industry in the United States.</p>
 					</div>
-
 					<div className="iconbox-set-1-warp">
-						<div className="col-md-3">
+						<Col md={3}>
 							<div className="iconbox iconbox-set-1">
 								<div className="icon-1 bg-sub-color">
 									<i className="fa fa-desktop color-theme" aria-hidden="true"> </i>
@@ -33,9 +33,8 @@ const IconBox = (props) => (
 
 								</Link>
 							</div>
-						</div>
-
-						<div className="col-md-3">
+						</Col>
+						<Col md={3}>
 							<div className="iconbox iconbox-set-1">
 								<div className="icon-1 bg-sub-color">
 									<i className="fa fa-briefcase color-theme" aria-hidden="true"> </i>
@@ -46,9 +45,8 @@ const IconBox = (props) => (
 								<a href="#" className="ot-btn btn-main-color btn-rounded text-up white-text">Know More <i className="fa fa-plus" aria-hidden="true"> </i>
 								</a>
 							</div>
-						</div>
-
-						<div className="col-md-3">
+						</Col>
+						<Col md={3}>
 							<div className="iconbox iconbox-set-1">
 								<div className="icon-1 bg-sub-color">
 									<i className="fa fa-wrench color-theme" aria-hidden="true"> </i>
@@ -61,9 +59,8 @@ const IconBox = (props) => (
 
 								</Link>
 							</div>
-						</div>
-
-						<div className="col-md-3">
+						</Col>
+						<Col md={3}>
 							<div className="iconbox iconbox-set-1">
 								<div className="icon-1 bg-sub-color">
 									<i className="fa fa-users color-theme" aria-hidden="true"> </i>
@@ -76,12 +73,11 @@ const IconBox = (props) => (
 
 								</Link>
 							</div>
-						</div>
+						</Col>
 					</div>
-
-				</div>{/*eo row*/}
-			</div>{/*eo container*/}
+				</Row>
+			</Container>
 		</section>
-)
+);
 
 export default IconBox

@@ -9,10 +9,13 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Link } from 'gatsby'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import Layout from '../layout/layout1';
 import ShopFooter from '../components/Shop/ShopFooter/index'
 import SubHeader from '../components/SubHeader/SubHeader'
 import Subscribe from '../components/Subscribe'
+import config from '../../data/SiteConfig';
 
 function getData () {
 	return [
@@ -99,26 +102,12 @@ function getMembership () {
 
 export default () => (
 		<Layout>
-
-			<Helmet>
-				<title>Donations</title>
-				<meta name="description" content="The USVA represents the e-liquid manufacturers, device manufacturers,
-						wholesalers, distributors, vape shop owners, small business owners and entrepreneurs who have developed
-						innovative and quality vapor products" />
-				<meta name="Keywords" content="United States Vaping Association, Vaping Association, Frequently Asked Questions" />
-				<meta name="robots" content="index, nofollow, noarchive" />
-			</Helmet>
-
+			<Helmet title={`Donations | ${config.siteTitle}`} />
 			<SubHeader pageTitle="USVA - Consumer Donation" breadcrumb="Donate" />
-
 			<section id="main-content">
-
-				<div className="container">
-
-					<div className="row">
-
+				<Container>
+					<Row>
 						<div className="main-shop">
-
 							{getData().map(data => (
 
 								<div className="product" key={data.id}>
@@ -166,15 +155,10 @@ export default () => (
 						))}
 
 						</div>
-
-					</div>
-
-				</div>
-
+					</Row>
+				</Container>
 			</section>
-
 			<ShopFooter />
-
 			<Subscribe/>
 		</Layout>
 )

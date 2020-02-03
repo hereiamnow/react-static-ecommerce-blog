@@ -7,7 +7,6 @@
  * Description: Component is a child of the Footer component.
  */
 
-/* Based on Dotted HTML template. See copyrights in readme.md */
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import './style.css'

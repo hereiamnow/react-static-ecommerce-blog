@@ -8,21 +8,23 @@
  */
 
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class RecentBlogBootstrap extends React.Component {
 	render () {
 		return (
 			<section id="blog" className="bg-light-grey">
-				<div className="container">
-					<div className="row">
-						<div className="col-md-12">
+				<Container>
+					<Row>
+						<Col md={12}>
 							<div className="title-warp">
 								<h3 className="title-landing">Recent Blog</h3>
 							</div>
-						</div>
-						<div className="col-md-12">
+						</Col>{/*eo col-12*/}
+						<Col md={12}>
 							<div className="blog-landing-warp">
-
 								<div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
 
 									<ol className="carousel-indicators">
@@ -220,12 +222,10 @@ class RecentBlogBootstrap extends React.Component {
 										<span className="sr-only">Next</span>
 									</a>
 								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
+							</div>{/*blog-landing-warp*/}
+						</Col>{/*eo col-12*/}
+					</Row>
+				</Container>
 			</section>
 		);
 	}

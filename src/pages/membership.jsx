@@ -15,7 +15,8 @@ import SEO from '../components/SEO/SEO';
 import ShopFooter from '../components/Shop/ShopFooter';
 import SubHeader from '../components/SubHeader';
 import Subscribe from '../components/Subscribe';
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 function getData () {
 	return [
@@ -71,8 +72,8 @@ export default () => (
 			<SubHeader pageTitle={config.companyName + ' Membership'} breadcrumb="Membership" />
 
 			<section id="main-content">
-				<div className="container">
-					<div className="row">
+				<Container>
+					<Row>
 
 						<div className="main-shop">
 
@@ -123,8 +124,8 @@ export default () => (
 							))}
 
 						</div>{/*main-shop*/}
-					</div>{/*row*/}
-				</div>{/*container*/}
+					</Row>{/*row*/}
+				</Container>{/*container*/}
 			</section>
 
 			<ShopFooter />

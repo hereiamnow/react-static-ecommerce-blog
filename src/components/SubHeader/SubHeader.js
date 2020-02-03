@@ -8,12 +8,14 @@
 
 import React from 'react'
 import {Link} from 'gatsby'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 export const SubHeader =({location, title, crumbLabel, crumbLink})=> {
 		return (
 				<section id="subheader" className="no-padding sub-header-border">
-					<div className="container">
-						<div className="row">
+					<Container>
+						<Row>
 							<div className="sub-header-warp">
 								<h3 className="title-subheader">{title}</h3>
 								<ol className="breadcrumb">
@@ -22,10 +24,10 @@ export const SubHeader =({location, title, crumbLabel, crumbLink})=> {
 									<li className="active"><Link to={crumbLink}>{crumbLabel}</Link></li>
 								</ol>
 							</div>
-						</div>
-					</div>
+						</Row>
+					</Container>
 				</section>
 		);
-}
+};
 
 export default SubHeader

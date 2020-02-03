@@ -4,7 +4,7 @@
  * Project: react-static-ecommerce-blog - a site built for gatsby
  * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
  * Relative Path: src/components/Slider/Slides/Slide01/Slide01.jsx
- * Description: Based on Dotted HTML template
+ * Description:
  */
 
 import React from 'react'

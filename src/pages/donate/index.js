@@ -1,5 +1,7 @@
 import React from 'react';
 import Helmet from "react-helmet";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import { Link } from 'gatsby';
 import config from '../../../data/SiteConfig';
 import product from '../../../data/Products';
@@ -12,14 +14,18 @@ import Subscribe from '../../components/Subscribe';
 export default ({location}) => {
 	return (
 		<Layout location={location} crumbLabel={"Donations"}>
+
 			<Helmet title={`Donation | ${config.siteTitle}`} />
+
 			<SEO title="Donation" keywords={['USVA', 'USVA.ORG']} />
+
 			<SubHeader title={`Donations - ${config.siteTitle}`}
 				crumbLink={'/donate'}
 				crumbLabel="Donate" />
+
 			<section id="main-content">
-				<div className="container">
-					<div className="row">
+				<Container>
+					<Row>
 						<div className="main-shop">
 							{
 								product.items
@@ -70,9 +76,9 @@ export default ({location}) => {
 							}
 						</div>
 						{/*main-shop*/}
-					</div>
+					</Row>
 					{/*row*/}
-				</div>
+				</Container>
 				{/*container*/}
 			</section>
 			<ShopFooter />

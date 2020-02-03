@@ -1,5 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Layout from '../../layout/layout1';
 import SubHeader from '../../components/SubHeader';
 import Subscribe from '../../components/Subscribe';
@@ -43,24 +46,20 @@ class MonthlySubscriptionPage extends React.Component {
 
 		return (
 				<Layout>
-
-					<Helmet>
-						<title>Monthly Subscription - {config.siteTitle}</title>
-						<meta name="description" content="The USVA represents the e-liquid manufacturers, device manufacturers, wholesalers, distributors, vape shop owners, small business owners and entrepreneurs who have developed innovative and quality vapor products" />
-					</Helmet>
+					<Helmet title={`Monthly Subscription | ${config.siteTitle}`} />
 
 					<SubHeader title={`Membership Subscription | ${config.siteTitle}`}
 						crumbLabel="Membership" crumbLink="/membership" />
 
 					<section id="main-content">
-						<div className="container">
-							<div className="row">
-								<div className="col-md-5">
+						<Container>
+							<Row>
+								<Col md={5}>
 									<div className="product-img-warp">
 										<img src="/images/usva/monthly-recurring-membership_w640.png" className="img-responsive" alt="Image" />
 									</div>
-								</div>
-								<div className="col-md-7">
+								</Col>
+								<Col md={7}>
 									<div className="product-detail-warp">
 										<div className="product-category">Subscription</div>
 										<div className="product-title">
@@ -106,10 +105,10 @@ class MonthlySubscriptionPage extends React.Component {
 											/>
 										</div>
 									</div>
-								</div>
+								</Col>
 								<div className="clearboth m-tb-20"> </div>
-							</div>
-						</div>
+							</Row>
+						</Container>
 					</section>
 
 					<Subscribe />

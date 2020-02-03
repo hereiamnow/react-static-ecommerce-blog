@@ -8,6 +8,8 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import Layout from '../../layout/layout1';
 import SubHeader from '../../components/SubHeader/index';
 import Subscribe from '../../components/Subscribe/index';
@@ -16,17 +18,20 @@ import config from '../../../data/SiteConfig';
 const PrivacyPolicyView = ({location}) => {
 	return (
 		<Layout location={location} crumbLabel="Privacy Statement">
+
 			<Helmet>
 				<title>Privacy Statement</title>
 				<meta name="description" content="The USVA represents the e-liquid manufacturers, device manufacturers,	wholesalers, distributors, vape shop owners, small business owners and entrepreneurs who have developed	innovative and quality vapor products" />
 				<meta name="Keywords" content="United States Vaping Association, Vaping Association, Frequently Asked Questions" />
 				<meta name="robots" content="index, nofollow, noarchive" />
 			</Helmet>
+
 			<SubHeader title={`Privacy Statement | ${config.siteTitle}`}
 				crumbLink={'/legal/privacy-policy'} crumbLabel="Privacy Statement" />
+
 			<section>
-				<div className="container">
-					<div className="row">
+				<Container>
+					<Row>
 
 						<div className="heading-services">
 							<p className="services-heading">
@@ -101,8 +106,8 @@ const PrivacyPolicyView = ({location}) => {
 
 						</div>
 
-					</div>
-				</div>
+					</Row>
+				</Container>
 			</section>
 			<Subscribe />
 		</Layout>

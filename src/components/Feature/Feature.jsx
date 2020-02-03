@@ -8,23 +8,23 @@
 
 import React from 'react'
 import { Link } from 'gatsby'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Accordion from 'react-bootstrap/Accordion'
+import Card from 'react-bootstrap/Card'
+import AccordionToggle from 'react-bootstrap/AccordionToggle'
+import AccordionCollapse from 'react-bootstrap/AccordionCollapse'
+import features from '../../../data/Features'
 
 const Feature = () => (
-
 		<section id="feature" className="bg-light-grey">
-
-			<div className="container">
-
-				<div className="row">
-
+			<Container>
+				<Row>
 					<div className="feature-warp">
-
-						<div className="col-md-8">
-
+						<Col md={8}>
 							<h3>Why You Should Choose Us?</h3>
-
 							<p className="feature-des-text">Integer est arcu, congue nec vulputate faucibus, aliquam eget tellus. Aliquam laoreet aliquam mi, vitae tempus orci mattis vitae. Cras ultricies mauris est, ultricies sagittis diam euismod et. Curabitur at dolor vitae felis semper ullamcorper eu mattis felis. Phasellus felis diam, egestas non hendrerit a, lacinia a neque. </p>
-
 							<div className="discover">
 								<img src="https://placehold.it/316x330/ccc.png" className="img-responsive" alt="Image" />
 
@@ -64,96 +64,34 @@ const Feature = () => (
 								</Link>
 
 							</div>
+						</Col>
+						<Col md={4}>
+							<Accordion defaultActiveKey="0">
+								{features.items
+									.map((item, index) => {
+										/// if index === 0 ( it is first element in array ) then add class active
+										var activeClass = (index === 0) ? 'panel panel-custom border-color-theme' : 'panel panel-custom';
 
-						</div>
-						{/*eo column*/}
-
-						<div className="col-md-4">
-
-							<div className="" id="accordion" role="tablist" aria-multiselectable="true">
-
-								<div className="panel panel-custom border-color-theme">
-
-									<div className="panel-heading " role="tab" id="headingOne">
-										<h3 className="panel-title">
-
-											<a role="button"
-											   data-toggle="collapse"
-											   data-parent="#accordion"
-											   href="#collapseOne"
-											   aria-expanded="true"
-											   aria-controls="collapseOne">
-												Cras Suscipit Pulvinar Dui Vitae
-											</a>
-
-										</h3>
-									</div>
-
-									<div id="collapseOne" className="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-										<div className="panel-body">
-											Pellentesque eleifend euismod sapien non egestas. Donec ante sapien, semper tristique nulla vitae, porttitor consequat nisi.
-										</div>
-									</div>
-								</div>
-								<div className="panel panel-custom ">
-									<div className="panel-heading " role="tab" id="headingTwo">
-										<h4 className="panel-title">
-											<a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-												Morbi Ante Mi Commodo Nec Dignissim
-											</a>
-										</h4>
-									</div>
-									<div id="collapseTwo" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-										<div className="panel-body">
-											Pellentesque eleifend euismod sapien non egestas. Donec ante sapien, semper tristique nulla vitae, porttitor consequat nisi.
-										</div>
-									</div>
-								</div>
-								<div className="panel panel-custom ">
-									<div className="panel-heading " role="tab" id="headingThree">
-										<h4 className="panel-title">
-											<a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-												Nullam Tristique Scelerisque Felis Vel Tempor
-											</a>
-										</h4>
-									</div>
-									<div id="collapseThree" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-										<div className="panel-body ">
-											Pellentesque eleifend euismod sapien non egestas. Donec ante sapien, semper tristique nulla vitae, porttitor consequat nisi.
-										</div>
-									</div>
-								</div>
-								<div className="panel panel-custom ">
-									<div className="panel-heading " role="tab" id="headingFour">
-										<h4 className="panel-title">
-											<a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-												Vivamus Tempor Est In Tortor Faucibus, At Lacinia Libero
-											</a>
-										</h4>
-									</div>
-									<div id="collapseFour" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-										<div className="panel-body ">
-											Pellentesque eleifend euismod sapien non egestas. Donec ante sapien, semper tristique nulla vitae, porttitor consequat nisi.
-										</div>
-									</div>
-								</div>
-
-							</div>
-							{/*eo accordion*/}
-
-						</div>
-						{/*eo column*/}
-
-					</div>
-					{/*eo feature-warp wrapper*/}
-
-				</div>
-				{/*eo row*/}
-
-			</div>
-			{/*eo container*/}
-
+										return(
+											<Card key={item.id} className={activeClass}>
+												<AccordionToggle as={Card.Header} eventKey={index} className={'panel-heading'}>
+													<h3 className="panel-title">{item.title}</h3>
+												</AccordionToggle>
+												<AccordionCollapse eventKey={index} className={'panel-collapse'}>
+													<Card.Body className={'panel-body'}>
+														{item.body}
+													</Card.Body>
+												</AccordionCollapse>
+											</Card>
+										);
+									})
+								}
+							</Accordion>
+						</Col>
+					</div>{/*eo feature-warp wrapper*/}
+				</Row>
+			</Container>
 		</section>
-)
+);
 
 export default Feature

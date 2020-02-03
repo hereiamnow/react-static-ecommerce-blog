@@ -8,6 +8,9 @@
  */
 
 import React, { Component } from 'react'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import SocialLinks from './SocialLinks/socialLinks'
 import RecentPosts from './RecentPosts/RecentPosts'
 import UsefulLinks from './UsefulLinks/usefulLinks'
@@ -26,49 +29,27 @@ class Footer extends Component {
 		}
 		*/
 		return (
-
 				<React.Fragment>
-
-					{/*
-					<UserLinks config={config} labeled />
-					<h4>{copyright}</h4>
-					<Link to={url}>
-						<button>Subscribe</button>
-					</Link>
-					*/}
-
 					<BackToTop />
-
 					<footer className="footer-v1">
-
-						<div className="container">
-
-							<div className="row">
-
-								<div className="col-md-3">
+						<Container>
+							<Row>
+								<Col md={3}>
 									<SocialLinks />
-								</div>
-
-								<div className="col-md-3">
+								</Col>
+								<Col md={3}>
 									<RecentPosts />
-								</div>
-
-								<div className="col-md-3">
+								</Col>
+								<Col md={3}>
 									<UsefulLinks />
-								</div>
-
-								<div className="col-md-3">
+								</Col>
+								<Col md={3}>
 									<Contacts />
-								</div>
-
-							</div>{/*row*/}
-
-						</div>{/*container*/}
-
-					</footer>{/*.footer-v1*/}
-
+								</Col>
+							</Row>
+						</Container>
+					</footer>
 				</React.Fragment>
-
 		)
 	}
 }

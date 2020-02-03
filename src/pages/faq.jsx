@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Helmet from 'react-helmet';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Layout from '../layout/layout1';
 import SubHeader from '../components/SubHeader';
 import Subscribe from '../components/Subscribe';
@@ -9,35 +12,19 @@ import config from '../../data/SiteConfig';
 export const FaqPage = ({location}) => {
 	return (
 		<Layout>
-			<Helmet>
-				<title>Frequently Asked Questions</title>
-				<meta name="description" content="The USVA represents the e-liquid manufacturers, device manufacturers, wholesalers, distributors, vape shop owners, small business owners and entrepreneurs who have developed innovative and quality vapor products" />
-				<meta name="Keywords" content="United States Vaping Association, Vaping Association, Frequently Asked Questions" />
-				<meta name="robots" content="index, nofollow, noarchive" />
-			</Helmet>
-			<SubHeader title={`Frequently Asked Questions | ${config.siteTitle}`}
-				crumbLink={'/faq'} crumbLabel="FAQs" />
+			<Helmet title={`Frequently Asked Questions | ${config.siteTitle}`} />
+			<SubHeader title={`Frequently Asked Questions | ${config.siteTitle}`} crumbLink={'/faq'} crumbLabel="FAQs" />
 			<section id="main-content">
-				<div className="container">
-					<div className="row">
+				<Container>
+					<Row>
 						<div className="main-page">
 							<div id="single-blog" className="single-blog-warp">
 
-								{/* COMMENT
-							TWO HORIZONTAL BLOCKS OF TEXT - ONE YELLOW, ONE BLACK
-							*/}                            <p className="faq-heading">The USVA is one bad ass mother fucker, who with out compromise will tear you a new asshole, drink all your liquor, bone your betty, and do so with a smile on our face.</p>
-
+								<p className="faq-heading">The USVA is one bad ass mother fucker, who with out compromise will tear you a new asshole, drink all your liquor, bone your betty, and do so with a smile on our face.</p>
 								<p>The Vapor Technology Association represents the e-liquid manufacturers, device manufacturers, wholesalers, distributors, vape shop owners, small business owners and entrepreneurs who have developed innovative and quality vapor products, providing adult consumers with a better alternative to traditional combustible products. VTA and its members are leaders in the vapor community, promoting small businesses and job growth, responsible public policies and regulations, and a high standard of safety within the industry.</p>
 
-								{/* COMMENT
-							JUST THE FACTS - START OF THE ACCORDION
-							*/}
 								<div className="faq-panel" id="accordion" role="tablist" aria-multiselectable="true">
 
-									{/* COMMENT
-								PANEL CONTAINING ONE FAQ - CONTAINS CHILD HEADER AND BODY
-								REPEAT AS NEEDED
-								*/}
 									<div className="panel panel-custom border-color-theme">
 										<div className="panel-heading " role="tab" id="headingOne">
 											<h4 className="panel-title">
@@ -54,10 +41,6 @@ export const FaqPage = ({location}) => {
 										</div>
 									</div>
 
-									{/* COMMENT
-								PANEL CONTAINING ONE FAQ - CONTAINS CHILD HEADER AND BODY
-								REPEAT AS NEEDED
-								*/}
 									<div className="panel panel-custom ">
 										<div className="panel-heading " role="tab" id="headingTwo">
 											<h4 className="panel-title">
@@ -187,16 +170,10 @@ export const FaqPage = ({location}) => {
 							<div id="sidebar" className="main-sidebar">
 								<div className="widget widget-support">
 									<div className="avatar-supporter">
-										{/*<img
-										src='https://placehold.it/1698x1131/DEB152/000000.png'
-										className='img-responsive' alt='Image'/>*/}
 										<img src="/images/pages/faq/1234567890.jpg" className="img-responsive" alt="Image" />
-
 									</div>
 									<div className="content-support bg-sub">
-
 										<h4>Need More Support?</h4>
-
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
 
 										<Link href="/contact">
@@ -206,12 +183,9 @@ export const FaqPage = ({location}) => {
 									</div>
 								</div>
 							</div>
-						</div>
-
-					</div>
-
-				</div>
-
+						</div>{/*SideBar Container*/}
+					</Row>
+				</Container>
 			</section>
 			<Subscribe />
 		</Layout>

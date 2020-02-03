@@ -1,5 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Layout from '../layout/layout1';;
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
@@ -22,9 +25,9 @@ class ContactPage extends React.Component {
 				<Helmet title={`Contact | ${config.siteTitle}`} />
 				<SEO title="Contact - United States Vaping Association" keywords={['USVA', 'THEUSVA']} />
 				<section>
-					<div className="container">
-						<div className="row">
-							<div className="col-md-4">
+					<Container>
+						<Row>
+							<Col md={4}>
 								<div className="left-contact">
 									<h3>Few Words About Us</h3>
 									<p>{config.aboutText}</p>
@@ -35,9 +38,8 @@ class ContactPage extends React.Component {
 									<p><i className="fa fa-link color-theme" aria-hidden="true"> </i> {config.companySiteUrl}</p>
 									<p><i className="fa fa-paper-plane color-theme" aria-hidden="true"> </i> {config.emailSupport}</p>
 								</div>
-							</div>
-							{/*column*/}
-							<div className="col-md-8">
+							</Col>
+							<Col md={8}>
 								<div className="right-contact">
 									<h3>Find Us On The Map</h3>
 									<div className="map-warp" style={divStyle}>
@@ -48,14 +50,10 @@ class ContactPage extends React.Component {
 										<h3>Drop Us a Line</h3>
 										<FormInline />
 									</div>
-									{/*form*/}
 								</div>
-							</div>
-							{/*column*/}
-						</div>
-						{/*row*/}
-					</div>
-					{/*container*/}
+							</Col>
+						</Row>
+					</Container>
 				</section>
 			</Layout>
 		);

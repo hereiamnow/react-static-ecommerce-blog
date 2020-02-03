@@ -8,7 +8,6 @@
  *  imported from SiteConfig.js
  */
 
-/* Based on Dotted HTML template. See copyrights in readme.md */
 import React, { Component } from 'react';
 import config from '../../../../data/SiteConfig';
 import './style.css';

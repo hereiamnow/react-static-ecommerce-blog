@@ -1,4 +1,16 @@
+/**
+ * Created by S. Miller <hereiamnow@gmail.com>
+ * Date: 2/1/2020 12:19 AM
+ * Project: react-static-ecommerce-blog - a site built for gatsby
+ * GitRepo: https://github.com/hereiamnow/react-static-ecommerce-blog.git
+ * Relative Path: src/components/Shop/PricingTable/PricingTable.js
+ * Description:
+ */
+
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import PricingTableItem from './PricingTableItem';
 import PricingTableItemFeatured from './PricingTableItemFeatured';
 
@@ -6,26 +18,26 @@ class PricingTable extends React.Component {
 	render () {
 		return (
 				<section id="pricing-table">
-					<div className="container">
-						<div className="row">
+					<Container>
+						<Row>
 							<div className="main-page-pricing-table">
-								<div className="col-md-12">
+								<Col md={12}>
 									<h3>Pricing Table Set 1</h3>
-								</div>
+								</Col>
 								<div className="pricing-set-1 ">
-									<div className="col-md-4">
+									<Col md={4}>
 										<PricingTableItem />
-									</div>
-									<div className="col-md-4">
+									</Col>
+									<Col md={4}>
 										<PricingTableItemFeatured />
-									</div>
-									<div className="col-md-4">
+									</Col>
+									<Col md={4}>
 										<PricingTableItem />
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+									</Col>
+								</div>{/*pricing-set-1*/}
+							</div>{/*main-page-pricing-table*/}
+						</Row>
+					</Container>
 				</section>
 
 		);

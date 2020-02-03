@@ -4,10 +4,15 @@
  * Project: react-static-ecommerce-blog - a site built for gatsby
  * GitRepo:
  * Relative Path: src/components/RecentBlog/RecentBlog.jsx
- * Description: Based on Dotted HTML template
+ * Description:
  */
 
-import React from 'react'
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Carousel from 'react-bootstrap/Carousel';
+import CarouselItem from 'react-bootstrap/CarouselItem';
 
 const options = {
 	autoPlay: false, //Set AutoPlay to 3 seconds
@@ -18,7 +23,7 @@ const options = {
 	itemsMobile: [479, 1],
 	pagination: true,
 	navigation: false
-}
+};
 
 function getData () {
 	return [
@@ -61,7 +66,9 @@ function getData () {
 			'thumbnailLarge': 'https://placehold.it/640x640/FFFAFA.png',
 			'category': 'Litigation',
 			'comments': '12'
-		}, {
+		}
+
+/*		, {
 			'id': '004',
 			'month': 'NOV',
 			'date': '13',
@@ -87,38 +94,40 @@ function getData () {
 			'thumbnailLarge': 'https://placehold.it/640x640/FFFAFA.png',
 			'category': 'Litigation',
 			'comments': '12'
-		}
-	]
+		}*/
+	];
 }
 
 export class RecentBlog extends React.Component {
 
 	render () {
-		console.log(this.props)
+
+
 		return (
-				<section id="blog" className={this.props.sectionTitle}>
-					<div className="container">
-						<div className="row">
+			<section id="blog" className={this.props.sectionTitle}>
+				<Container>
+					<Row>
+						<Col md={12}>
+							<div className="title-warp">
+								<h3 className="title-landing">{this.props.sectionTitle}</h3>
+							</div>
+						</Col>
 
-							<div className="col-md-12">
-								<div className="title-warp">
-									<h3 className="title-landing">{this.props.sectionTitle}</h3>
-								</div>
-							</div>{/*column*/}
-
-							<div className="col-md-12">
-
-								<div className="blog-landing-warp">
-
-									<div id="owl-blog-landing" className="owl-carousel owl-theme owl-blog-landing ">
-
-										{/*ITEM*/}
-
-											{/*<div className="item"></div>*/}
-
+						<Col md={12}>
+							<div className="blog-landing-warp">
+								{/*Indicators*/}
+								<ol className="carousel-indicators">
+									<li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+									<li data-target="#myCarousel" data-slide-to="1"></li>
+									<li data-target="#myCarousel" data-slide-to="2"></li>
+								</ol>
+								<Carousel id="owl-blog-landing" className="">
+									<Row>
+											{/*Creates Column and Carousel*/}
 											{getData().map(data => (
 
-													<div className="item" key={data.id}>
+												<Col md={4}>
+													<CarouselItem className="item" key={data.id}>
 
 														<div className="item-blog blog-single-feature-img">
 
@@ -138,21 +147,16 @@ export class RecentBlog extends React.Component {
 																		<div className="blog-type">
 																			<img src={data.thumbnailSmall} className="img-responsive" alt="Image" />
 																		</div>
-																	</div>
+																	</div>/*blog-data*/
 
 																	<div className="blog-text">
-
-																		<a href="blog-single.html">
-																			<h4 className="hover-text-theme">{data.subTitle}</h4>
-																		</a>
-
+																		<a href="blog-single.html"><h4 className="hover-text-theme">{data.subTitle}</h4></a>
 																		<p>{data.theText + '...'}</p>
-
-																		<a href="blog-single.html"
-																		   className="readmore hover-text-theme">[read more]
-																		</a>
+																		<a href="blog-single.html" className="readmore hover-text-theme">[read more]</a>
 																	</div>
 																</div>
+
+
 																<div className="blog-footer-2 border-color-theme">
 																	<ul>
 																		<li>Posted by <a className="hover-text-theme">{data.postedBy}</a></li>
@@ -162,23 +166,27 @@ export class RecentBlog extends React.Component {
 																</div>
 															</div>
 														</div>
-													</div>
-											))}	{/*END ITEM*/}
+													</CarouselItem>
+												</Col>
 
-									</div>
+											))}
+									</Row>
 
-								</div>{/*blog-landing-warp*/}
 
-							</div>{/*column*/}
 
-						</div>{/*row*/}
 
-					</div>{/*container*/}
 
-				</section>
+								</Carousel>
 
-		)
+							</div>
+							{/*blog-landing-warp*/}
+						</Col>{/*column*/}
+					</Row>{/*row*/}
+				</Container>{/*container*/}
+			</section>
+
+		);
 	}
 }
 
-export default RecentBlog
+export default RecentBlog;
